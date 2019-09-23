@@ -45,7 +45,7 @@ public abstract class PageDTO {
 		return "PageDTO [pageNo=" + pageNo + ", pageSize=" + pageSize + "]";
 	}
 
-	protected void setPageParam() {
+	public void setPageParam() {
 		if (pageNo == null || pageNo <= 0) {
 			pageNo = 1L;
 		}

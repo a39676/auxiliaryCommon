@@ -1,11 +1,7 @@
 package movie.pojo.type;
 
-public enum MovieType {
+public enum MovieRegionType {
 	
-	/** 最新电影 */
-	newMovie("newMovie", 1),
-	/** 经典电影 */
-	classic("classic", 2),
 	/** 国内电影 */
 	domestic("domestic", 3),
 	/** 欧美电影 */
@@ -21,7 +17,7 @@ public enum MovieType {
 	private String name;
 	private Integer code;
 	
-	MovieType(String evaluationName, Integer evaluationCode) {
+	MovieRegionType(String evaluationName, Integer evaluationCode) {
 		this.name = evaluationName;
 		this.code = evaluationCode;
 	}
@@ -35,8 +31,8 @@ public enum MovieType {
 		return code;
 	}
 
-	public static MovieType getType(String typeName) {
-		for(MovieType t : MovieType.values()) {
+	public static MovieRegionType getType(String typeName) {
+		for(MovieRegionType t : MovieRegionType.values()) {
 			if(t.getName().equals(typeName)) {
 				return t;
 			}
@@ -44,8 +40,8 @@ public enum MovieType {
 		return null;
 	}
 	
-	public static MovieType getType(Integer typeCode) {
-		for(MovieType t : MovieType.values()) {
+	public static MovieRegionType getType(Integer typeCode) {
+		for(MovieRegionType t : MovieRegionType.values()) {
 			if(t.getCode().equals(typeCode)) {
 				return t;
 			}
