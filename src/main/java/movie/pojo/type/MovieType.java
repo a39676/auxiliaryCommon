@@ -9,9 +9,13 @@ public enum MovieType {
 	/** 国内电影 */
 	domestic("domestic", 3),
 	/** 欧美电影 */
-	EuropeAndAmerica("EuropeAndAmerica", 4),
+	eurAndAmerica("eurAndUmerica", 4),
+	/** 日韩电影 */
+	jpAndKr("jpAndKr", 5),
+	
 	/** 其他电影 */
-	otherMovie("otherMovie", 5),
+	otherMovie("otherMovie", 6),
+	
 	;
 	
 	private String name;
