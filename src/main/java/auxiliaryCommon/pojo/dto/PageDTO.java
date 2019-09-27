@@ -46,20 +46,20 @@ public abstract class PageDTO {
 	}
 
 	public void setPageParam() {
-		if (pageNo == null || pageNo <= 0) {
-			pageNo = 1L;
+		if (this.pageNo == null || this.pageNo <= 0) {
+			this.pageNo = 1L;
 		}
-		if (pageSize == null || pageSize <= 0) {
-			pageSize = 1L;
+		if (this.pageSize == null || this.pageSize <= 0) {
+			this.pageSize = 1L;
 		}
-		if (pageNo == 1) {
+		if (this.pageNo == 1) {
 			this.setPageStart(0L);
-			this.setPageEnd(pageSize);
-		} else if (pageNo > 1) {
-			this.setPageStart(pageSize * (pageNo - 1) + 1);
+			this.setPageEnd(this.pageSize);
+		} else if (this.pageNo > 1) {
+			this.setPageStart(this.pageSize * (this.pageNo - 1) + 1);
 			this.setPageEnd(this.getPageStart() + pageSize);
 		}
-		this.setPageSize(pageSize);
+		this.setPageSize(this.pageSize);
 	}
 
 }

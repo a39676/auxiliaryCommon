@@ -6,19 +6,19 @@ import movie.pojo.type.MovieRegionType;
 public class FindMovieSummaryListDTO extends PageDTO {
 
 	/** {@link MovieRegionType} */
-	private Integer MovieRegionType;
+	private Integer movieRegionType;
 
 	public Integer getMovieRegionType() {
-		return MovieRegionType;
+		return movieRegionType;
 	}
 
 	public void setMovieRegionType(Integer movieRegionType) {
-		MovieRegionType = movieRegionType;
+		this.movieRegionType = movieRegionType;
 	}
 
 	@Override
 	public String toString() {
-		return "FindMovieSummaryListDTO [MovieRegionType=" + MovieRegionType + ", pageNo=" + pageNo + ", pageSize="
+		return "FindMovieSummaryListDTO [movieRegionType=" + movieRegionType + ", pageNo=" + pageNo + ", pageSize="
 				+ pageSize + ", pageStart=" + pageStart + ", pageEnd=" + pageEnd + "]";
 	}
 
