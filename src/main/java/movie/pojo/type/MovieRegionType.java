@@ -2,12 +2,14 @@ package movie.pojo.type;
 
 public enum MovieRegionType {
 	
-	/** 国内电影 */
+	/** 国内(大陆)电影 */
 	domestic("domestic", 3),
 	/** 欧美电影 */
 	eurAndAmerica("eurAndUmerica", 4),
 	/** 日韩电影 */
 	jpAndKr("jpAndKr", 5),
+	/** 港澳台电影 */
+	hongKongMarcoTaiwan("hongKongMarcoTaiwan", 7),
 	
 	/** 其他电影 */
 	otherMovie("otherMovie", 6),
