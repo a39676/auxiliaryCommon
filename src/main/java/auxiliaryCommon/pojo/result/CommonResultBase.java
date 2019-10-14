@@ -4,7 +4,7 @@ import auxiliaryCommon.pojo.type.BaseResultType;
 
 public abstract class CommonResultBase<T> {
 
-	private boolean success = false;
+	protected boolean success = false;
 	
 	private String code;
 
