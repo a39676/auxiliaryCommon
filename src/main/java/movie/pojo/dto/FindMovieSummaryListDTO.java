@@ -1,10 +1,11 @@
 package movie.pojo.dto;
 
 import auxiliaryCommon.pojo.dto.PageDTO;
-import movie.pojo.type.MovieRegionType;
+import io.swagger.annotations.ApiModelProperty;
 
 public class FindMovieSummaryListDTO extends PageDTO {
 
+	@ApiModelProperty("电影类型")
 	/** {@link MovieRegionType} */
 	private Integer movieRegionType;
 
