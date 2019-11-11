@@ -7,5 +7,6 @@ public class MovieInteractionUrl {
 	public static final String movieDetail = "/movieDetail";
 	public static final String movieRegionType = "/movieRegionType";
 	public static final String handleMovieIntroductionRecive = "/handleMovieIntroductionRecive";
+	public static final String recommend = "/recommend";
 
 }
