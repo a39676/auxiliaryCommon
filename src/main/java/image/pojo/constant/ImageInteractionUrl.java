@@ -1,8 +1,8 @@
 package image.pojo.constant;
 
-public class ImageUrl {
+public class ImageInteractionUrl {
 
-	public static final String root = "/tool/image";
+	public static final String root = "/imageInteraction";
 	
 	public static final String uploadImageToCloudinary = "/uploadImageToCloudinary";
 }
