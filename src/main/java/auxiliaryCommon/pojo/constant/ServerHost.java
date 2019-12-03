@@ -1,4 +1,4 @@
-package auxiliaryCommon.autoTest.jsonReport.pojo.constant;
+package auxiliaryCommon.pojo.constant;
 
 public class ServerHost {
 

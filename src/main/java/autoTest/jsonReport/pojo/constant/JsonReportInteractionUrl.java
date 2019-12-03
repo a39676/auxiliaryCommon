@@ -1,4 +1,4 @@
-package auxiliaryCommon.autoTest.jsonReport.pojo.constant;
+package autoTest.jsonReport.pojo.constant;
 
 public class JsonReportInteractionUrl {
 
