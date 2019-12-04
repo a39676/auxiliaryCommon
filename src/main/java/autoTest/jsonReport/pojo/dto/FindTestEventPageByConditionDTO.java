@@ -2,22 +2,50 @@ package autoTest.jsonReport.pojo.dto;
 
 import java.time.LocalDateTime;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateTimeDeserializer;
+
+import dateTimeHandle.DateUtilCustom;
 import io.swagger.annotations.ApiModelProperty;
 
 public class FindTestEventPageByConditionDTO {
 
 	private Long id;
+
 	private Long moduleId;
+
+	private Long caseId;
+
 	private String eventName;
+
 	private String reportPath;
+
 	@ApiModelProperty("最早创建时间")
+	@JsonFormat(pattern = DateUtilCustom.normalDateTimeFormat)
+	@JsonDeserialize(using = LocalDateTimeDeserializer.class)
 	private LocalDateTime createStartTime;
+
 	@ApiModelProperty("最迟创建时间")
+	@JsonFormat(pattern = DateUtilCustom.normalDateTimeFormat)
+	@JsonDeserialize(using = LocalDateTimeDeserializer.class)
 	private LocalDateTime createEndTime;
+
 	@ApiModelProperty("最早运行时间")
+	@JsonFormat(pattern = DateUtilCustom.normalDateTimeFormat)
+	@JsonDeserialize(using = LocalDateTimeDeserializer.class)
 	private LocalDateTime runTimeStartTime;
+
 	@ApiModelProperty("最迟运行时间")
+	@JsonFormat(pattern = DateUtilCustom.normalDateTimeFormat)
+	@JsonDeserialize(using = LocalDateTimeDeserializer.class)
 	private LocalDateTime runTimeEndTime;
+
+	@ApiModelProperty("搜索分界时间")
+	@JsonFormat(pattern = DateUtilCustom.normalDateTimeFormat)
+	@JsonDeserialize(using = LocalDateTimeDeserializer.class)
+	private LocalDateTime endTime;
+
 	private Long limit;
 
 	public Long getId() {
@@ -92,12 +120,28 @@ public class FindTestEventPageByConditionDTO {
 		this.limit = limit;
 	}
 
+	public Long getCaseId() {
+		return caseId;
+	}
+
+	public void setCaseId(Long caseId) {
+		this.caseId = caseId;
+	}
+
+	public LocalDateTime getEndTime() {
+		return endTime;
+	}
+
+	public void setEndTime(LocalDateTime endTime) {
+		this.endTime = endTime;
+	}
+
 	@Override
 	public String toString() {
-		return "FindTestEventPageByConditionDTO [id=" + id + ", moduleId=" + moduleId + ", eventName=" + eventName
-				+ ", reportPath=" + reportPath + ", createStartTime=" + createStartTime + ", createEndTime="
-				+ createEndTime + ", runTimeStartTime=" + runTimeStartTime + ", runTimeEndTime=" + runTimeEndTime
-				+ ", limit=" + limit + "]";
+		return "FindTestEventPageByConditionDTO [id=" + id + ", moduleId=" + moduleId + ", caseId=" + caseId
+				+ ", eventName=" + eventName + ", reportPath=" + reportPath + ", createStartTime=" + createStartTime
+				+ ", createEndTime=" + createEndTime + ", runTimeStartTime=" + runTimeStartTime + ", runTimeEndTime="
+				+ runTimeEndTime + ", endTime=" + endTime + ", limit=" + limit + "]";
 	}
 
 }
