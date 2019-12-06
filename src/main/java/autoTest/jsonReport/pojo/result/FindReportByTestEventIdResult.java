@@ -6,12 +6,22 @@ import auxiliaryCommon.pojo.result.CommonResult;
 
 public class FindReportByTestEventIdResult extends CommonResult {
 
+	private Long id;
+
 	private String title;
 	private String reportStr;
 
 	private LocalDateTime createTime;
 	private LocalDateTime startTime;
 	private LocalDateTime endTime;
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
 
 	public String getTitle() {
 		return title;
@@ -55,11 +65,11 @@ public class FindReportByTestEventIdResult extends CommonResult {
 
 	@Override
 	public String toString() {
-		return "FindReportByTestEventIdResult [title=" + title + ", reportStr=" + reportStr + ", createTime="
-				+ createTime + ", startTime=" + startTime + ", endTime=" + endTime + ", getCode()=" + getCode()
-				+ ", getResult()=" + getResult() + ", getMessage()=" + getMessage() + ", isSuccess()=" + isSuccess()
-				+ ", toString()=" + super.toString() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode()
-				+ "]";
+		return "FindReportByTestEventIdResult [id=" + id + ", title=" + title + ", reportStr=" + reportStr
+				+ ", createTime=" + createTime + ", startTime=" + startTime + ", endTime=" + endTime + ", getCode()="
+				+ getCode() + ", getResult()=" + getResult() + ", getMessage()=" + getMessage() + ", isSuccess()="
+				+ isSuccess() + ", toString()=" + super.toString() + ", getClass()=" + getClass() + ", hashCode()="
+				+ hashCode() + "]";
 	}
 
 }
