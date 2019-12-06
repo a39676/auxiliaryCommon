@@ -1,0 +1,22 @@
+package autoTest.testEvent.pojo.dto;
+
+import java.time.LocalDateTime;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateTimeDeserializer;
+
+import dateTimeHandle.DateHandler;
+import io.swagger.annotations.ApiModelProperty;
+
+public class InsertBingDemoTestEventDTO {
+
+	@ApiModelProperty("预约运行时间(可空)")
+	@JsonFormat(pattern = DateHandler.normalDateTimeFormat)
+	@JsonDeserialize(using = LocalDateTimeDeserializer.class)
+	private LocalDateTime appointment;
+	
+	@ApiModelProperty("预期搜索关键字")
+	private String searchKeyWord;
+	
+}
