@@ -15,8 +15,29 @@ public class InsertBingDemoTestEventDTO {
 	@JsonFormat(pattern = DateHandler.normalDateTimeFormat)
 	@JsonDeserialize(using = LocalDateTimeDeserializer.class)
 	private LocalDateTime appointment;
-	
+
 	@ApiModelProperty("预期搜索关键字")
 	private String searchKeyWord;
-	
+
+	public LocalDateTime getAppointment() {
+		return appointment;
+	}
+
+	public void setAppointment(LocalDateTime appointment) {
+		this.appointment = appointment;
+	}
+
+	public String getSearchKeyWord() {
+		return searchKeyWord;
+	}
+
+	public void setSearchKeyWord(String searchKeyWord) {
+		this.searchKeyWord = searchKeyWord;
+	}
+
+	@Override
+	public String toString() {
+		return "InsertBingDemoTestEventDTO [appointment=" + appointment + ", searchKeyWord=" + searchKeyWord + "]";
+	}
+
 }
