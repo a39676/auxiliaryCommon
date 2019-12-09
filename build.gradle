@@ -43,7 +43,7 @@ repositories {
 
 dependencies {
 	// tools
-	compile project(':toolPacksG')
+	// compile project(':toolPacksG')
 
 	// other
 	// swagger
