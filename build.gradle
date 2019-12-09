@@ -8,9 +8,9 @@ buildscript {
 	}
 }
 
-bootJar {
-	baseName = 'auxiliaryCommon'
-}
+// bootJar {
+// 	baseName = 'auxiliaryCommon'
+// }
 
 group = 'auxiliaryCommon'
 version = '0.0.1'
@@ -43,7 +43,7 @@ repositories {
 
 dependencies {
 	// tools
-	// compile project(':toolPacksG')
+	compile project(':toolPacksG')
 
 	// other
 	// swagger
