@@ -6,8 +6,8 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateTimeDeserializer;
 
+import auxiliaryCommon.pojo.constant.DateTimeConstant;
 import io.swagger.annotations.ApiModelProperty;
-import toolPack.dateTimeHandle.DateHandler;
 
 public class FindTestEventPageByConditionDTO {
 
@@ -22,27 +22,27 @@ public class FindTestEventPageByConditionDTO {
 	private String reportPath;
 
 	@ApiModelProperty("最早创建时间")
-	@JsonFormat(pattern = DateHandler.normalDateTimeFormat)
+	@JsonFormat(pattern = DateTimeConstant.normalDateTimeFormat)
 	@JsonDeserialize(using = LocalDateTimeDeserializer.class)
 	private LocalDateTime createStartTime;
 
 	@ApiModelProperty("最迟创建时间")
-	@JsonFormat(pattern = DateHandler.normalDateTimeFormat)
+	@JsonFormat(pattern = DateTimeConstant.normalDateTimeFormat)
 	@JsonDeserialize(using = LocalDateTimeDeserializer.class)
 	private LocalDateTime createEndTime;
 
 	@ApiModelProperty("最早运行时间")
-	@JsonFormat(pattern = DateHandler.normalDateTimeFormat)
+	@JsonFormat(pattern = DateTimeConstant.normalDateTimeFormat)
 	@JsonDeserialize(using = LocalDateTimeDeserializer.class)
 	private LocalDateTime runTimeStartTime;
 
 	@ApiModelProperty("最迟运行时间")
-	@JsonFormat(pattern = DateHandler.normalDateTimeFormat)
+	@JsonFormat(pattern = DateTimeConstant.normalDateTimeFormat)
 	@JsonDeserialize(using = LocalDateTimeDeserializer.class)
 	private LocalDateTime runTimeEndTime;
 
 	@ApiModelProperty("搜索分界时间")
-	@JsonFormat(pattern = DateHandler.normalDateTimeFormat)
+	@JsonFormat(pattern = DateTimeConstant.normalDateTimeFormat)
 	@JsonDeserialize(using = LocalDateTimeDeserializer.class)
 	private LocalDateTime endTime;
 
