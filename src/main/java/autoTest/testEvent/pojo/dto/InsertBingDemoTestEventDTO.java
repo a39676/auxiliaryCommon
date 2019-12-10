@@ -6,13 +6,13 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateTimeDeserializer;
 
+import auxiliaryCommon.pojo.constant.DateTimeConstant;
 import io.swagger.annotations.ApiModelProperty;
-import toolPack.dateTimeHandle.DateHandler;
 
 public class InsertBingDemoTestEventDTO {
 
 	@ApiModelProperty("预约运行时间(可空)")
-	@JsonFormat(pattern = DateHandler.normalDateTimeFormat)
+	@JsonFormat(pattern = DateTimeConstant.normalDateTimeFormat)
 	@JsonDeserialize(using = LocalDateTimeDeserializer.class)
 	private LocalDateTime appointment;
 
