@@ -9,7 +9,7 @@ import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateTimeDeserializer;
 import auxiliaryCommon.pojo.constant.DateTimeConstant;
 import io.swagger.annotations.ApiModelProperty;
 
-public class InsertBingDemoTestEventDTO {
+public class InsertSearchingDemoTestEventDTO {
 
 	@ApiModelProperty("预约运行时间(可空)")
 	@JsonFormat(pattern = DateTimeConstant.normalDateTimeFormat)
