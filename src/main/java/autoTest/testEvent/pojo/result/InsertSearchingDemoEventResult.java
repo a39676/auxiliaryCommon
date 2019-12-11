@@ -2,7 +2,7 @@ package autoTest.testEvent.pojo.result;
 
 import auxiliaryCommon.pojo.result.CommonResult;
 
-public class InsertBingDemoEventResult extends CommonResult {
+public class InsertSearchingDemoEventResult extends CommonResult {
 
 	private Long eventId;
 	private Integer waitingEventCount = 0;
