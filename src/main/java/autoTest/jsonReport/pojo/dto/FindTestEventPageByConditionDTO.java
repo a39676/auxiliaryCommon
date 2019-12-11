@@ -21,6 +21,9 @@ public class FindTestEventPageByConditionDTO {
 
 	private String reportPath;
 
+	@ApiModelProperty("是否已运行")
+	private Boolean runFlag = true;
+
 	@ApiModelProperty("最早创建时间")
 	@JsonFormat(pattern = DateTimeConstant.normalDateTimeFormat)
 	@JsonDeserialize(using = LocalDateTimeDeserializer.class)
@@ -64,6 +67,14 @@ public class FindTestEventPageByConditionDTO {
 		this.moduleId = moduleId;
 	}
 
+	public Long getCaseId() {
+		return caseId;
+	}
+
+	public void setCaseId(Long caseId) {
+		this.caseId = caseId;
+	}
+
 	public String getEventName() {
 		return eventName;
 	}
@@ -78,6 +89,14 @@ public class FindTestEventPageByConditionDTO {
 
 	public void setReportPath(String reportPath) {
 		this.reportPath = reportPath;
+	}
+
+	public Boolean getRunFlag() {
+		return runFlag;
+	}
+
+	public void setRunFlag(Boolean runFlag) {
+		this.runFlag = runFlag;
 	}
 
 	public LocalDateTime getCreateStartTime() {
@@ -112,22 +131,6 @@ public class FindTestEventPageByConditionDTO {
 		this.runTimeEndTime = runTimeEndTime;
 	}
 
-	public Long getLimit() {
-		return limit;
-	}
-
-	public void setLimit(Long limit) {
-		this.limit = limit;
-	}
-
-	public Long getCaseId() {
-		return caseId;
-	}
-
-	public void setCaseId(Long caseId) {
-		this.caseId = caseId;
-	}
-
 	public LocalDateTime getEndTime() {
 		return endTime;
 	}
@@ -136,12 +139,21 @@ public class FindTestEventPageByConditionDTO {
 		this.endTime = endTime;
 	}
 
+	public Long getLimit() {
+		return limit;
+	}
+
+	public void setLimit(Long limit) {
+		this.limit = limit;
+	}
+
 	@Override
 	public String toString() {
 		return "FindTestEventPageByConditionDTO [id=" + id + ", moduleId=" + moduleId + ", caseId=" + caseId
-				+ ", eventName=" + eventName + ", reportPath=" + reportPath + ", createStartTime=" + createStartTime
-				+ ", createEndTime=" + createEndTime + ", runTimeStartTime=" + runTimeStartTime + ", runTimeEndTime="
-				+ runTimeEndTime + ", endTime=" + endTime + ", limit=" + limit + "]";
+				+ ", eventName=" + eventName + ", reportPath=" + reportPath + ", runFlag=" + runFlag
+				+ ", createStartTime=" + createStartTime + ", createEndTime=" + createEndTime + ", runTimeStartTime="
+				+ runTimeStartTime + ", runTimeEndTime=" + runTimeEndTime + ", endTime=" + endTime + ", limit=" + limit
+				+ "]";
 	}
 
 }
