@@ -1,6 +1,6 @@
 package autoTest.testEvent.pojo.constant;
 
-public class BingDemoUrl {
+public class SearchingDemoUrl {
 
 	public static final String root = "/bingDemo";
 	
