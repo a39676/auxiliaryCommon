@@ -9,6 +9,8 @@ public class FindMovieSummaryListDTO extends PageDTO {
 	/** {@link MovieRegionType} */
 	private Integer movieRegionType;
 
+	private String title;
+
 	public Integer getMovieRegionType() {
 		return movieRegionType;
 	}
@@ -17,10 +19,17 @@ public class FindMovieSummaryListDTO extends PageDTO {
 		this.movieRegionType = movieRegionType;
 	}
 
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
 	@Override
 	public String toString() {
-		return "FindMovieSummaryListDTO [movieRegionType=" + movieRegionType + ", pageNo=" + pageNo + ", pageSize="
-				+ pageSize + ", pageStart=" + pageStart + ", pageEnd=" + pageEnd + "]";
+		return "FindMovieSummaryListDTO [movieRegionType=" + movieRegionType + ", title=" + title + "]";
 	}
 
 }
