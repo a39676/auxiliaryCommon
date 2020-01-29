@@ -13,6 +13,9 @@ public enum TestModuleType {
 	
 	/** daily sign */
 	dailySign(4L, "dailySign"),
+	
+	/** lottery */
+	lottery(5L, "lottery"),
 	;
 
 	private Long id;
