@@ -24,6 +24,9 @@ public class FindTestEventPageByConditionDTO {
 	@ApiModelProperty("是否已运行")
 	private Boolean runFlag = true;
 
+	@ApiModelProperty("是否运行失败")
+	private Boolean isFail = false;
+
 	@ApiModelProperty("最早创建时间")
 	@JsonFormat(pattern = DateTimeConstant.normalDateTimeFormat)
 	@JsonDeserialize(using = LocalDateTimeDeserializer.class)
@@ -99,6 +102,14 @@ public class FindTestEventPageByConditionDTO {
 		this.runFlag = runFlag;
 	}
 
+	public Boolean getIsFail() {
+		return isFail;
+	}
+
+	public void setIsFail(Boolean isFail) {
+		this.isFail = isFail;
+	}
+
 	public LocalDateTime getCreateStartTime() {
 		return createStartTime;
 	}
@@ -150,10 +161,10 @@ public class FindTestEventPageByConditionDTO {
 	@Override
 	public String toString() {
 		return "FindTestEventPageByConditionDTO [id=" + id + ", moduleId=" + moduleId + ", caseId=" + caseId
-				+ ", eventName=" + eventName + ", reportPath=" + reportPath + ", runFlag=" + runFlag
-				+ ", createStartTime=" + createStartTime + ", createEndTime=" + createEndTime + ", runTimeStartTime="
-				+ runTimeStartTime + ", runTimeEndTime=" + runTimeEndTime + ", endTime=" + endTime + ", limit=" + limit
-				+ "]";
+				+ ", eventName=" + eventName + ", reportPath=" + reportPath + ", runFlag=" + runFlag + ", isFail="
+				+ isFail + ", createStartTime=" + createStartTime + ", createEndTime=" + createEndTime
+				+ ", runTimeStartTime=" + runTimeStartTime + ", runTimeEndTime=" + runTimeEndTime + ", endTime="
+				+ endTime + ", limit=" + limit + "]";
 	}
 
 }
