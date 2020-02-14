@@ -16,6 +16,9 @@ public enum TestModuleType {
 	
 	/** lottery */
 	lottery(5L, "lottery"),
+	
+	/** collecting */
+	collecting(6L, "collecting"),
 	;
 
 	private Long id;
