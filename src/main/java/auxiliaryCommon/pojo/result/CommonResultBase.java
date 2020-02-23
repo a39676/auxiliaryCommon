@@ -53,6 +53,10 @@ public abstract class CommonResultBase<T> {
 	public boolean isSuccess() {
 		return success;
 	}
+	
+	public boolean isFail() {
+		return !success;
+	}
 
 	public void setIsSuccess() {
 		this.setResult(BaseResultType.success.getCode());
