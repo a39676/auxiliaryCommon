@@ -5,4 +5,7 @@ public class ImageInteractionUrl {
 	public static final String root = "/imageInteraction";
 	
 	public static final String uploadImageToCloudinary = "/uploadImageToCloudinary";
+	
+	public static final String imageSaving = "/imageSaving";
+	
 }
