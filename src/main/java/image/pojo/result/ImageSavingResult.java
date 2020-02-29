@@ -5,7 +5,7 @@ import auxiliaryCommon.pojo.result.CommonResult;
 public class ImageSavingResult extends CommonResult {
 
 	private String imgUrl;
-	private Long imgId;
+	private String imgPK;
 
 	public String getImgUrl() {
 		return imgUrl;
@@ -15,17 +15,17 @@ public class ImageSavingResult extends CommonResult {
 		this.imgUrl = imgUrl;
 	}
 
-	public Long getImgId() {
-		return imgId;
+	public String getImgPK() {
+		return imgPK;
 	}
 
-	public void setImgId(Long imgId) {
-		this.imgId = imgId;
+	public void setImgPK(String imgPK) {
+		this.imgPK = imgPK;
 	}
 
 	@Override
 	public String toString() {
-		return "ImageSavingResult [imgUrl=" + imgUrl + ", imgId=" + imgId + "]";
+		return "ImageSavingResult [imgUrl=" + imgUrl + ", imgPK=" + imgPK + "]";
 	}
 
 }

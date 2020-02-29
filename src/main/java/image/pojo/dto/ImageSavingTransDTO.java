@@ -2,6 +2,12 @@ package image.pojo.dto;
 
 import java.time.LocalDateTime;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateTimeDeserializer;
+
+import auxiliaryCommon.pojo.constant.DateTimeConstant;
+
 /**
  * 内部几个应用之间, 图片转存用
  */
@@ -12,6 +18,8 @@ public class ImageSavingTransDTO {
 	/** 文件名 */
 	private String imgName;
 	/** 图片保存有效期 */
+	@JsonFormat(pattern = DateTimeConstant.normalDateTimeFormat)
+	@JsonDeserialize(using = LocalDateTimeDeserializer.class)
 	private LocalDateTime validTime;
 
 	public LocalDateTime getValidTime() {
