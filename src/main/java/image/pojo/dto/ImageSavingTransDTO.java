@@ -1,5 +1,7 @@
 package image.pojo.dto;
 
+import java.time.LocalDateTime;
+
 /**
  * 内部几个应用之间, 图片转存用
  */
@@ -9,16 +11,15 @@ public class ImageSavingTransDTO {
 	private String imgPath;
 	/** 文件名 */
 	private String imgName;
-	/** {@link ImageTransType} */
-	/** 图片保存类型 */
-	private Integer imgTransType;
+	/** 图片保存有效期 */
+	private LocalDateTime validTime;
 
-	public Integer getImgTransType() {
-		return imgTransType;
+	public LocalDateTime getValidTime() {
+		return validTime;
 	}
 
-	public void setImgTransType(Integer imgTransType) {
-		this.imgTransType = imgTransType;
+	public void setValidTime(LocalDateTime validTime) {
+		this.validTime = validTime;
 	}
 
 	public String getImgName() {
@@ -39,8 +40,7 @@ public class ImageSavingTransDTO {
 
 	@Override
 	public String toString() {
-		return "ImageSavingTransDTO [imgPath=" + imgPath + ", imgName=" + imgName + ", imgTransType=" + imgTransType
-				+ "]";
+		return "ImageSavingTransDTO [imgPath=" + imgPath + ", imgName=" + imgName + ", validTime=" + validTime + "]";
 	}
 
 }
