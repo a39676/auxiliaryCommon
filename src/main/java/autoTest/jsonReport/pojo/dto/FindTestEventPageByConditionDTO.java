@@ -25,7 +25,7 @@ public class FindTestEventPageByConditionDTO {
 	private Boolean runFlag = true;
 
 	@ApiModelProperty("是否运行成功")
-	private Boolean isSuccess = null;
+	private Boolean isSuccess = true;
 
 	@ApiModelProperty("最早创建时间")
 	@JsonFormat(pattern = DateTimeConstant.normalDateTimeFormat)
