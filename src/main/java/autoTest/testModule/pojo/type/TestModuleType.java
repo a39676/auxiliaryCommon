@@ -19,6 +19,9 @@ public enum TestModuleType {
 	
 	/** collecting */
 	collecting(6L, "collecting"),
+	
+	/** localClawing */
+	localClawing(7L, "localClawing"),
 	;
 
 	private Long id;
