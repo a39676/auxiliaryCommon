@@ -11,8 +11,8 @@ public enum TestModuleType {
 	/** ATDemo */
 	ATDemo(3L, "ATDemo"),
 	
-	/** daily sign */
-	dailySign(4L, "dailySign"),
+	/** scheduleClawing */
+	scheduleClawing(4L, "scheduleClawing"),
 	
 	/** lottery */
 	lottery(5L, "lottery"),
