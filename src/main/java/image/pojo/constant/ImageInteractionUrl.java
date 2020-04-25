@@ -6,6 +6,6 @@ public class ImageInteractionUrl {
 	
 	public static final String uploadImageToCloudinary = "/uploadImageToCloudinary";
 	
-	public static final String imageSaving = "/imageSaving";
+	public static final String imageSavingFromBBT = "/imageSavingFromBBT";
 	
 }
