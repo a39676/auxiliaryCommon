@@ -22,6 +22,8 @@ public class ImageSavingTransDTO {
 	@JsonDeserialize(using = LocalDateTimeDeserializer.class)
 	private LocalDateTime validTime;
 
+	private Long imgTagCode;
+
 	public LocalDateTime getValidTime() {
 		return validTime;
 	}
@@ -46,9 +48,18 @@ public class ImageSavingTransDTO {
 		this.imgPath = imgPath;
 	}
 
+	public Long getImgTagCode() {
+		return imgTagCode;
+	}
+
+	public void setImgTagCode(Long imgTagCode) {
+		this.imgTagCode = imgTagCode;
+	}
+
 	@Override
 	public String toString() {
-		return "ImageSavingTransDTO [imgPath=" + imgPath + ", imgName=" + imgName + ", validTime=" + validTime + "]";
+		return "ImageSavingTransDTO [imgPath=" + imgPath + ", imgName=" + imgName + ", validTime=" + validTime
+				+ ", imgTagCode=" + imgTagCode + "]";
 	}
 
 }
