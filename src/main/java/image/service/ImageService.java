@@ -37,4 +37,27 @@ public class ImageService {
 		return false;
 	}
 	
+	public boolean imgSamePixCheck(BufferedImage image1, BufferedImage image2) {
+		if(image1 == null || image2 == null) {
+			return false;
+		}
+		
+		if(image1.getWidth() != image2.getWidth()) {
+			return false;
+		}
+		
+		if(image1.getHeight() != image2.getHeight()) {
+			return false;
+		}
+		
+		for (int x = 1; x < image1.getWidth(); x++) {
+			for (int y = 1; y < image1.getHeight(); y++) {
+				if(image1.getRGB(x, y) != image2.getRGB(x, y)) {
+					return false;
+				}
+			}
+		}
+		return true;
+	}
+	
 }
