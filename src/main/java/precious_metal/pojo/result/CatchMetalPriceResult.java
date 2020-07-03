@@ -1,7 +1,7 @@
-package metal.pojo.result;
+package precious_metal.pojo.result;
 
 import auxiliaryCommon.pojo.result.CommonResult;
-import metal.pojo.dto.PreciousMetailPriceDTO;
+import precious_metal.pojo.dto.PreciousMetailPriceDTO;
 
 public class CatchMetalPriceResult extends CommonResult {
 

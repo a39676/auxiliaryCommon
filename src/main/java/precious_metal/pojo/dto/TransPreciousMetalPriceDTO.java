@@ -1,4 +1,4 @@
-package metal.pojo.dto;
+package precious_metal.pojo.dto;
 
 import java.util.List;
 

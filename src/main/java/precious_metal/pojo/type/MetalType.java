@@ -1,4 +1,4 @@
-package metal.pojo.type;
+package precious_metal.pojo.type;
 
 public enum MetalType {
 	

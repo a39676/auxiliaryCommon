@@ -1,6 +1,6 @@
-package metal.pojo.dto;
+package precious_metal.pojo.dto;
 
-import metal.pojo.type.MetalType;
+import precious_metal.pojo.type.MetalType;
 import tool.pojo.type.UtilOfWeightType;
 
 public class PreciousMetailPriceDTO {
