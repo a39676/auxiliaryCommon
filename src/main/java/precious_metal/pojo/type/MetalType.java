@@ -2,7 +2,7 @@ package precious_metal.pojo.type;
 
 public enum MetalType {
 	
-	gold("gole", 1),
+	gold("gold", 1),
 	silver("silver", 2),
 	;
 	
