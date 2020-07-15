@@ -2,7 +2,7 @@ package precious_metal.pojo.dto;
 
 import java.util.List;
 
-public class TransPreciousMetalPriceDTO {
+public class TransmissionPreciousMetalPriceDTO {
 
 	private List<PreciousMetailPriceDTO> priceList;
 

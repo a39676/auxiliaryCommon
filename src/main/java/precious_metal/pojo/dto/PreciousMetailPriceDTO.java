@@ -18,7 +18,7 @@ public class PreciousMetailPriceDTO {
 	/**
 	 * yyyy-MM-dd HH:mm:ss
 	 */
-	private String transDate;
+	private String transactionDateTime;
 
 	public Integer getMetalType() {
 		return metalType;
@@ -44,18 +44,18 @@ public class PreciousMetailPriceDTO {
 		this.price = price;
 	}
 
-	public String getTransDate() {
-		return transDate;
+	public String getTransactionDateTime() {
+		return transactionDateTime;
 	}
 
-	public void setTransDate(String transDate) {
-		this.transDate = transDate;
+	public void setTransactionDateTime(String transactionDateTime) {
+		this.transactionDateTime = transactionDateTime;
 	}
 
 	@Override
 	public String toString() {
 		return "PreciousMetailPriceDTO [metalType=" + metalType + ", weightUtilType=" + weightUtilType + ", price="
-				+ price + ", transDate=" + transDate + "]";
+				+ price + ", transDate=" + transactionDateTime + "]";
 	}
 
 }
