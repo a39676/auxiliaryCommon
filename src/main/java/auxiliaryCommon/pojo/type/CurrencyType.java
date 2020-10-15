@@ -2,18 +2,15 @@ package auxiliaryCommon.pojo.type;
 
 public enum CurrencyType {
 	
-	success	("success", "0"),
-	fail ("fail", "-1"),
-	nullParam ("参数为空", "-2"),
-	errorParam ("参数异常", "-3"),
-	serviceError("内部异常", "-4"),
+	CNY ("CNY", 0),
+	USD	("USD", 1),
 	;
 	
 	
 	private String name;
-	private String code;
+	private Integer code;
 	
-	CurrencyType(String name, String code) {
+	CurrencyType(String name, Integer code) {
 		this.name = name;
 		this.code = code;
 	}
@@ -22,7 +19,25 @@ public enum CurrencyType {
 		return this.name;
 	}
 	
-	public String getCode() {
+	public Integer getCode() {
 		return this.code;
+	}
+	
+	public static CurrencyType getType(String typeName) {
+		for(CurrencyType t : CurrencyType.values()) {
+			if(t.getName().equals(typeName)) {
+				return t;
+			}
+		}
+		return null;
+	}
+	
+	public static CurrencyType getType(Integer typeCode) {
+		for (CurrencyType t : CurrencyType.values()) {
+			if(t.getCode().equals(typeCode)) {
+				return t;
+			}
+		}
+		return null;
 	}
 }
