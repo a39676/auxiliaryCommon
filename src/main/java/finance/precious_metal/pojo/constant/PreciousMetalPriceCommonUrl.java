@@ -1,4 +1,4 @@
-package precious_metal.pojo.constant;
+package finance.precious_metal.pojo.constant;
 
 public class PreciousMetalPriceCommonUrl {
 

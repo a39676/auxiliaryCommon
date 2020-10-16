@@ -1,4 +1,4 @@
-package cryptoCoin.pojo.type;
+package finance.cryptoCoin.pojo.type;
 
 public enum CryptoCoinType {
 	

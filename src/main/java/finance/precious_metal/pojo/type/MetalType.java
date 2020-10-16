@@ -1,4 +1,4 @@
-package precious_metal.pojo.type;
+package finance.precious_metal.pojo.type;
 
 public enum MetalType {
 	

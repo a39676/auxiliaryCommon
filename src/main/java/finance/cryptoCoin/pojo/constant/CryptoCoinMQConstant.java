@@ -1,4 +1,4 @@
-package cryptoCoin.pojo.constant;
+package finance.cryptoCoin.pojo.constant;
 
 public class CryptoCoinMQConstant {
 

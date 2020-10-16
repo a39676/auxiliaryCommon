@@ -1,4 +1,4 @@
-package cryptoCoin.pojo.dto;
+package finance.cryptoCoin.pojo.dto;
 
 public class CryptoCoinPriceDTO {
 
