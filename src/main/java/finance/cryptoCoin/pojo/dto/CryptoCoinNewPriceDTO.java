@@ -1,6 +1,6 @@
 package finance.cryptoCoin.pojo.dto;
 
-public class CryptoCoinPriceDTO {
+public class CryptoCoinNewPriceDTO {
 
 	private String croptoCoinName;
 	private String currency;
