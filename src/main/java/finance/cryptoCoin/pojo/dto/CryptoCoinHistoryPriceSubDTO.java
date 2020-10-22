@@ -1,7 +1,5 @@
 package finance.cryptoCoin.pojo.dto;
 
-import java.time.LocalDateTime;
-
 import auxiliaryCommon.pojo.type.CurrencyType;
 import finance.cryptoCoin.pojo.type.CryptoCoinType;
 
@@ -12,7 +10,7 @@ import finance.cryptoCoin.pojo.type.CryptoCoinType;
  */
 public class CryptoCoinHistoryPriceSubDTO {
 
-	private LocalDateTime time;
+	private String time;
 	private Double start;
 	private Double end;
 	private Double high;
@@ -22,11 +20,11 @@ public class CryptoCoinHistoryPriceSubDTO {
 	/** {@link CurrencyType}}*/
 	private String currencyType;
 
-	public LocalDateTime getTime() {
+	public String getTime() {
 		return time;
 	}
 
-	public void setTime(LocalDateTime time) {
+	public void setTime(String time) {
 		this.time = time;
 	}
 
