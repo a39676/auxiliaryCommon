@@ -4,6 +4,13 @@ public enum CryptoCoinType {
 	
 	BTC ("BTC", 0),
 	ETH	("ETH", 1),
+	FIL("FIL", 2),
+	BCH("BCH", 3),
+	HT("HT", 4),
+	XRP("XRP", 5),
+	LTC("LTC", 6),
+	EOS("EOS", 7),
+	BTT("BTT", 8),
 	;
 	
 	
