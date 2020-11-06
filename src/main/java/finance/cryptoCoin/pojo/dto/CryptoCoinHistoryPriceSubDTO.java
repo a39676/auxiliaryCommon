@@ -4,7 +4,9 @@ import auxiliaryCommon.pojo.type.CurrencyType;
 import finance.cryptoCoin.pojo.type.CryptoCoinType;
 
 /**
- * time 代表当分钟 example: 2020-10-10 13:25:00 = 2020-10-10 13:25:00.000 ~ 2020-10-10 13:25:59.999 
+ * time 代表当分钟 example: 2020-10-10 13:25:00 = 2020-10-10 13:25:00.000 ~
+ * 2020-10-10 13:25:59.999
+ * 
  * @author Daven
  *
  */
@@ -15,9 +17,10 @@ public class CryptoCoinHistoryPriceSubDTO {
 	private Double end;
 	private Double high;
 	private Double low;
-	/** {@link CryptoCoinType}}*/
+	private Double volume;
+	/** {@link CryptoCoinType}} */
 	private String coinType;
-	/** {@link CurrencyType}}*/
+	/** {@link CurrencyType}} */
 	private String currencyType;
 
 	public String getTime() {
@@ -76,10 +79,19 @@ public class CryptoCoinHistoryPriceSubDTO {
 		this.currencyType = currencyType;
 	}
 
+	public Double getVolume() {
+		return volume;
+	}
+
+	public void setVolume(Double volume) {
+		this.volume = volume;
+	}
+
 	@Override
 	public String toString() {
 		return "CryptoCoinHistoryPriceSubDTO [time=" + time + ", start=" + start + ", end=" + end + ", high=" + high
-				+ ", low=" + low + ", coinType=" + coinType + ", currencyType=" + currencyType + "]";
+				+ ", low=" + low + ", volume=" + volume + ", coinType=" + coinType + ", currencyType=" + currencyType
+				+ "]";
 	}
 
 }
