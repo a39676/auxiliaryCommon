@@ -2,22 +2,24 @@ package auxiliaryCommon.pojo.type;
 
 public enum TimeUnitType {
 	
-	nanoSecond("nanoSecond", 0),
-	milliSecond("milliSecond", 1),
-	second("second", 2),
-	minute("minute", 3),
-	hour("hour", 4),
-	day("day", 5),
-	week("week", 6),
-	month("month", 7),
-	year("year", 8),
+	nanoSecond("nanoSecond", "纳秒",  0),
+	milliSecond("milliSecond", "毫秒", 1),
+	second("second", "秒", 2),
+	minute("minute", "分", 3),
+	hour("hour", "时", 4),
+	day("day", "日", 5),
+	week("week", "周", 6),
+	month("month", "月", 7),
+	year("year", "年", 8),
 	;
 	
 	private String name;
+	private String cnName;
 	private Integer code;
 	
-	TimeUnitType(String name, Integer code) {
+	TimeUnitType(String name, String cnName, Integer code) {
 		this.name = name;
+		this.cnName = cnName;
 		this.code = code;
 	}
 	
@@ -26,6 +28,10 @@ public enum TimeUnitType {
 		return name;
 	}
 
+	public String getCNName() {
+		return cnName;
+	}
+	
 	public Integer getCode() {
 		return code;
 	}
