@@ -28,7 +28,7 @@ public enum TimeUnitType {
 		return name;
 	}
 
-	public String getCNName() {
+	public String getCnName() {
 		return cnName;
 	}
 	
