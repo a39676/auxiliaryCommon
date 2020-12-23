@@ -2,6 +2,8 @@ package finance.cryptoCoin.pojo.type;
 
 public enum CryptoCoinType {
 	
+	TEST("TEST", -1),
+
 	BTC ("BTC", 0),
 	ETH	("ETH", 1),
 	FIL("FIL", 2),
