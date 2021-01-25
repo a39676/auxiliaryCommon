@@ -4,6 +4,11 @@ import java.time.DayOfWeek;
 
 public class CryptoCoinDataConstant {
 	
+	/**
+	 * 用于监控 crypto compare 历史数据接口活动状态
+	 */
+	public static final String LAST_HISTORY_DATA_ACTIVE_REDIS_KEY = "cryptoCoinHistoryDataLastActiveTime";
+	public static final int LAST_HISTORY_DATA_INACTIVE_JUDGMENT_SECOND = 90;
 	
 	/**
 	 * 2021-01-19
