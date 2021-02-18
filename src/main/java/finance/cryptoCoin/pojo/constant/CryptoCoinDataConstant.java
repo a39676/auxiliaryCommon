@@ -23,10 +23,10 @@ public class CryptoCoinDataConstant {
 	
 	/**
 	 * 2021-01-19
-	 * 从 crytpo compare web socket 实时获取数据, 最多保存10分钟
+	 * 从 crytpo compare web socket 实时获取数据, 最多保存20分钟
 	 * 并且每种虚拟币 兑 货币, 应只保存最新数值
 	 */
-	public static final int CRYPTO_COIN_CACHE_DATA_LIVE_MINUTES = 10;
+	public static final int CRYPTO_COIN_CACHE_DATA_LIVE_MINUTES = 20;
 	
 	/**
 	 * 2020-10-26
