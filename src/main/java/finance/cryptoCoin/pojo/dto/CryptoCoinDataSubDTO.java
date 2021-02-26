@@ -10,7 +10,7 @@ import finance.cryptoCoin.pojo.type.CryptoCoinType;
  * @author Daven
  *
  */
-public class CryptoCoinHistoryPriceSubDTO {
+public class CryptoCoinDataSubDTO {
 
 	private String time;
 	private Double start;

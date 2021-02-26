@@ -2,13 +2,13 @@ package finance.cryptoCoin.pojo.dto;
 
 import java.util.List;
 
-public class CryptoCoinHistoryPriceDTO {
+public class CryptoCoinDataDTO {
 
 	private String cryptoCoinTypeName;
 
 	private String currencyName;
 
-	private List<CryptoCoinHistoryPriceSubDTO> priceHistoryData;
+	private List<CryptoCoinDataSubDTO> priceHistoryData;
 
 	public String getCryptoCoinTypeName() {
 		return cryptoCoinTypeName;
@@ -26,11 +26,11 @@ public class CryptoCoinHistoryPriceDTO {
 		this.currencyName = currencyName;
 	}
 
-	public List<CryptoCoinHistoryPriceSubDTO> getPriceHistoryData() {
+	public List<CryptoCoinDataSubDTO> getPriceHistoryData() {
 		return priceHistoryData;
 	}
 
-	public void setPriceHistoryData(List<CryptoCoinHistoryPriceSubDTO> priceHistoryData) {
+	public void setPriceHistoryData(List<CryptoCoinDataSubDTO> priceHistoryData) {
 		this.priceHistoryData = priceHistoryData;
 	}
 
