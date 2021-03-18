@@ -1,7 +1,6 @@
 package finance.cryptoCoin.pojo.dto;
 
 import auxiliaryCommon.pojo.type.CurrencyType;
-import finance.cryptoCoin.pojo.type.CryptoCoinType;
 
 /**
  * time 代表当分钟 example: 2020-10-10 13:25:00 = 2020-10-10 13:25:00.000 ~

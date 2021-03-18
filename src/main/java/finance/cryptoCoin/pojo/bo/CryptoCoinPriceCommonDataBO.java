@@ -6,7 +6,7 @@ import java.time.LocalDateTime;
 public class CryptoCoinPriceCommonDataBO implements Comparable<CryptoCoinPriceCommonDataBO> {
 	private Long id;
 
-	private Integer coinType;
+	private String coinType;
 
 	private Integer currencyType;
 
@@ -36,11 +36,11 @@ public class CryptoCoinPriceCommonDataBO implements Comparable<CryptoCoinPriceCo
 		this.id = id;
 	}
 
-	public Integer getCoinType() {
+	public String getCoinType() {
 		return coinType;
 	}
 
-	public void setCoinType(Integer coinType) {
+	public void setCoinType(String coinType) {
 		this.coinType = coinType;
 	}
 
