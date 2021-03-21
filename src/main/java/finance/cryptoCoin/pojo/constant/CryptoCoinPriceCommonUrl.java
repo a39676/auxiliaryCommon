@@ -4,4 +4,6 @@ public class CryptoCoinPriceCommonUrl {
 
 	public static final String ROOT = "/cryptoCoin";
 	
+	public static final String GET_ALL_CATALOG = "/getAllCatalog";
+	
 }
