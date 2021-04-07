@@ -4,6 +4,7 @@ public enum CurrencyType {
 	
 	CNY ("CNY", 0),
 	USD	("USD", 1),
+	USDT ("USDT", 2),
 	;
 	
 	
