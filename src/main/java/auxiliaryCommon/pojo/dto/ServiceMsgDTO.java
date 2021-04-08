@@ -1,6 +1,6 @@
 package auxiliaryCommon.pojo.dto;
 
-public class BBTMsgDTO {
+public class ServiceMsgDTO {
 
 	private String msg;
 
