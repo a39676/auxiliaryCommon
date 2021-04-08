@@ -5,7 +5,8 @@ public class CryptoCoinWebSocketConstant {
 	public static final String CRYPTO_COMPARE_SOCKET_LAST_ACTIVE_TIME_REDIS_KEY = "cryptoCompareWebSocketLastActiveTime";
 	public static final String BINANCE_SOCKET_LAST_ACTIVE_TIME_REDIS_KEY = "binanceWebSocketLastActiveTime";
 	
-	public static final int SOCKET_INACTIVE_JUDGMENT_SECOND = 20;
+	public static final int CRYPTO_COMPARE_SOCKET_INACTIVE_JUDGMENT_SECOND = 20;
+	public static final int BINANCE_SOCKET_INACTIVE_JUDGMENT_SECOND = 10;
 	
 	public static final int SOCKET_COLDDOWN_SECOND = 60;
 
