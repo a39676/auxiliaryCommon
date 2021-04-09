@@ -143,7 +143,7 @@ public class CryptoCoinPriceCommonDataBO implements Comparable<CryptoCoinPriceCo
 				return 0;
 			} else if (o.getStartTime() == null) {
 				return -1;
-			} else if (this.getStartTime() == null) {
+			} else if (t.getStartTime() == null) {
 				return 1;
 			} else {
 				return 0;
