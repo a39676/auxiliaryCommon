@@ -5,6 +5,7 @@ public enum TelegramBotType {
 	BOT_1("bot1ID", 1),
 	BOT_2("bot2ID", 2),
 	CX_CALENDAR_NOTICE_BOT("CxCalendarNoticeBot", 3),
+	CRYPTO_COIN_LOW_PRICE_NOTICE_BOT("CryptoCoinLowPriceNoticeBot", 4),
 	;
 	
 	private String name;
