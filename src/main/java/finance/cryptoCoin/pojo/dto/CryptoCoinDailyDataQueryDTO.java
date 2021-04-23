@@ -1,10 +1,17 @@
 package finance.cryptoCoin.pojo.dto;
 
+import finance.cryptoCoin.pojo.type.CryptoCoinDataSourceType;
+
 public class CryptoCoinDailyDataQueryDTO {
 
 	private String coinName;
+
 	private String currencyName;
+
 	private Integer counting;
+
+	/** {@link CryptoCoinDataSourceType} **/
+	private Integer dataSourceCode;
 
 	public String getCoinName() {
 		return coinName;
@@ -30,9 +37,17 @@ public class CryptoCoinDailyDataQueryDTO {
 		this.counting = counting;
 	}
 
+	public Integer getDataSourceCode() {
+		return dataSourceCode;
+	}
+
+	public void setDataSourceCode(Integer dataSourceCode) {
+		this.dataSourceCode = dataSourceCode;
+	}
+
 	@Override
 	public String toString() {
 		return "CryptoCoinDailyDataQueryDTO [coinName=" + coinName + ", currencyName=" + currencyName + ", counting="
-				+ counting + "]";
+				+ counting + ", dataSourceCode=" + dataSourceCode + "]";
 	}
 }
