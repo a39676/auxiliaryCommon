@@ -2,9 +2,6 @@ package autoTest.testModule.pojo.type;
 
 public enum TestModuleType {
 
-	/** movie clawing */
-	movieClawing(1L, "movieClawing"),
-	
 	/** badJoke */
 	badJoke(2L, "badJoke"),
 
