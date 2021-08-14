@@ -19,9 +19,6 @@ public class InsertSearchingDemoTestEventDTO {
 	@ApiModelProperty("预期搜索关键字")
 	private String searchKeyWord;
 
-	@ApiModelProperty("案例类型,关联不同的搜索引擎, 1:bing, 2:baidu")
-	private Long caseId;
-
 	public LocalDateTime getAppointment() {
 		return appointment;
 	}
@@ -38,18 +35,9 @@ public class InsertSearchingDemoTestEventDTO {
 		this.searchKeyWord = searchKeyWord;
 	}
 
-	public Long getCaseId() {
-		return caseId;
-	}
-
-	public void setCaseId(Long caseId) {
-		this.caseId = caseId;
-	}
-
 	@Override
 	public String toString() {
-		return "InsertSearchingDemoTestEventDTO [appointment=" + appointment + ", searchKeyWord=" + searchKeyWord
-				+ ", caseId=" + caseId + "]";
+		return "InsertSearchingDemoTestEventDTO [appointment=" + appointment + ", searchKeyWord=" + searchKeyWord + "]";
 	}
 
 }
