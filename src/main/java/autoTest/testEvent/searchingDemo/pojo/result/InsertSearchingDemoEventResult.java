@@ -1,4 +1,4 @@
-package autoTest.testEvent.pojo.result;
+package autoTest.testEvent.searchingDemo.pojo.result;
 
 import auxiliaryCommon.pojo.result.CommonResult;
 

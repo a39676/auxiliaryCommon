@@ -1,4 +1,4 @@
-package autoTest.testEvent.pojo.constant;
+package autoTest.testEvent.searchingDemo.pojo.constant;
 
 public class SearchingDemoConstant {
 
