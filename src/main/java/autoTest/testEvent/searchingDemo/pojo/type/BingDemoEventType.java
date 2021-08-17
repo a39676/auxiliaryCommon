@@ -2,6 +2,9 @@ package autoTest.testEvent.searchingDemo.pojo.type;
 
 public enum BingDemoEventType {
 
+	/** bing all demo */
+	bingAllDemo(0L, "bingAllDemo"),
+	
 	/** bing search demo */
 	bingSearchDemo(1L, "bingSearchDemo"),
 
