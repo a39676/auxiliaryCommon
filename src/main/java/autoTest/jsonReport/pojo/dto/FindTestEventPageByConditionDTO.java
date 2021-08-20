@@ -10,7 +10,7 @@ public class FindTestEventPageByConditionDTO {
 
 	private Long moduleId;
 
-	private Long caseId;
+	private Long flowId;
 
 	private String eventName;
 
@@ -55,12 +55,12 @@ public class FindTestEventPageByConditionDTO {
 		this.moduleId = moduleId;
 	}
 
-	public Long getCaseId() {
-		return caseId;
+	public Long getFlowId() {
+		return flowId;
 	}
 
-	public void setCaseId(Long caseId) {
-		this.caseId = caseId;
+	public void setFlowId(Long flowId) {
+		this.flowId = flowId;
 	}
 
 	public String getEventName() {
@@ -145,7 +145,7 @@ public class FindTestEventPageByConditionDTO {
 
 	@Override
 	public String toString() {
-		return "FindTestEventPageByConditionDTO [id=" + id + ", moduleId=" + moduleId + ", caseId=" + caseId
+		return "FindTestEventPageByConditionDTO [id=" + id + ", moduleId=" + moduleId + ", flowId=" + flowId
 				+ ", eventName=" + eventName + ", reportPath=" + reportPath + ", runFlag=" + runFlag + ", isSuccess="
 				+ isSuccess + ", createStartTime=" + createStartTime + ", createEndTime=" + createEndTime
 				+ ", runTimeStartTime=" + runTimeStartTime + ", runTimeEndTime=" + runTimeEndTime + ", endTime="
