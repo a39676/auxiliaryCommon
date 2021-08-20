@@ -8,7 +8,7 @@ public class TestReportBO {
 
 	private Long projectId;
 
-	private Long caseId;
+	private Long flowId;
 
 	private Long moduleId;
 
@@ -38,8 +38,8 @@ public class TestReportBO {
 		this.projectId = projectId;
 	}
 
-	public void setCaseId(Long caseId) {
-		this.caseId = caseId;
+	public void setFlowId(Long flowId) {
+		this.flowId = flowId;
 	}
 
 	public void setModuleId(Long moduleId) {
@@ -78,8 +78,8 @@ public class TestReportBO {
 		return projectId;
 	}
 
-	public Long getCaseId() {
-		return caseId;
+	public Long getFlowId() {
+		return flowId;
 	}
 
 	public Long getModuleId() {
@@ -136,7 +136,7 @@ public class TestReportBO {
 
 	@Override
 	public String toString() {
-		return "TestReportBO [id=" + id + ", projectId=" + projectId + ", caseId=" + caseId + ", moduleId=" + moduleId
+		return "TestReportBO [id=" + id + ", projectId=" + projectId + ", caseId=" + flowId + ", moduleId=" + moduleId
 				+ ", eventName=" + eventName + ", reportPath=" + reportPath + ", createTime=" + createTime
 				+ ", createTimeStr=" + createTimeStr + ", startTime=" + startTime + ", startTimeStr=" + startTimeStr
 				+ ", endTime=" + endTime + ", endTimeStr=" + endTimeStr + ", isPass=" + isPass + "]";

@@ -13,19 +13,19 @@ public enum BingDemoFlowType {
 	;
 
 	private Long id;
-	private String eventName;
+	private String flowName;
 
 	BingDemoFlowType(Long id, String caseName) {
 		this.id = id;
-		this.eventName = caseName;
+		this.flowName = caseName;
 	}
 
 	public Long getId() {
 		return id;
 	}
 
-	public String getEventName() {
-		return eventName;
+	public String getFlowName() {
+		return flowName;
 	}
 
 	public static BingDemoFlowType getType(Long id) {
