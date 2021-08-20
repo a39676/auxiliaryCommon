@@ -1,6 +1,6 @@
 package autoTest.testEvent.searchingDemo.pojo.type;
 
-public enum BingDemoEventType {
+public enum BingDemoFlowType {
 
 	/** bing all demo */
 	bingAllDemo(0L, "bingAllDemo"),
@@ -13,23 +13,23 @@ public enum BingDemoEventType {
 	;
 
 	private Long id;
-	private String caseName;
+	private String eventName;
 
-	BingDemoEventType(Long id, String caseName) {
+	BingDemoFlowType(Long id, String caseName) {
 		this.id = id;
-		this.caseName = caseName;
+		this.eventName = caseName;
 	}
 
 	public Long getId() {
 		return id;
 	}
 
-	public String getCaseName() {
-		return caseName;
+	public String getEventName() {
+		return eventName;
 	}
 
-	public static BingDemoEventType getType(Long id) {
-		for (BingDemoEventType t : BingDemoEventType.values()) {
+	public static BingDemoFlowType getType(Long id) {
+		for (BingDemoFlowType t : BingDemoFlowType.values()) {
 			if (t.getId().equals(id)) {
 				return t;
 			}
