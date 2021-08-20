@@ -14,7 +14,7 @@ public class AutomationTestInsertEventDTO {
 	@ApiModelProperty("测试模块")
 	private Long testModuleType;
 
-	private Long eventType;
+	private Long flowType;
 
 	/** json format */
 	private String paramStr;
@@ -35,14 +35,14 @@ public class AutomationTestInsertEventDTO {
 		this.testModuleType = testModuleType;
 	}
 
-	public Long getEventType() {
-		return eventType;
+	public Long getFlowType() {
+		return flowType;
 	}
 
-	public void setEventType(Long eventType) {
-		this.eventType = eventType;
+	public void setFlowType(Long flowType) {
+		this.flowType = flowType;
 	}
-
+	
 	public String getParamStr() {
 		return paramStr;
 	}
@@ -51,10 +51,5 @@ public class AutomationTestInsertEventDTO {
 		this.paramStr = paramStr;
 	}
 
-	@Override
-	public String toString() {
-		return "AutomationTestInsertEventDTO [appointment=" + appointment + ", testModuleType=" + testModuleType
-				+ ", eventType=" + eventType + ", paramStr=" + paramStr + "]";
-	}
 
 }

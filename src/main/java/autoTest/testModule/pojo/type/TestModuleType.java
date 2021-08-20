@@ -16,19 +16,19 @@ public enum TestModuleType {
 	;
 
 	private Long id;
-	private String eventName;
+	private String moduleName;
 
-	TestModuleType(Long id, String eventName) {
+	TestModuleType(Long id, String moduleName) {
 		this.id = id;
-		this.eventName = eventName;
+		this.moduleName = moduleName;
 	}
 
 	public Long getId() {
 		return id;
 	}
 
-	public String getEventName() {
-		return eventName;
+	public String getModuleName() {
+		return moduleName;
 	}
 
 }
