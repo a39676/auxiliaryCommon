@@ -1,24 +1,22 @@
 package autoTest.testEvent.pojo.dto;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
-import autoTest.testEvent.pojo.result.AutomationTestEventResult;
+import at.report.pojo.dto.JsonReportOfEventDTO;
+import autoTest.testEvent.pojo.result.AutomationTestCaseResult;
 
 public class AutomationTestResultDTO {
 
 	private Long testEventId;
-	private Long moduleId;
-	private Long flowId;
 
-	private String eventName;
 	private String remark;
 
 	private LocalDateTime startTime;
 	private LocalDateTime endTime;
 
-	private String reportStr;
-
-	private AutomationTestEventResult testEventResult;
+	private JsonReportOfEventDTO report;
+	private List<AutomationTestCaseResult> caseResultList;
 
 	public Long getTestEventId() {
 		return testEventId;
@@ -26,30 +24,6 @@ public class AutomationTestResultDTO {
 
 	public void setTestEventId(Long testEventId) {
 		this.testEventId = testEventId;
-	}
-
-	public Long getModuleId() {
-		return moduleId;
-	}
-
-	public void setModuleId(Long moduleId) {
-		this.moduleId = moduleId;
-	}
-
-	public Long getFlowId() {
-		return flowId;
-	}
-
-	public void setFlowId(Long flowId) {
-		this.flowId = flowId;
-	}
-
-	public String getEventName() {
-		return eventName;
-	}
-
-	public void setEventName(String eventName) {
-		this.eventName = eventName;
 	}
 
 	public String getRemark() {
@@ -76,27 +50,26 @@ public class AutomationTestResultDTO {
 		this.endTime = endTime;
 	}
 
-	public String getReportStr() {
-		return reportStr;
+	public JsonReportOfEventDTO getReport() {
+		return report;
 	}
 
-	public void setReportStr(String reportStr) {
-		this.reportStr = reportStr;
+	public void setReport(JsonReportOfEventDTO report) {
+		this.report = report;
 	}
 
-	public AutomationTestEventResult getTestEventResult() {
-		return testEventResult;
+	public List<AutomationTestCaseResult> getCaseResultList() {
+		return caseResultList;
 	}
 
-	public void setTestEventResult(AutomationTestEventResult testEventResult) {
-		this.testEventResult = testEventResult;
+	public void setCaseResultList(List<AutomationTestCaseResult> caseResultList) {
+		this.caseResultList = caseResultList;
 	}
 
 	@Override
 	public String toString() {
-		return "AutomationTestResultDTO [testEventId=" + testEventId + ", moduleId=" + moduleId + ", flowId=" + flowId
-				+ ", eventName=" + eventName + ", remark=" + remark + ", startTime=" + startTime + ", endTime="
-				+ endTime + ", reportStr=" + reportStr + ", testEventResult=" + testEventResult + "]";
+		return "AutomationTestResultDTO [testEventId=" + testEventId + ", remark=" + remark + ", startTime=" + startTime
+				+ ", endTime=" + endTime + ", report=" + report + ", caseResultList=" + caseResultList + "]";
 	}
 
 }

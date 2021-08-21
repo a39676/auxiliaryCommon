@@ -32,7 +32,7 @@ repositories {
 
 dependencies {
 	// tools
-	// compile project(':toolPacksG')
+	compile project(':ATTool')
 
 	// other
 	// swagger

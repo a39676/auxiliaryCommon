@@ -2,26 +2,26 @@ package autoTest.testEvent.pojo.result;
 
 import autoTest.testEvent.pojo.type.AutomationTestFlowResultType;
 
-public class AutomationTestFlowResult {
+public class AutomationTestCaseResult {
 
-	private String flowName;
-	private Long flowId;
+	private String caseName;
+	private Long caseId;
 	private AutomationTestFlowResultType resultType = AutomationTestFlowResultType.FAILED;
 
-	public String getFlowName() {
-		return flowName;
+	public String getCaseName() {
+		return caseName;
 	}
 
-	public void setFlowName(String flowName) {
-		this.flowName = flowName;
+	public void setCaseName(String caseName) {
+		this.caseName = caseName;
 	}
 
-	public Long getFlowId() {
-		return flowId;
+	public Long getCaseId() {
+		return caseId;
 	}
 
-	public void setFlowId(Long flowId) {
-		this.flowId = flowId;
+	public void setCaseId(Long caseId) {
+		this.caseId = caseId;
 	}
 
 	public AutomationTestFlowResultType getResultType() {
@@ -34,7 +34,8 @@ public class AutomationTestFlowResult {
 
 	@Override
 	public String toString() {
-		return "AutomationTestFlowResult [flowName=" + flowName + ", flowId=" + flowId + "]";
+		return "AutomationTestCaseResult [caseName=" + caseName + ", caseId=" + caseId + ", resultType=" + resultType
+				+ "]";
 	}
 
 }
