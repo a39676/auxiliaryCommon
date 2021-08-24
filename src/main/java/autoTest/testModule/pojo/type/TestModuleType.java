@@ -30,5 +30,14 @@ public enum TestModuleType {
 	public String getModuleName() {
 		return moduleName;
 	}
+	
+	public static TestModuleType getType(Long id) {
+		for (TestModuleType t : TestModuleType.values()) {
+			if (t.getId().equals(id)) {
+				return t;
+			}
+		}
+		return null;
+	}
 
 }
