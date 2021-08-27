@@ -10,7 +10,6 @@ public enum ScheduleClawingType {
 	
 	WAWAWIWA_COMIC(10L, "wawawiwaComic"),
 	
-	CRYPTO_COIN_DAILY_DATA(11L, "cryptoCoinDailyData"),
 	;
 
 	private Long id;

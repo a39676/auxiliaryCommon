@@ -12,7 +12,7 @@ public enum BingDemoSearchFlowType {
 	SEARCH_RESULT_CHECK(2L, "search result check"),
 
 	/** bing image demo */
-	bingImageDemo(3L, "bingImageDemo"),
+	BING_IMAGE_DEMO(3L, "bingImageDemo"),
 	;
 
 	private Long id;
