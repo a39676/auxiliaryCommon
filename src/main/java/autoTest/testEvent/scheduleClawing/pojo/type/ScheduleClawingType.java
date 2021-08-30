@@ -5,10 +5,8 @@ public enum ScheduleClawingType {
 	/** wuYiJob */
 	WU_YI_JOB(2L, "wuYiJob"),
 	
-	/** maiMai */
-	MAI_MAI(6L, "maiMai"),
 	
-	WAWAWIWA_COMIC(10L, "wawawiwaComic"),
+	WAWAWIWA_COMIC(10L, "wawawiwaComic"), 
 	
 	;
 
@@ -28,4 +26,13 @@ public enum ScheduleClawingType {
 		return flowName;
 	}
 
+
+	public static ScheduleClawingType getType(Long id) {
+		for (ScheduleClawingType t : ScheduleClawingType.values()) {
+			if (t.getId().equals(id)) {
+				return t;
+			}
+		}
+		return null;
+	}
 }

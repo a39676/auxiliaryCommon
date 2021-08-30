@@ -6,13 +6,16 @@ public enum TestModuleType {
 	ATDemo(3L, "ATDemo"),
 	
 	/** scheduleClawing */
-	scheduleClawing(4L, "scheduleClawing"),
+	SCHEDULE_CLAWING(4L, "scheduleClawing"),
 	
 	/** collecting */
 	collecting(6L, "collecting"),
 	
 	/** localClawing */
 	localClawing(7L, "localClawing"),
+	
+	/** crypto coin */
+	CRYPTO_COIN(8L, "crypto coin"),
 	;
 
 	private Long id;
