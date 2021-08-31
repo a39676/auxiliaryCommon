@@ -7,6 +7,8 @@ import io.swagger.annotations.ApiModelProperty;
 
 public class AutomationTestInsertEventDTO {
 
+	private Long testEventId;
+
 	@ApiModelProperty("预约运行时间(可空)")
 	private LocalDateTime appointment;
 
@@ -18,6 +20,20 @@ public class AutomationTestInsertEventDTO {
 
 	/** json format */
 	private String paramStr;
+
+	@Override
+	public String toString() {
+		return "AutomationTestInsertEventDTO [testEventId=" + testEventId + ", appointment=" + appointment
+				+ ", testModuleType=" + testModuleType + ", flowType=" + flowType + ", paramStr=" + paramStr + "]";
+	}
+
+	public Long getTestEventId() {
+		return testEventId;
+	}
+
+	public void setTestEventId(Long testEventId) {
+		this.testEventId = testEventId;
+	}
 
 	public LocalDateTime getAppointment() {
 		return appointment;
@@ -42,7 +58,7 @@ public class AutomationTestInsertEventDTO {
 	public void setFlowType(Long flowType) {
 		this.flowType = flowType;
 	}
-	
+
 	public String getParamStr() {
 		return paramStr;
 	}
@@ -50,6 +66,5 @@ public class AutomationTestInsertEventDTO {
 	public void setParamStr(String paramStr) {
 		this.paramStr = paramStr;
 	}
-
 
 }

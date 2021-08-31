@@ -13,6 +13,8 @@ public class CryptoCoinDailyDataQueryDTO {
 	/** {@link CryptoCoinDataSourceType} **/
 	private Integer dataSourceCode;
 
+	private String apiKey;
+
 	public String getCoinName() {
 		return coinName;
 	}
@@ -45,9 +47,17 @@ public class CryptoCoinDailyDataQueryDTO {
 		this.dataSourceCode = dataSourceCode;
 	}
 
+	public String getApiKey() {
+		return apiKey;
+	}
+
+	public void setApiKey(String apiKey) {
+		this.apiKey = apiKey;
+	}
+
 	@Override
 	public String toString() {
 		return "CryptoCoinDailyDataQueryDTO [coinName=" + coinName + ", currencyName=" + currencyName + ", counting="
-				+ counting + ", dataSourceCode=" + dataSourceCode + "]";
+				+ counting + ", dataSourceCode=" + dataSourceCode + ", apiKey=" + apiKey + "]";
 	}
 }

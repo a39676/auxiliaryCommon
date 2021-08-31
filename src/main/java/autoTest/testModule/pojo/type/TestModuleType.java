@@ -6,13 +6,16 @@ public enum TestModuleType {
 	ATDemo(3L, "ATDemo"),
 	
 	/** scheduleClawing */
-	scheduleClawing(4L, "scheduleClawing"),
+	SCHEDULE_CLAWING(4L, "scheduleClawing"),
 	
 	/** collecting */
 	collecting(6L, "collecting"),
 	
 	/** localClawing */
 	localClawing(7L, "localClawing"),
+	
+	/** crypto coin */
+	CRYPTO_COIN(8L, "crypto coin"),
 	;
 
 	private Long id;
@@ -29,6 +32,15 @@ public enum TestModuleType {
 
 	public String getModuleName() {
 		return moduleName;
+	}
+	
+	public static TestModuleType getType(Long id) {
+		for (TestModuleType t : TestModuleType.values()) {
+			if (t.getId().equals(id)) {
+				return t;
+			}
+		}
+		return null;
 	}
 
 }

@@ -17,7 +17,7 @@ public class AutomationTestResultDTO {
 
 	private JsonReportOfEventDTO report;
 	private List<AutomationTestCaseResult> caseResultList;
-
+	
 	public Long getTestEventId() {
 		return testEventId;
 	}
