@@ -8,9 +8,6 @@ public enum BingDemoSearchFlowType {
 	/** bing search demo */
 	SEARCH_IN_HOMEPAGE(1L, "search in home page"),
 	
-	/** bing search result check */
-	SEARCH_RESULT_CHECK(2L, "search result check"),
-
 	/** bing image demo */
 	BING_IMAGE_DEMO(3L, "bingImageDemo"),
 	;
