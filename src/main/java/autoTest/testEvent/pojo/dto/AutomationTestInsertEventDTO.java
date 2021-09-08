@@ -18,13 +18,16 @@ public class AutomationTestInsertEventDTO {
 
 	private Long flowType;
 
+	private String flowTypeName;
+
 	/** json format */
 	private String paramStr;
 
 	@Override
 	public String toString() {
 		return "AutomationTestInsertEventDTO [testEventId=" + testEventId + ", appointment=" + appointment
-				+ ", testModuleType=" + testModuleType + ", flowType=" + flowType + ", paramStr=" + paramStr + "]";
+				+ ", testModuleType=" + testModuleType + ", flowType=" + flowType + ", flowTypeName=" + flowTypeName
+				+ ", paramStr=" + paramStr + "]";
 	}
 
 	public Long getTestEventId() {
@@ -57,6 +60,14 @@ public class AutomationTestInsertEventDTO {
 
 	public void setFlowType(Long flowType) {
 		this.flowType = flowType;
+	}
+
+	public String getFlowTypeName() {
+		return flowTypeName;
+	}
+
+	public void setFlowTypeName(String flowTypeName) {
+		this.flowTypeName = flowTypeName;
 	}
 
 	public String getParamStr() {
