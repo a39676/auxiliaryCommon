@@ -3,7 +3,7 @@ package autoTest.testEvent.pojo.dto;
 import java.time.LocalDateTime;
 import java.util.List;
 
-import at.report.pojo.dto.JsonReportOfEventDTO;
+import at.report.pojo.dto.JsonReportOfFlowDTO;
 import autoTest.testEvent.pojo.result.AutomationTestCaseResult;
 
 public class AutomationTestResultDTO {
@@ -15,7 +15,7 @@ public class AutomationTestResultDTO {
 	private LocalDateTime startTime;
 	private LocalDateTime endTime;
 
-	private JsonReportOfEventDTO report;
+	private JsonReportOfFlowDTO report;
 	private List<AutomationTestCaseResult> caseResultList;
 	
 	public Long getTestEventId() {
@@ -50,11 +50,11 @@ public class AutomationTestResultDTO {
 		this.endTime = endTime;
 	}
 
-	public JsonReportOfEventDTO getReport() {
+	public JsonReportOfFlowDTO getReport() {
 		return report;
 	}
 
-	public void setReport(JsonReportOfEventDTO report) {
+	public void setReport(JsonReportOfFlowDTO report) {
 		this.report = report;
 	}
 
