@@ -9,14 +9,6 @@ public class CryptoCoinDataConstant {
 	 */
 	public static final int LAST_HISTORY_DATA_INACTIVE_JUDGMENT_SECOND = 60 * 5;
 	
-	/**
-	 * 2021-01-19
-	 * redis 价格缓存, key格式
-	 * crypto_coin_cache_%s_%s_%s ---> crypto_coin_cache_BTC_USD_yyyyMMddHHmm
-	 */
-	public static final String CRYPTO_COIN_CACHE_REDIS_KEY_FORMAT = "crypto_coin_cache_%s_%s_%s";
-	
-	public static final String CRYPTO_COIN_CACHE_REDIS_KEY_DATETIME_FORMAT = "yyyyMMddHHmm";
 	
 	public static final DayOfWeek START_DAY_OF_WEEK = DayOfWeek.SUNDAY;
 	
