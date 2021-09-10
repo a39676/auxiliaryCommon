@@ -1,5 +1,7 @@
 package autoTest.testEvent.searchingDemo.pojo.dto;
 
+import java.time.LocalDateTime;
+
 import io.swagger.annotations.ApiModelProperty;
 
 public class BingSearchInHomePageDTO {
@@ -9,6 +11,11 @@ public class BingSearchInHomePageDTO {
 
 	@ApiModelProperty("预期关键字出现在第N个结果中")
 	private Integer indexInResult;
+
+	@ApiModelProperty("预约运行时间(可空)")
+	private LocalDateTime appointment;
+
+	private Long flowId;
 
 	public String getSearchKeyword() {
 		return searchKeyword;
@@ -26,9 +33,26 @@ public class BingSearchInHomePageDTO {
 		this.indexInResult = indexInResult;
 	}
 
+	public LocalDateTime getAppointment() {
+		return appointment;
+	}
+
+	public void setAppointment(LocalDateTime appointment) {
+		this.appointment = appointment;
+	}
+
+	public Long getFlowId() {
+		return flowId;
+	}
+
+	public void setFlowId(Long flowId) {
+		this.flowId = flowId;
+	}
+
 	@Override
 	public String toString() {
-		return "BingSearchInHomePageDTO [searchKeyword=" + searchKeyword + ", indexInResult=" + indexInResult + "]";
+		return "BingSearchInHomePageDTO [searchKeyword=" + searchKeyword + ", indexInResult=" + indexInResult
+				+ ", appointment=" + appointment + ", flowId=" + flowId + "]";
 	}
 
 }
