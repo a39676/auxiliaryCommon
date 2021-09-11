@@ -7,12 +7,12 @@ import java.time.LocalDateTime;
  */
 public class ImageSavingTransDTO {
 
-	/** 已经本地保存的地址 */
-	private String imgPath;
 	/** 文件名 */
 	private String imgName;
 	/** 图片保存有效期 */
 	private LocalDateTime validTime;
+	/** img in base64 */
+	private String imgBase64Str;
 
 	private Long imgTagCode;
 
@@ -32,14 +32,6 @@ public class ImageSavingTransDTO {
 		this.imgName = imgName;
 	}
 
-	public String getImgPath() {
-		return imgPath;
-	}
-
-	public void setImgPath(String imgPath) {
-		this.imgPath = imgPath;
-	}
-
 	public Long getImgTagCode() {
 		return imgTagCode;
 	}
@@ -48,9 +40,17 @@ public class ImageSavingTransDTO {
 		this.imgTagCode = imgTagCode;
 	}
 
+	public String getImgBase64Str() {
+		return imgBase64Str;
+	}
+
+	public void setImgBase64Str(String imgBase64Str) {
+		this.imgBase64Str = imgBase64Str;
+	}
+
 	@Override
 	public String toString() {
-		return "ImageSavingTransDTO [imgPath=" + imgPath + ", imgName=" + imgName + ", validTime=" + validTime
+		return "ImageSavingTransDTO [imgName=" + imgName + ", validTime=" + validTime + ", imgBase64Str=" + imgBase64Str
 				+ ", imgTagCode=" + imgTagCode + "]";
 	}
 
