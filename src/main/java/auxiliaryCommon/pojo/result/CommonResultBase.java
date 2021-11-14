@@ -8,7 +8,7 @@ public abstract class CommonResultBase<T> {
 	
 	private String code;
 
-	private String message;
+	private String message = "";
 	
 	
 
