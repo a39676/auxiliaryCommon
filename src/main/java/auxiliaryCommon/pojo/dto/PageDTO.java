@@ -1,15 +1,11 @@
 package auxiliaryCommon.pojo.dto;
 
-import io.swagger.annotations.ApiModelProperty;
-
 public abstract class PageDTO {
 	
 	protected Long pageNo = 1L;
 	protected Long pageSize = 10L;
 	
-	@ApiModelProperty(hidden = true)
 	protected Long pageStart = 1L;
-	@ApiModelProperty(hidden = true)
 	protected Long pageEnd = 1L;
 
 	public Long getPageNo() {
