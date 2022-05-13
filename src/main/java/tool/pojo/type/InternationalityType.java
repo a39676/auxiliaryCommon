@@ -7,7 +7,7 @@ public enum InternationalityType {
 	MO(853, "Macao", "澳门"),
 	TW(886, "Taiwan", "台湾"),
 	US(1, "United States of America", "美国"),
-	CA(1, "Canada", "加拿大"),
+	CA(1, "Canada", "加拿大"),	
 	GB(44, "United Kiongdom", "英国"),
 	MY(60, "Malaysia", "马来西亚"),
 	IN(91, "India", "印度"),
@@ -220,6 +220,18 @@ public enum InternationalityType {
 	public static InternationalityType getType(Integer typeCode) {
 		for(InternationalityType t : InternationalityType.values()) {
 			if(t.getCode().equals(typeCode)) {
+				return t;
+			}
+		}
+		return null;
+	}
+	
+	public static InternationalityType getType(Integer typeCode, String cnName) {
+		if(typeCode == null || cnName == null) {
+			return null;
+		}
+		for(InternationalityType t : InternationalityType.values()) {
+			if(t.getCode().equals(typeCode) && t.getCnName().equals(cnName)) {
 				return t;
 			}
 		}
