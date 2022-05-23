@@ -13,7 +13,7 @@ public class ImageSavingTransDTO {
 	private LocalDateTime validTime;
 	/** img in base64 */
 	private String imgBase64Str;
-
+	/** {@link ImageTagType} */
 	private Long imgTagCode;
 
 	public LocalDateTime getValidTime() {
