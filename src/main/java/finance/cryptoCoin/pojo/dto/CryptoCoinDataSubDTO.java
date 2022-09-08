@@ -1,6 +1,6 @@
 package finance.cryptoCoin.pojo.dto;
 
-import auxiliaryCommon.pojo.type.CurrencyType;
+import finance.cryptoCoin.pojo.type.CurrencyTypeForCryptoCoin;
 
 /**
  * time 代表当分钟 example: 2020-10-10 13:25:00 = 2020-10-10 13:25:00.000 ~
@@ -19,7 +19,7 @@ public class CryptoCoinDataSubDTO {
 	private Double volume;
 	/** {@link CryptoCoinType}} */
 	private String coinType;
-	/** {@link CurrencyType}} */
+	/** {@link CurrencyTypeForCryptoCoin}} */
 	private String currencyType;
 
 	public String getTime() {
