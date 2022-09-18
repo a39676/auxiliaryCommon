@@ -8,10 +8,12 @@ public class CurrencyExchageRateDataDTO {
 	private Integer currencyCodeTo;
 	private BigDecimal currencyAmountFrom;
 	private BigDecimal currencyAmountTo;
-	private BigDecimal yesterdayBugHigh;
-	private BigDecimal yesterdaySellHigh;
+	private BigDecimal yesterdayBuyHigh;
 	private BigDecimal yesterdayBuyLow;
+	private BigDecimal yesterdaySellHigh;
 	private BigDecimal yesterdaySellLow;
+	private BigDecimal yesterdayBuyAvg;
+	private BigDecimal yesterdaySellAvg;
 
 	public Integer getCurrencyCodeFrom() {
 		return currencyCodeFrom;
@@ -45,12 +47,12 @@ public class CurrencyExchageRateDataDTO {
 		this.currencyAmountTo = currencyAmountTo;
 	}
 
-	public BigDecimal getYesterdayBugHigh() {
-		return yesterdayBugHigh;
+	public BigDecimal getYesterdayBuyHigh() {
+		return yesterdayBuyHigh;
 	}
 
 	public void setYesterdayBuyHigh(BigDecimal yesterdayBugHigh) {
-		this.yesterdayBugHigh = yesterdayBugHigh;
+		this.yesterdayBuyHigh = yesterdayBugHigh;
 	}
 
 	public BigDecimal getYesterdaySellHigh() {
@@ -77,12 +79,29 @@ public class CurrencyExchageRateDataDTO {
 		this.yesterdaySellLow = yesterdaySellLow;
 	}
 
+	public BigDecimal getYesterdayBuyAvg() {
+		return yesterdayBuyAvg;
+	}
+
+	public void setYesterdayBuyAvg(BigDecimal yesterdayBuyAvg) {
+		this.yesterdayBuyAvg = yesterdayBuyAvg;
+	}
+
+	public BigDecimal getYesterdaySellAvg() {
+		return yesterdaySellAvg;
+	}
+
+	public void setYesterdaySellAvg(BigDecimal yesterdaySellAvg) {
+		this.yesterdaySellAvg = yesterdaySellAvg;
+	}
+
 	@Override
 	public String toString() {
 		return "CurrencyExchageRateDataDTO [currencyCodeFrom=" + currencyCodeFrom + ", currencyCodeTo=" + currencyCodeTo
 				+ ", currencyAmountFrom=" + currencyAmountFrom + ", currencyAmountTo=" + currencyAmountTo
-				+ ", yesterdayBugHigh=" + yesterdayBugHigh + ", yesterdaySellHigh=" + yesterdaySellHigh
-				+ ", yesterdayBuyLow=" + yesterdayBuyLow + ", yesterdaySellLow=" + yesterdaySellLow + "]";
+				+ ", yesterdayBuyHigh=" + yesterdayBuyHigh + ", yesterdayBuyLow=" + yesterdayBuyLow
+				+ ", yesterdaySellHigh=" + yesterdaySellHigh + ", yesterdaySellLow=" + yesterdaySellLow
+				+ ", yesterdayBuyAvg=" + yesterdayBuyAvg + ", yesterdaySellAvg=" + yesterdaySellAvg + "]";
 	}
 
 }
