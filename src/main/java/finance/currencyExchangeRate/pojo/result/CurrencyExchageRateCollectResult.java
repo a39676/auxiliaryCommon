@@ -10,6 +10,8 @@ public class CurrencyExchageRateCollectResult extends CommonResult {
 
 	private List<CurrencyExchageRateDataDTO> dataList;
 
+	private boolean isDailyQuery = true;
+
 	public List<CurrencyExchageRateDataDTO> getDataList() {
 		return dataList;
 	}
@@ -17,18 +19,25 @@ public class CurrencyExchageRateCollectResult extends CommonResult {
 	public void setDataList(List<CurrencyExchageRateDataDTO> dataList) {
 		this.dataList = dataList;
 	}
-	
+
 	public void addData(CurrencyExchageRateDataDTO data) {
-		if(this.dataList == null) {
+		if (this.dataList == null) {
 			this.dataList = new ArrayList<CurrencyExchageRateDataDTO>();
 		}
 		this.dataList.add(data);
 	}
 
+	public boolean getIsDailyQuery() {
+		return isDailyQuery;
+	}
+
+	public void setIsDailyQuery(boolean isDailyQuery) {
+		this.isDailyQuery = isDailyQuery;
+	}
+
 	@Override
 	public String toString() {
-		return "CurrencyExchageRateCollectResult [dataList=" + dataList + ", success=" + success + ", getDataList()="
-				+ getDataList() + "]";
+		return "CurrencyExchageRateCollectResult [dataList=" + dataList + ", isDailyQuery=" + isDailyQuery + "]";
 	}
 
 }
