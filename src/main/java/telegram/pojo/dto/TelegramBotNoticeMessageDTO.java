@@ -1,6 +1,6 @@
 package telegram.pojo.dto;
 
-public class TelegramMessageDTO {
+public class TelegramBotNoticeMessageDTO {
 
 	private String msg;
 	private Long id;
