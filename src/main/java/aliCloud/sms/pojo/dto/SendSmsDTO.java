@@ -1,4 +1,4 @@
-package aliCloud.sms;
+package aliCloud.sms.pojo.dto;
 
 public class SendSmsDTO {
 
