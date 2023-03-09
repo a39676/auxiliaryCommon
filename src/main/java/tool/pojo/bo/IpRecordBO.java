@@ -23,9 +23,7 @@ public class IpRecordBO {
 
 	@Override
 	public String toString() {
-		return "IpRecordBO [remoteAddr=" + remoteAddr + ", forwardAddr=" + forwardAddr + ", getRemoteAddr()="
-				+ getRemoteAddr() + ", getForwardAddr()=" + getForwardAddr() + ", getClass()=" + getClass()
-				+ ", hashCode()=" + hashCode() + ", toString()=" + super.toString() + "]";
+		return "IpRecordBO [remoteAddr=" + remoteAddr + ", forwardAddr=" + forwardAddr + "]";
 	}
 
 }
