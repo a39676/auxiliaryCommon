@@ -1,4 +1,4 @@
-package wechat.pojo.type;
+package wechatApi.pojo.type;
 
 /** 微信接收消息类型 */
 public enum WechatMessageType {

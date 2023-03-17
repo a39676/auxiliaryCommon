@@ -1,9 +1,8 @@
-package wechat.pojo.dto;
+package wechatSdk.pojo.dto;
 
-public class GetAccessTokenDTO {
+public class UpdateWechatOptionDTO {
 
 	private String appId;
-
 	private String appSecret;
 
 	public String getAppId() {
@@ -24,7 +23,7 @@ public class GetAccessTokenDTO {
 
 	@Override
 	public String toString() {
-		return "GetAccessTokenDTO [appId=" + appId + ", appSecret=" + appSecret + "]";
+		return "UpdateWechatOptionDTO [appId=" + appId + ", appSecret=" + appSecret + "]";
 	}
 
 }

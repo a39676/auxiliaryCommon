@@ -1,4 +1,4 @@
-package wechat.pojo.type;
+package wechatApi.pojo.type;
 
 /** 微信事件类型 */
 public enum WechatEventType {

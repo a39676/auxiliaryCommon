@@ -1,4 +1,4 @@
-package wechat.pojo.result;
+package wechatSdk.pojo.result;
 
 import auxiliaryCommon.pojo.result.CommonResult;
 
