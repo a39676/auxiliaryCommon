@@ -7,8 +7,8 @@ import openAi.pojo.type.OpenAiChatCompletionFinishType;
 public class AiChatSendNewMessageResult extends CommonResult {
 
 	private OpanAiChatCompletionMessageDTO msgDTO;
-
 	private OpenAiChatCompletionFinishType finishType;
+	private Integer usage;
 
 	public OpanAiChatCompletionMessageDTO getMsgDTO() {
 		return msgDTO;
@@ -26,9 +26,17 @@ public class AiChatSendNewMessageResult extends CommonResult {
 		this.finishType = finishType;
 	}
 
+	public Integer getUsage() {
+		return usage;
+	}
+
+	public void setUsage(Integer usage) {
+		this.usage = usage;
+	}
+
 	@Override
 	public String toString() {
-		return "AiChatSendNewMessageResult [msgDTO=" + msgDTO + ", finishType=" + finishType + "]";
+		return "AiChatSendNewMessageResult [msgDTO=" + msgDTO + ", finishType=" + finishType + ", usage=" + usage + "]";
 	}
 
 }
