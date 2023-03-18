@@ -1,8 +1,8 @@
 package aiChat.pojo.constant;
 
-public class AiChatUrlConstant {
+public class AiChatFromWechatSdkUrlConstant {
 
-	public static final String ROOT = "/aiChat";
+	public static final String ROOT = "/aiChatFromWechatSdk";
 	
 	public static final String GET_TMP_KEY_BY_OPEN_ID = "/getTmpKeyByOpenId";
 }
