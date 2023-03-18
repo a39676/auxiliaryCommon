@@ -14,4 +14,12 @@ public class GetTmpKeyByOpenIdResult extends CommonResult {
 		this.tmpKey = tmpKey;
 	}
 
+	@Override
+	public String toString() {
+		return "GetTmpKeyByOpenIdResult [tmpKey=" + tmpKey + ", getCode()=" + getCode() + ", getResult()=" + getResult()
+				+ ", getMessage()=" + getMessage() + ", isSuccess()=" + isSuccess() + ", isFail()=" + isFail()
+				+ ", toString()=" + super.toString() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode()
+				+ "]";
+	}
+
 }
