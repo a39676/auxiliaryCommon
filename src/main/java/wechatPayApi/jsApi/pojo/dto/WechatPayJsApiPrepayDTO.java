@@ -2,60 +2,15 @@ package wechatPayApi.jsApi.pojo.dto;
 
 public class WechatPayJsApiPrepayDTO {
 
-	private String appId;
-	private String merchantId;
-	private String privateKey;
-	private String merchantSerialNumber;
-	private String apiV3Key;
 	private String payerOpenId;
 	private String description;
 	private String NotifyUrl;
-	private String outOrderNum;
 	private String expireTimeStr;
+	/** remark */
 	private String attach;
 	/** 单位(分) */
 	private Integer amount;
 	private String outTradeNo;
-
-	public String getAppId() {
-		return appId;
-	}
-
-	public void setAppId(String appId) {
-		this.appId = appId;
-	}
-
-	public String getMerchantId() {
-		return merchantId;
-	}
-
-	public void setMerchantId(String merchantId) {
-		this.merchantId = merchantId;
-	}
-
-	public String getPrivateKey() {
-		return privateKey;
-	}
-
-	public void setPrivateKey(String privateKey) {
-		this.privateKey = privateKey;
-	}
-
-	public String getMerchantSerialNumber() {
-		return merchantSerialNumber;
-	}
-
-	public void setMerchantSerialNumber(String merchantSerialNumber) {
-		this.merchantSerialNumber = merchantSerialNumber;
-	}
-
-	public String getApiV3Key() {
-		return apiV3Key;
-	}
-
-	public void setApiV3Key(String apiV3Key) {
-		this.apiV3Key = apiV3Key;
-	}
 
 	public String getPayerOpenId() {
 		return payerOpenId;
@@ -79,14 +34,6 @@ public class WechatPayJsApiPrepayDTO {
 
 	public void setNotifyUrl(String notifyUrl) {
 		NotifyUrl = notifyUrl;
-	}
-
-	public String getOutOrderNum() {
-		return outOrderNum;
-	}
-
-	public void setOutOrderNum(String outOrderNum) {
-		this.outOrderNum = outOrderNum;
 	}
 
 	public String getExpireTimeStr() {
@@ -119,6 +66,13 @@ public class WechatPayJsApiPrepayDTO {
 
 	public void setOutTradeNo(String outTradeNo) {
 		this.outTradeNo = outTradeNo;
+	}
+
+	@Override
+	public String toString() {
+		return "WechatPayJsApiPrepayDTO [payerOpenId=" + payerOpenId + ", description=" + description + ", NotifyUrl="
+				+ NotifyUrl + ", expireTimeStr=" + expireTimeStr + ", attach=" + attach + ", amount=" + amount
+				+ ", outTradeNo=" + outTradeNo + "]";
 	}
 
 }
