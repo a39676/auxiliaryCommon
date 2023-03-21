@@ -1,10 +1,10 @@
 package aiChat.pojo.result;
 
-import auxiliaryCommon.pojo.result.CommonResult;
 import openAi.pojo.dto.OpanAiChatCompletionMessageDTO;
 import openAi.pojo.type.OpenAiChatCompletionFinishType;
+import wechatApi.pojo.result.WechatCommonResult;
 
-public class AiChatSendNewMessageResult extends CommonResult {
+public class AiChatSendNewMessageResult extends WechatCommonResult {
 
 	private OpanAiChatCompletionMessageDTO msgDTO;
 	private OpenAiChatCompletionFinishType finishType;

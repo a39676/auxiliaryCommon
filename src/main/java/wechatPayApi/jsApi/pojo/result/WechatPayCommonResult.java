@@ -1,7 +1,7 @@
 package wechatPayApi.jsApi.pojo.result;
 
-import auxiliaryCommon.pojo.result.CommonResult;
+import wechatApi.pojo.result.WechatCommonResult;
 
-public abstract class WechatPayCommonResult extends CommonResult {
+public abstract class WechatPayCommonResult extends WechatCommonResult {
 
 }
