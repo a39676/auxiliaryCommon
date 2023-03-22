@@ -6,6 +6,8 @@ public class WechatPayOptionDTO {
 	private String apiV3Key;
 	private String merchantId;
 	private String merchantSerialNumber;
+	private Long ticketLivingSecond = 6900L;
+	private Long certificateLivingSecond = 3600L * 10;
 
 	public String getPrivateKey() {
 		return privateKey;
@@ -39,10 +41,27 @@ public class WechatPayOptionDTO {
 		this.merchantSerialNumber = merchantSerialNumber;
 	}
 
+	public Long getTicketLivingSecond() {
+		return ticketLivingSecond;
+	}
+
+	public void setTicketLivingSecond(Long ticketLivingSecond) {
+		this.ticketLivingSecond = ticketLivingSecond;
+	}
+
+	public Long getCertificateLivingSecond() {
+		return certificateLivingSecond;
+	}
+
+	public void setCertificateLivingSecond(Long certificateLivingSecond) {
+		this.certificateLivingSecond = certificateLivingSecond;
+	}
+
 	@Override
 	public String toString() {
 		return "WechatPayOptionDTO [privateKey=" + privateKey + ", apiV3Key=" + apiV3Key + ", merchantId=" + merchantId
-				+ ", merchantSerialNumber=" + merchantSerialNumber + "]";
+				+ ", merchantSerialNumber=" + merchantSerialNumber + ", ticketLivingSecond=" + ticketLivingSecond
+				+ ", certificateLivingSecond=" + certificateLivingSecond + "]";
 	}
 
 }
