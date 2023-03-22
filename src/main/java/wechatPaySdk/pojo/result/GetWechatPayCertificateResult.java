@@ -1,11 +1,13 @@
 package wechatPaySdk.pojo.result;
 
+import java.time.LocalDateTime;
+
 import auxiliaryCommon.pojo.result.CommonResult;
 
 public class GetWechatPayCertificateResult extends CommonResult {
 
 	private String certificate;
-	private String certificateCreateTimeStr;
+	private LocalDateTime certificateCreateTime;
 
 	public String getCertificate() {
 		return certificate;
@@ -15,12 +17,18 @@ public class GetWechatPayCertificateResult extends CommonResult {
 		this.certificate = certificate;
 	}
 
-	public String getCertificateCreateTimeStr() {
-		return certificateCreateTimeStr;
+	public LocalDateTime getCertificateCreateTime() {
+		return certificateCreateTime;
 	}
 
-	public void setCertificateCreateTimeStr(String certificateCreateTimeStr) {
-		this.certificateCreateTimeStr = certificateCreateTimeStr;
+	public void setCertificateCreateTime(LocalDateTime certificateCreateTime) {
+		this.certificateCreateTime = certificateCreateTime;
+	}
+
+	@Override
+	public String toString() {
+		return "GetWechatPayCertificateResult [certificate=" + certificate + ", certificateCreateTime="
+				+ certificateCreateTime + "]";
 	}
 
 }
