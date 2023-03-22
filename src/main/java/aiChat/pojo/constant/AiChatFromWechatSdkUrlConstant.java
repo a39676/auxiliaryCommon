@@ -9,4 +9,6 @@ public class AiChatFromWechatSdkUrlConstant {
 	public static final String SEND_NEW_MESSAGE = "/sendNewMessage";
 	
 	public static final String GET_CHAT_HISTORY = "/getChatHistory";
+	
+	public static final String EXTEND_TMP_KEY_VALIDITY = "/extendTmpKeyValidity";
 }
