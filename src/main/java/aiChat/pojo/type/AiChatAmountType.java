@@ -1,6 +1,6 @@
-package openAi.pojo.type;
+package aiChat.pojo.type;
 
-public enum OpenAiAmountType {
+public enum AiChatAmountType {
 	
 	BONUS("bonus", 1),
 	RECHARGE("recharge", 2),
@@ -9,7 +9,7 @@ public enum OpenAiAmountType {
 	private String name;
 	private Integer code;
 	
-	OpenAiAmountType(String name, Integer code) {
+	AiChatAmountType(String name, Integer code) {
 		this.name = name;
 		this.code = code;
 	}
@@ -23,8 +23,8 @@ public enum OpenAiAmountType {
 		return code;
 	}
 
-	public static OpenAiAmountType getType(String typeName) {
-		for(OpenAiAmountType t : OpenAiAmountType.values()) {
+	public static AiChatAmountType getType(String typeName) {
+		for(AiChatAmountType t : AiChatAmountType.values()) {
 			if(t.getName().equals(typeName)) {
 				return t;
 			}
@@ -32,8 +32,8 @@ public enum OpenAiAmountType {
 		return null;
 	}
 	
-	public static OpenAiAmountType getType(Integer typeCode) {
-		for(OpenAiAmountType t : OpenAiAmountType.values()) {
+	public static AiChatAmountType getType(Integer typeCode) {
+		for(AiChatAmountType t : AiChatAmountType.values()) {
 			if(t.getCode().equals(typeCode)) {
 				return t;
 			}

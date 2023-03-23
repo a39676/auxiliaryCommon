@@ -11,4 +11,6 @@ public class AiChatFromWechatSdkUrlConstant {
 	public static final String GET_CHAT_HISTORY = "/getChatHistory";
 	
 	public static final String EXTEND_TMP_KEY_VALIDITY = "/extendTmpKeyValidity";
+	
+	public static final String BUY_MEMBERSHIP_FROM_WECHAT = "/buyMembershipFromWechat";
 }

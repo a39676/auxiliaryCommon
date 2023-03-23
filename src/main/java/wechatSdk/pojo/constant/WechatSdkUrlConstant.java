@@ -10,4 +10,6 @@ public class WechatSdkUrlConstant {
 	public static final String GET_WECHAT_SDK_WECHAT_OPTION = "/getWechatSdkWechatOption";
 	public static final String UPDATE_WECHAT_ACCESS_TOKEN = "/udpateWechatAccessToken";
 	public static final String GET_WECHAT_ACCESS_TOKEN = "/getWechatAccessToken";
+
+	public static final String SEND_NOTIFY = "/sendNotify";
 }
