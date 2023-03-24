@@ -2,7 +2,7 @@ package wechatApi.pojo.result;
 
 import java.util.List;
 
-public class GetUserInfoByUnionAccessTokenResult extends WechatCommonResult {
+public class GetUserInfoByUnionAccessTokenResult extends WechatApiCommonResult {
 
 	private String openid;
 	private String nickname;

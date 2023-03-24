@@ -1,6 +1,6 @@
 package wechatPayApi.jsApi.pojo.dto;
 
-public class WechatPayFeedbackDecryptDTO {
+public class WechatPayJsApiFeedbackDecryptDTO {
 
 	private String mchid; // : "1639965365"
 	private String appid; // : "wx362dcf449f04c1b5"
@@ -12,8 +12,8 @@ public class WechatPayFeedbackDecryptDTO {
 	private String bank_type; // : "ICBC_CREDIT"
 	private String attach; // : "something"
 	private String success_time; // : "2023-03-22T14:14:02+08:00"
-	private WechatPayFeedbackDecryptPayerDTO payer;
-	private WechatPayFeedbackDecryptAmountDTO amount;
+	private WechatPayJsApiFeedbackDecryptPayerDTO payer;
+	private WechatPayJsApiFeedbackDecryptAmountDTO amount;
 
 	public String getMchid() {
 		return mchid;
@@ -95,19 +95,19 @@ public class WechatPayFeedbackDecryptDTO {
 		this.success_time = success_time;
 	}
 
-	public WechatPayFeedbackDecryptPayerDTO getPayer() {
+	public WechatPayJsApiFeedbackDecryptPayerDTO getPayer() {
 		return payer;
 	}
 
-	public void setPayer(WechatPayFeedbackDecryptPayerDTO payer) {
+	public void setPayer(WechatPayJsApiFeedbackDecryptPayerDTO payer) {
 		this.payer = payer;
 	}
 
-	public WechatPayFeedbackDecryptAmountDTO getAmount() {
+	public WechatPayJsApiFeedbackDecryptAmountDTO getAmount() {
 		return amount;
 	}
 
-	public void setAmount(WechatPayFeedbackDecryptAmountDTO amount) {
+	public void setAmount(WechatPayJsApiFeedbackDecryptAmountDTO amount) {
 		this.amount = amount;
 	}
 

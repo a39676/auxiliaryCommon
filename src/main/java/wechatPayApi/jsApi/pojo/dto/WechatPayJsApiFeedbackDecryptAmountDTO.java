@@ -1,6 +1,6 @@
 package wechatPayApi.jsApi.pojo.dto;
 
-public class WechatPayFeedbackDecryptAmountDTO {
+public class WechatPayJsApiFeedbackDecryptAmountDTO {
 
 	/** 单位(分) */
 	private Integer total;

@@ -1,6 +1,6 @@
 package wechatApi.pojo.result;
 
-public class GetWechatUserInfoOrUidAccessTokenByCodeResult extends WechatCommonResult {
+public class GetWechatUserInfoOrUidAccessTokenByCodeResult extends WechatApiCommonResult {
 
 	private String access_token; // "ACCESS_TOKEN",
 	private Integer expires_in; // 7200,

@@ -4,7 +4,7 @@ import java.util.List;
 
 import wechatApi.pojo.type.WechatSubscribeSceneType;
 
-public class GetUserInfoByOpenIdResult extends WechatCommonResult {
+public class GetUserInfoByOpenIdResult extends WechatApiCommonResult {
 
 	private String subscribe; // : 1,
 	private String openid; // : "o6_bmjrPTlm6_2sgVt7hMZOPfL2M",

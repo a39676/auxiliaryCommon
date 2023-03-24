@@ -1,6 +1,6 @@
 package wechatPayApi.jsApi.pojo.dto;
 
-public class WechatPayFeedbackDecryptPayerDTO {
+public class WechatPayJsApiFeedbackDecryptPayerDTO {
 
 	private String openId;
 

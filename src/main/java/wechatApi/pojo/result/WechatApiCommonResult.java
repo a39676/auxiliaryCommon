@@ -3,7 +3,7 @@ package wechatApi.pojo.result;
 import auxiliaryCommon.pojo.result.CommonResult;
 import wechatSdk.pojo.type.WechatSdkCommonResultType;
 
-public abstract class WechatCommonResult extends CommonResult {
+public abstract class WechatApiCommonResult extends CommonResult {
 
 	private Integer errcode;
 	private String errmsg;
