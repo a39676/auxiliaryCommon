@@ -1,5 +1,7 @@
 package wechatPayApi.jsApi.pojo.dto;
 
+import wechatSdk.pojo.dto.BuyMembershipFromWechatAttachmentDTO;
+
 public class WechatPayJsApiFeedbackDecryptDTO {
 
 	private String mchid; // : "1639965365"
@@ -10,7 +12,7 @@ public class WechatPayJsApiFeedbackDecryptDTO {
 	private String trade_state; // : "SUCCESS"
 	private String trade_state_desc; // : "支付成功"
 	private String bank_type; // : "ICBC_CREDIT"
-	private String attach; // : "something"
+	private BuyMembershipFromWechatAttachmentDTO attach; // : "something"
 	private String success_time; // : "2023-03-22T14:14:02+08:00"
 	private WechatPayJsApiFeedbackDecryptPayerDTO payer;
 	private WechatPayJsApiFeedbackDecryptAmountDTO amount;
@@ -79,11 +81,11 @@ public class WechatPayJsApiFeedbackDecryptDTO {
 		this.bank_type = bank_type;
 	}
 
-	public String getAttach() {
+	public BuyMembershipFromWechatAttachmentDTO getAttach() {
 		return attach;
 	}
 
-	public void setAttach(String attach) {
+	public void setAttach(BuyMembershipFromWechatAttachmentDTO attach) {
 		this.attach = attach;
 	}
 
