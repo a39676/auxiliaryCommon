@@ -1,5 +1,7 @@
 package aiChat.pojo.vo;
 
+import java.time.LocalDateTime;
+
 public class AiChatUserMembershipDetailVO {
 
 	private String pk;
@@ -8,7 +10,9 @@ public class AiChatUserMembershipDetailVO {
 	private Integer dailyBonus;
 	private Integer recharge;
 	private Double price;
-	private String expiredTime;
+	private String expiredTimeStr;
+	private LocalDateTime expiredDatetime;
+	private Boolean isValid;
 
 	public String getPk() {
 		return pk;
@@ -18,11 +22,11 @@ public class AiChatUserMembershipDetailVO {
 		this.pk = pk;
 	}
 
-	public final String getDescription() {
+	public String getDescription() {
 		return description;
 	}
 
-	public final void setDescription(String description) {
+	public void setDescription(String description) {
 		this.description = description;
 	}
 
@@ -58,19 +62,36 @@ public class AiChatUserMembershipDetailVO {
 		this.price = price;
 	}
 
-	public final String getExpiredTime() {
-		return expiredTime;
+	public String getExpiredTimeStr() {
+		return expiredTimeStr;
 	}
 
-	public final void setExpiredTime(String expiredTime) {
-		this.expiredTime = expiredTime;
+	public void setExpiredTimeStr(String expiredTimeStr) {
+		this.expiredTimeStr = expiredTimeStr;
+	}
+
+	public LocalDateTime getExpiredDatetime() {
+		return expiredDatetime;
+	}
+
+	public void setExpiredDatetime(LocalDateTime expiredDatetime) {
+		this.expiredDatetime = expiredDatetime;
+	}
+
+	public Boolean getIsValid() {
+		return isValid;
+	}
+
+	public void setIsValid(Boolean isValid) {
+		this.isValid = isValid;
 	}
 
 	@Override
 	public String toString() {
 		return "AiChatUserMembershipDetailVO [pk=" + pk + ", description=" + description + ", chatHistoryCountLimit="
 				+ chatHistoryCountLimit + ", dailyBonus=" + dailyBonus + ", recharge=" + recharge + ", price=" + price
-				+ ", expiredTime=" + expiredTime + "]";
+				+ ", expiredTimeStr=" + expiredTimeStr + ", expiredDatetime=" + expiredDatetime + ", isValid=" + isValid
+				+ "]";
 	}
 
 }
