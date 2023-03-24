@@ -1,13 +1,14 @@
 package aiChat.pojo.vo;
 
-public class AiChatUserMembershipLevelDetailVO {
+public class AiChatUserMembershipDetailVO {
 
 	private String pk;
-	private Long level;
+	private String description;
 	private Integer chatHistoryCountLimit;
 	private Integer dailyBonus;
 	private Integer recharge;
 	private Double price;
+	private String expiredTime;
 
 	public String getPk() {
 		return pk;
@@ -17,12 +18,12 @@ public class AiChatUserMembershipLevelDetailVO {
 		this.pk = pk;
 	}
 
-	public Long getLevel() {
-		return level;
+	public final String getDescription() {
+		return description;
 	}
 
-	public void setLevel(Long level) {
-		this.level = level;
+	public final void setDescription(String description) {
+		this.description = description;
 	}
 
 	public Integer getChatHistoryCountLimit() {
@@ -57,11 +58,19 @@ public class AiChatUserMembershipLevelDetailVO {
 		this.price = price;
 	}
 
+	public final String getExpiredTime() {
+		return expiredTime;
+	}
+
+	public final void setExpiredTime(String expiredTime) {
+		this.expiredTime = expiredTime;
+	}
+
 	@Override
 	public String toString() {
-		return "AiChatUserMembershipLevelDetailVO [pk=" + pk + ", level=" + level + ", chatHistoryCountLimit="
+		return "AiChatUserMembershipDetailVO [pk=" + pk + ", description=" + description + ", chatHistoryCountLimit="
 				+ chatHistoryCountLimit + ", dailyBonus=" + dailyBonus + ", recharge=" + recharge + ", price=" + price
-				+ "]";
+				+ ", expiredTime=" + expiredTime + "]";
 	}
 
 }
