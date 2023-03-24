@@ -2,19 +2,19 @@ package wechatPayApi.jsApi.pojo.dto;
 
 public class WechatPayJsApiFeedbackDecryptPayerDTO {
 
-	private String openId;
+	private String openid;
 
-	public String getOpenId() {
-		return openId;
+	public final String getOpenid() {
+		return openid;
 	}
 
-	public void setOpenId(String openId) {
-		this.openId = openId;
+	public final void setOpenid(String openid) {
+		this.openid = openid;
 	}
 
 	@Override
 	public String toString() {
-		return "WechatPayFeedbackDecryptPayerDTO [openId=" + openId + "]";
+		return "WechatPayJsApiFeedbackDecryptPayerDTO [openid=" + openid + "]";
 	}
 
 }
