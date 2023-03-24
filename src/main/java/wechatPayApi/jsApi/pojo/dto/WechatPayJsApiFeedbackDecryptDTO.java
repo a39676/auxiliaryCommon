@@ -17,108 +17,108 @@ public class WechatPayJsApiFeedbackDecryptDTO {
 	private WechatPayJsApiFeedbackDecryptPayerDTO payer;
 	private WechatPayJsApiFeedbackDecryptAmountDTO amount;
 
-	public String getMchid() {
+	public final String getMchid() {
 		return mchid;
 	}
 
-	public void setMchid(String mchid) {
+	public final void setMchid(String mchid) {
 		this.mchid = mchid;
 	}
 
-	public String getAppid() {
+	public final String getAppid() {
 		return appid;
 	}
 
-	public void setAppid(String appid) {
+	public final void setAppid(String appid) {
 		this.appid = appid;
 	}
 
-	public String getOut_trade_no() {
+	public final String getOut_trade_no() {
 		return out_trade_no;
 	}
 
-	public void setOut_trade_no(String out_trade_no) {
+	public final void setOut_trade_no(String out_trade_no) {
 		this.out_trade_no = out_trade_no;
 	}
 
-	public String getTransaction_id() {
+	public final String getTransaction_id() {
 		return transaction_id;
 	}
 
-	public void setTransaction_id(String transaction_id) {
+	public final void setTransaction_id(String transaction_id) {
 		this.transaction_id = transaction_id;
 	}
 
-	public String getTrade_type() {
+	public final String getTrade_type() {
 		return trade_type;
 	}
 
-	public void setTrade_type(String trade_type) {
+	public final void setTrade_type(String trade_type) {
 		this.trade_type = trade_type;
 	}
 
-	public String getTrade_state() {
+	public final String getTrade_state() {
 		return trade_state;
 	}
 
-	public void setTrade_state(String trade_state) {
+	public final void setTrade_state(String trade_state) {
 		this.trade_state = trade_state;
 	}
 
-	public String getTrade_state_desc() {
+	public final String getTrade_state_desc() {
 		return trade_state_desc;
 	}
 
-	public void setTrade_state_desc(String trade_state_desc) {
+	public final void setTrade_state_desc(String trade_state_desc) {
 		this.trade_state_desc = trade_state_desc;
 	}
 
-	public String getBank_type() {
+	public final String getBank_type() {
 		return bank_type;
 	}
 
-	public void setBank_type(String bank_type) {
+	public final void setBank_type(String bank_type) {
 		this.bank_type = bank_type;
 	}
 
-	public BuyMembershipFromWechatAttachmentDTO getAttach() {
+	public final BuyMembershipFromWechatAttachmentDTO getAttach() {
 		return attach;
 	}
 
-	public void setAttach(BuyMembershipFromWechatAttachmentDTO attach) {
+	public final void setAttach(BuyMembershipFromWechatAttachmentDTO attach) {
 		this.attach = attach;
 	}
 
-	public String getSuccess_time() {
+	public final String getSuccess_time() {
 		return success_time;
 	}
 
-	public void setSuccess_time(String success_time) {
+	public final void setSuccess_time(String success_time) {
 		this.success_time = success_time;
 	}
 
-	public WechatPayJsApiFeedbackDecryptPayerDTO getPayer() {
+	public final WechatPayJsApiFeedbackDecryptPayerDTO getPayer() {
 		return payer;
 	}
 
-	public void setPayer(WechatPayJsApiFeedbackDecryptPayerDTO payer) {
+	public final void setPayer(WechatPayJsApiFeedbackDecryptPayerDTO payer) {
 		this.payer = payer;
 	}
 
-	public WechatPayJsApiFeedbackDecryptAmountDTO getAmount() {
+	public final WechatPayJsApiFeedbackDecryptAmountDTO getAmount() {
 		return amount;
 	}
 
-	public void setAmount(WechatPayJsApiFeedbackDecryptAmountDTO amount) {
+	public final void setAmount(WechatPayJsApiFeedbackDecryptAmountDTO amount) {
 		this.amount = amount;
 	}
 
 	@Override
 	public String toString() {
-		return "WechatPayFeedbackDecryptDTO [mchid=" + mchid + ", appid=" + appid + ", out_trade_no=" + out_trade_no
-				+ ", transaction_id=" + transaction_id + ", trade_type=" + trade_type + ", trade_state=" + trade_state
-				+ ", trade_state_desc=" + trade_state_desc + ", bank_type=" + bank_type + ", attach=" + attach
-				+ ", success_time=" + success_time + ", payer=" + payer + ", amount=" + amount + "]";
+		return "WechatPayJsApiFeedbackDecryptDTO [mchid=" + mchid + ", appid=" + appid + ", out_trade_no="
+				+ out_trade_no + ", transaction_id=" + transaction_id + ", trade_type=" + trade_type + ", trade_state="
+				+ trade_state + ", trade_state_desc=" + trade_state_desc + ", bank_type=" + bank_type + ", attach="
+				+ attach + ", success_time=" + success_time + ", payer=" + payer + ", amount=" + amount + "]";
 	}
 
 }

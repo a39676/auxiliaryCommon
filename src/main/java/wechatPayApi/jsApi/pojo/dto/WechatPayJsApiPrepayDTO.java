@@ -1,5 +1,7 @@
 package wechatPayApi.jsApi.pojo.dto;
 
+import wechatSdk.pojo.dto.BuyMembershipFromWechatAttachmentDTO;
+
 public class WechatPayJsApiPrepayDTO {
 
 	private String payerOpenId;
@@ -7,7 +9,7 @@ public class WechatPayJsApiPrepayDTO {
 	private String NotifyUrl;
 	private String expireTimeStr;
 	/** remark */
-	private String attach;
+	private BuyMembershipFromWechatAttachmentDTO attach;
 	/** 单位(分) */
 	private Integer amount;
 	private String outTradeNo;
@@ -44,11 +46,11 @@ public class WechatPayJsApiPrepayDTO {
 		this.expireTimeStr = expireTimeStr;
 	}
 
-	public String getAttach() {
+	public final BuyMembershipFromWechatAttachmentDTO getAttach() {
 		return attach;
 	}
 
-	public void setAttach(String attach) {
+	public final void setAttach(BuyMembershipFromWechatAttachmentDTO attach) {
 		this.attach = attach;
 	}
 
