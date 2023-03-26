@@ -12,6 +12,7 @@ public class GetAiChatUserDetailResult extends CommonResult {
 	private AiChatUserMembershipDetailSummaryVO membershipSummaryDetailVO;
 	private List<AiChatUserMembershipDetailVO> membershipList = new ArrayList<>();
 	private Integer amount;
+	private Boolean signedUpToday;
 
 	public AiChatUserMembershipDetailSummaryVO getMembershipSummaryDetailVO() {
 		return membershipSummaryDetailVO;
@@ -37,10 +38,18 @@ public class GetAiChatUserDetailResult extends CommonResult {
 		this.amount = amount;
 	}
 
+	public Boolean getSignedUpToday() {
+		return signedUpToday;
+	}
+
+	public void setSignedUpToday(Boolean signedUpToday) {
+		this.signedUpToday = signedUpToday;
+	}
+
 	@Override
 	public String toString() {
 		return "GetAiChatUserDetailResult [membershipSummaryDetailVO=" + membershipSummaryDetailVO + ", membershipList="
-				+ membershipList + ", amount=" + amount + "]";
+				+ membershipList + ", amount=" + amount + ", signedUpToday=" + signedUpToday + "]";
 	}
 
 }
