@@ -5,6 +5,7 @@ public class AiChatSendNewMsgDTO {
 	private String temporaryKey;
 	private String msg;
 	private Integer chatModeCounter;
+	private String nameOfActAs;
 
 	public String getTemporaryKey() {
 		return temporaryKey;
@@ -28,6 +29,14 @@ public class AiChatSendNewMsgDTO {
 
 	public void setChatModeCounter(Integer chatModeCounter) {
 		this.chatModeCounter = chatModeCounter;
+	}
+
+	public String getNameOfActAs() {
+		return nameOfActAs;
+	}
+
+	public void setNameOfActAs(String nameOfActAs) {
+		this.nameOfActAs = nameOfActAs;
 	}
 
 	@Override
