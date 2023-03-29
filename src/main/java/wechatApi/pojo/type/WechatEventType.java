@@ -4,7 +4,17 @@ package wechatApi.pojo.type;
 public enum WechatEventType {
 	
 	/** 关注 */
-	SUBSCRIBE("关注", 1),
+	SUBSCRIBE("subscribe", 1),
+	/** 取消关注 */
+	UNSUBSCRIBE("unsubscribe", 1),
+	/** 用户已关注的扫描二维码 */
+	SCAN("scan", 1),
+	/** 上报地理位置 */
+	LOCATION("location", 1),
+	/** 点击自定义菜单 */
+	CLICK("click", 1),
+	/** 点击菜单跳转链接 */
+	VIEW("view", 1),
 	;
 	
 	private String name;

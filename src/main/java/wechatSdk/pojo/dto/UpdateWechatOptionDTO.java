@@ -4,6 +4,7 @@ public class UpdateWechatOptionDTO {
 
 	private String appId;
 	private String appSecret;
+	private String developerOpenId;
 
 	public String getAppId() {
 		return appId;
@@ -21,9 +22,18 @@ public class UpdateWechatOptionDTO {
 		this.appSecret = appSecret;
 	}
 
+	public String getDeveloperOpenId() {
+		return developerOpenId;
+	}
+
+	public void setDeveloperOpenId(String developerOpenId) {
+		this.developerOpenId = developerOpenId;
+	}
+
 	@Override
 	public String toString() {
-		return "UpdateWechatOptionDTO [appId=" + appId + ", appSecret=" + appSecret + "]";
+		return "UpdateWechatOptionDTO [appId=" + appId + ", appSecret=" + appSecret + ", developerOpenId="
+				+ developerOpenId + "]";
 	}
 
 }
