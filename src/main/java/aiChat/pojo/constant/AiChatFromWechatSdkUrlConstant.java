@@ -19,4 +19,6 @@ public class AiChatFromWechatSdkUrlConstant {
 	public static final String DAILY_SIGN_UP = "/dailySignUp";
 
 	public static final String RECORDING_WECHAT_USER_FROM_PARAMETERIZED_QR_CODE = "/recordingWechatUserFromParameterizedQrCode";
+
+	public static final String RECEIVE_LONG_LIVE_QR_CODE = "/receiveLongLiveQrCode";
 }
