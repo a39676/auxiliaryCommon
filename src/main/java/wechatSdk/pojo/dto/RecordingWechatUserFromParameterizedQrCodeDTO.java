@@ -3,7 +3,7 @@ package wechatSdk.pojo.dto;
 public class RecordingWechatUserFromParameterizedQrCodeDTO {
 
 	private String userOpenId;
-	private String orignOpenId;
+	private String originOpenId;
 	/** QR code scene id */
 	private String parameter;
 
@@ -15,12 +15,12 @@ public class RecordingWechatUserFromParameterizedQrCodeDTO {
 		this.userOpenId = userOpenId;
 	}
 
-	public String getOrignOpenId() {
-		return orignOpenId;
+	public String getOriginOpenId() {
+		return originOpenId;
 	}
 
-	public void setOrignOpenId(String orignOpenId) {
-		this.orignOpenId = orignOpenId;
+	public void setOriginOpenId(String originOpenId) {
+		this.originOpenId = originOpenId;
 	}
 
 	public String getParameter() {
@@ -33,8 +33,8 @@ public class RecordingWechatUserFromParameterizedQrCodeDTO {
 
 	@Override
 	public String toString() {
-		return "RecordingWechatUserFromParameterizedQrCodeDTO [userOpenId=" + userOpenId + ", orignOpenId="
-				+ orignOpenId + ", parameter=" + parameter + "]";
+		return "RecordingWechatUserFromParameterizedQrCodeDTO [userOpenId=" + userOpenId + ", originOpenId="
+				+ originOpenId + ", parameter=" + parameter + "]";
 	}
 
 }
