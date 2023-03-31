@@ -21,4 +21,6 @@ public class AiChatFromWechatSdkUrlConstant {
 	public static final String RECORDING_WECHAT_USER_FROM_PARAMETERIZED_QR_CODE = "/recordingWechatUserFromParameterizedQrCode";
 
 	public static final String RECEIVE_LONG_LIVE_QR_CODE = "/receiveLongLiveQrCode";
+
+	public static final String GET_PROMPT_OF_ACT_AS = "/getPromptOfActAs";
 }
