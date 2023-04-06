@@ -1,6 +1,6 @@
 package aiChat.pojo.dto;
 
-public class AiChatSendNewMsgDTO {
+public class AiChatSendNewMsgFromWechatDTO {
 
 	private String temporaryKey;
 	private String msg;
