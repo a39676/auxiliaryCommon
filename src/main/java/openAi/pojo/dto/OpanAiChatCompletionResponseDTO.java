@@ -1,5 +1,6 @@
 package openAi.pojo.dto;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import openAi.pojo.type.OpenAiModelType;
@@ -22,6 +23,13 @@ public class OpanAiChatCompletionResponseDTO {
 
 	public void setChoices(List<OpanAiChatCompletionResponseChoiceDTO> choices) {
 		this.choices = choices;
+	}
+
+	public void addChoices(OpanAiChatCompletionResponseChoiceDTO choice) {
+		if (this.choices == null) {
+			this.choices = new ArrayList<>();
+		}
+		this.choices.add(choice);
 	}
 
 	public OpanAiChatCompletionResponseUsageDTO getUsage() {
