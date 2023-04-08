@@ -13,6 +13,7 @@ public class AiChatUserMembershipDetailVO {
 	private String expiredTimeStr;
 	private LocalDateTime expiredDatetime;
 	private Boolean isValid;
+	private Boolean isNormalPlan;
 
 	public String getPk() {
 		return pk;
@@ -86,12 +87,20 @@ public class AiChatUserMembershipDetailVO {
 		this.isValid = isValid;
 	}
 
+	public Boolean getIsNormalPlan() {
+		return isNormalPlan;
+	}
+
+	public void setIsNormalPlan(Boolean isNormalPlan) {
+		this.isNormalPlan = isNormalPlan;
+	}
+
 	@Override
 	public String toString() {
 		return "AiChatUserMembershipDetailVO [pk=" + pk + ", description=" + description + ", chatHistoryCountLimit="
 				+ chatHistoryCountLimit + ", dailyBonus=" + dailyBonus + ", recharge=" + recharge + ", price=" + price
 				+ ", expiredTimeStr=" + expiredTimeStr + ", expiredDatetime=" + expiredDatetime + ", isValid=" + isValid
-				+ "]";
+				+ ", isNormalPlan=" + isNormalPlan + "]";
 	}
 
 }
