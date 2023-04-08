@@ -23,4 +23,6 @@ public class AiChatFromWechatSdkUrlConstant {
 	public static final String RECEIVE_LONG_LIVE_QR_CODE = "/receiveLongLiveQrCode";
 
 	public static final String GET_PROMPT_OF_ACT_AS = "/getPromptOfActAs";
+	
+	public static final String GET_USER_OPEN_ID_LIST = "/getUserOpenIdList";
 }
