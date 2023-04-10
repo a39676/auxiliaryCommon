@@ -10,14 +10,14 @@ public class AiChatSendNewMsgFromApiDTO {
 	private String apiKey;
 	private String model;
 	private List<OpanAiChatCompletionMessageDTO> messages;
-	private Double temperature;
-	private Double top_p;
-	private Integer n;
-	private List<String> stop;
-	private Integer max_tokens;
-	private Double presence_penalty;
-	private Double frequency_penalty;
-	private Map<String, Integer> logit_bias;
+	private Double temperature = 1D;
+	private Double top_p = 1D;
+	private Integer n = 1;
+	private List<String> stop = null;
+	private Integer max_tokens = null;
+	private Double presence_penalty = 0D;
+	private Double frequency_penalty = 0D;
+	private Map<String, Integer> logit_bias = null;
 
 	public String getApiKey() {
 		return apiKey;
