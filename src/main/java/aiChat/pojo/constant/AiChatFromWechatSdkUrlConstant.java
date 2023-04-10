@@ -23,6 +23,12 @@ public class AiChatFromWechatSdkUrlConstant {
 	public static final String RECEIVE_LONG_LIVE_QR_CODE = "/receiveLongLiveQrCode";
 
 	public static final String GET_PROMPT_OF_ACT_AS = "/getPromptOfActAs";
-	
+
 	public static final String GET_USER_OPEN_ID_LIST = "/getUserOpenIdList";
+
+	public static final String GETNERATE_NEW_API_KEY = "/generateNewApiKey";
+
+	public static final String DELETE_API_KEY = "/deleteApiKey";
+
+	public static final String FIND_ALL_API_KEYS = "/findAllApiKey";
 }
