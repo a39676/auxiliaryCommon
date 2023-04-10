@@ -8,6 +8,7 @@ import openAi.pojo.dto.OpanAiChatCompletionMessageDTO;
 public class AiChatSendNewMsgFromApiDTO {
 
 	private String apiKey;
+	private String model;
 	private List<OpanAiChatCompletionMessageDTO> messages;
 	private Double temperature;
 	private Double top_p;
@@ -24,6 +25,14 @@ public class AiChatSendNewMsgFromApiDTO {
 
 	public void setApiKey(String apiKey) {
 		this.apiKey = apiKey;
+	}
+
+	public String getModel() {
+		return model;
+	}
+
+	public void setModel(String model) {
+		this.model = model;
 	}
 
 	public List<OpanAiChatCompletionMessageDTO> getMessages() {
@@ -100,9 +109,9 @@ public class AiChatSendNewMsgFromApiDTO {
 
 	@Override
 	public String toString() {
-		return "AiChatSendNewMsgFromApiDTO [apiKey=" + apiKey + ", messages=" + messages + ", temperature="
-				+ temperature + ", top_p=" + top_p + ", n=" + n + ", stop=" + stop + ", max_tokens=" + max_tokens
-				+ ", presence_penalty=" + presence_penalty + ", frequency_penalty=" + frequency_penalty
+		return "AiChatSendNewMsgFromApiDTO [apiKey=" + apiKey + ", model=" + model + ", messages=" + messages
+				+ ", temperature=" + temperature + ", top_p=" + top_p + ", n=" + n + ", stop=" + stop + ", max_tokens="
+				+ max_tokens + ", presence_penalty=" + presence_penalty + ", frequency_penalty=" + frequency_penalty
 				+ ", logit_bias=" + logit_bias + "]";
 	}
 
