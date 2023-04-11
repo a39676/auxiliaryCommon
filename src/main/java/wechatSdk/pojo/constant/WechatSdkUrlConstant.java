@@ -12,4 +12,5 @@ public class WechatSdkUrlConstant {
 	public static final String GET_WECHAT_ACCESS_TOKEN = "/getWechatAccessToken";
 
 	public static final String SEND_NOTIFY = "/sendNotify";
+
 }
