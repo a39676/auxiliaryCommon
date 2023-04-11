@@ -1,4 +1,4 @@
-package telegram.pojo.constant;
+package telegram.pojo.type;
 
 public enum TelegramBotType {
 	
@@ -7,6 +7,7 @@ public enum TelegramBotType {
 	CX_CALENDAR_NOTICE_BOT("CxCalendarNoticeBot", 3),
 	CRYPTO_COIN_LOW_PRICE_NOTICE_BOT("CryptoCoinLowPriceNoticeBot", 4),
 	URGE_NOTICE("UrgeNotice", 5),
+	AI_CHAT_NOTICE("aiChatNoticeBot", 6),
 	;
 	
 	private String name;
