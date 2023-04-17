@@ -1,4 +1,4 @@
-package aiChat.pojo.dto;
+package ai.aiChat.pojo.dto;
 
 import java.util.List;
 import java.util.Map;

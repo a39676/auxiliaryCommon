@@ -1,4 +1,4 @@
-package aiChat.pojo.result;
+package ai.aiChat.pojo.result;
 
 import java.util.List;
 

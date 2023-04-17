@@ -1,15 +1,16 @@
-package aiChat.pojo.type;
+package ai.aiArt.pojo.type;
 
-public enum AiChatAmountType {
+public enum AiArtJobType {
 	
-	BONUS("bonus", 1),
-	RECHARGE("recharge", 2),
+	FAILED("failed", -1),
+	WAITING("waiting", 0),
+	SUCCESS("success", 1),
 	;
 	
 	private String name;
 	private Integer code;
 	
-	AiChatAmountType(String name, Integer code) {
+	AiArtJobType(String name, Integer code) {
 		this.name = name;
 		this.code = code;
 	}
@@ -23,8 +24,8 @@ public enum AiChatAmountType {
 		return code;
 	}
 
-	public static AiChatAmountType getType(String typeName) {
-		for(AiChatAmountType t : AiChatAmountType.values()) {
+	public static AiArtJobType getType(String typeName) {
+		for(AiArtJobType t : AiArtJobType.values()) {
 			if(t.getName().equals(typeName)) {
 				return t;
 			}
@@ -32,8 +33,8 @@ public enum AiChatAmountType {
 		return null;
 	}
 	
-	public static AiChatAmountType getType(Integer typeCode) {
-		for(AiChatAmountType t : AiChatAmountType.values()) {
+	public static AiArtJobType getType(Integer typeCode) {
+		for(AiArtJobType t : AiArtJobType.values()) {
 			if(t.getCode().equals(typeCode)) {
 				return t;
 			}

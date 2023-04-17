@@ -1,4 +1,4 @@
-package aiChat.pojo.dto;
+package ai.aiChat.pojo.dto;
 
 public class AiChatSendNewMsgFromWechatDTO {
 

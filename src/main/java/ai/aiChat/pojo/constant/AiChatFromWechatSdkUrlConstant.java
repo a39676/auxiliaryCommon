@@ -1,4 +1,4 @@
-package aiChat.pojo.constant;
+package ai.aiChat.pojo.constant;
 
 public class AiChatFromWechatSdkUrlConstant {
 

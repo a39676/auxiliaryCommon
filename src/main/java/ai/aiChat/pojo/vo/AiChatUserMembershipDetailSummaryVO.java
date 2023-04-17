@@ -1,4 +1,4 @@
-package aiChat.pojo.vo;
+package ai.aiChat.pojo.vo;
 
 import java.util.HashMap;
 import java.util.Map;

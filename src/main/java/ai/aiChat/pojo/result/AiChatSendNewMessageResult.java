@@ -1,4 +1,4 @@
-package aiChat.pojo.result;
+package ai.aiChat.pojo.result;
 
 import openAi.pojo.dto.OpanAiChatCompletionMessageDTO;
 import openAi.pojo.type.OpenAiChatCompletionFinishType;
