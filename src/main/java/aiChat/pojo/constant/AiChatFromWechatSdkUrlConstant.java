@@ -31,4 +31,8 @@ public class AiChatFromWechatSdkUrlConstant {
 	public static final String DELETE_API_KEY = "/deleteApiKey";
 
 	public static final String FIND_ALL_API_KEYS = "/findAllApiKey";
+
+	public static final String TEXT_TO_IMAGE = "/textToImage";
+
+	public static final String FIND_TEXT_TO_IMAGE_JOB_LIST = "/findTextToImageJobList";
 }
