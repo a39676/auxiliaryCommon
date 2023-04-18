@@ -2,7 +2,7 @@ package ai.aiArt.pojo.dto;
 
 import ai.aiArt.pojo.type.AiArtSamplerType;
 
-public abstract class TextToImageFromDTO {
+public class TextToImageFromDTO {
 	private String prompts;
 	private String negativePrompts;
 	/** {@link AiArtSamplerType} */

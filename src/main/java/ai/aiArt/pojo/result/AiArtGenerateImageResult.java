@@ -2,19 +2,19 @@ package ai.aiArt.pojo.result;
 
 import java.util.List;
 
-import ai.aiArt.pojo.dto.TextToImageFromWechatDTO;
+import ai.aiArt.pojo.dto.TextToImageFromDTO;
 import auxiliaryCommon.pojo.result.CommonResult;
 
 public class AiArtGenerateImageResult extends CommonResult {
 
-	private TextToImageFromWechatDTO parameter;
+	private TextToImageFromDTO parameter;
 	private List<String> imgUrlList;
 
-	public TextToImageFromWechatDTO getParameter() {
+	public TextToImageFromDTO getParameter() {
 		return parameter;
 	}
 
-	public void setParameter(TextToImageFromWechatDTO parameter) {
+	public void setParameter(TextToImageFromDTO parameter) {
 		this.parameter = parameter;
 	}
 

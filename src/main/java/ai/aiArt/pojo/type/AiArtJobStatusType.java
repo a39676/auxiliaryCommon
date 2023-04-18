@@ -1,6 +1,6 @@
 package ai.aiArt.pojo.type;
 
-public enum AiArtJobType {
+public enum AiArtJobStatusType {
 	
 	FAILED("failed", -1),
 	WAITING("waiting", 0),
@@ -10,7 +10,7 @@ public enum AiArtJobType {
 	private String name;
 	private Integer code;
 	
-	AiArtJobType(String name, Integer code) {
+	AiArtJobStatusType(String name, Integer code) {
 		this.name = name;
 		this.code = code;
 	}
@@ -24,8 +24,8 @@ public enum AiArtJobType {
 		return code;
 	}
 
-	public static AiArtJobType getType(String typeName) {
-		for(AiArtJobType t : AiArtJobType.values()) {
+	public static AiArtJobStatusType getType(String typeName) {
+		for(AiArtJobStatusType t : AiArtJobStatusType.values()) {
 			if(t.getName().equals(typeName)) {
 				return t;
 			}
@@ -33,8 +33,8 @@ public enum AiArtJobType {
 		return null;
 	}
 	
-	public static AiArtJobType getType(Integer typeCode) {
-		for(AiArtJobType t : AiArtJobType.values()) {
+	public static AiArtJobStatusType getType(Integer typeCode) {
+		for(AiArtJobStatusType t : AiArtJobStatusType.values()) {
 			if(t.getCode().equals(typeCode)) {
 				return t;
 			}
