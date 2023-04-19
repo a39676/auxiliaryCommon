@@ -14,6 +14,7 @@ public class TextToImageFromDTO {
 	private Integer batchSize = 1;
 	private Long seed = Long.parseLong("-1");
 	private Long jobId;
+	private boolean isFromApi = false;
 
 	public String getPrompts() {
 		return prompts;
@@ -95,11 +96,19 @@ public class TextToImageFromDTO {
 		this.jobId = jobId;
 	}
 
+	public boolean getIsFromApi() {
+		return isFromApi;
+	}
+
+	public void setIsFromApi(boolean isFromApi) {
+		this.isFromApi = isFromApi;
+	}
+
 	@Override
 	public String toString() {
 		return "TextToImageFromDTO [prompts=" + prompts + ", negativePrompts=" + negativePrompts + ", sampler="
 				+ sampler + ", wedith=" + wedith + ", height=" + height + ", cfgScale=" + cfgScale + ", steps=" + steps
-				+ ", batchSize=" + batchSize + ", seed=" + seed + ", jobId=" + jobId + "]";
+				+ ", batchSize=" + batchSize + ", seed=" + seed + ", jobId=" + jobId + ", isFromApi=" + isFromApi + "]";
 	}
 
 }
