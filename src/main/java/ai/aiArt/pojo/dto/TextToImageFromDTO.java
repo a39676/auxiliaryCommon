@@ -7,7 +7,7 @@ public class TextToImageFromDTO {
 	private String negativePrompts;
 	/** {@link AiArtSamplerType} */
 	private String sampler = AiArtSamplerType.DPM_2M_Karras.getName();
-	private Integer wedith = 300;
+	private Integer width = 300;
 	private Integer height = 600;
 	private Integer cfgScale = 7;
 	private Integer steps = 30;
@@ -40,12 +40,12 @@ public class TextToImageFromDTO {
 		this.sampler = sampler;
 	}
 
-	public Integer getWedith() {
-		return wedith;
+	public Integer getWidth() {
+		return width;
 	}
 
-	public void setWedith(Integer wedith) {
-		this.wedith = wedith;
+	public void setWidth(Integer width) {
+		this.width = width;
 	}
 
 	public Integer getHeight() {
@@ -107,7 +107,7 @@ public class TextToImageFromDTO {
 	@Override
 	public String toString() {
 		return "TextToImageFromDTO [prompts=" + prompts + ", negativePrompts=" + negativePrompts + ", sampler="
-				+ sampler + ", wedith=" + wedith + ", height=" + height + ", cfgScale=" + cfgScale + ", steps=" + steps
+				+ sampler + ", wedith=" + width + ", height=" + height + ", cfgScale=" + cfgScale + ", steps=" + steps
 				+ ", batchSize=" + batchSize + ", seed=" + seed + ", jobId=" + jobId + ", isFromApi=" + isFromApi + "]";
 	}
 
