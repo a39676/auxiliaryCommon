@@ -2,19 +2,19 @@ package auxiliaryCommon.pojo.dto;
 
 public class BasePkDTO {
 
-	private String tmpKey;
+	private String pk;
 
-	public String getTmpKey() {
-		return tmpKey;
+	public String getPk() {
+		return pk;
 	}
 
-	public void setTmpKey(String tmpKey) {
-		this.tmpKey = tmpKey;
+	public void setPk(String pk) {
+		this.pk = pk;
 	}
 
 	@Override
 	public String toString() {
-		return "BaseDTO [tmpKey=" + tmpKey + "]";
+		return "BasePkDTO [pk=" + pk + "]";
 	}
 
 }

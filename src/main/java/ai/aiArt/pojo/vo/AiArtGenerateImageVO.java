@@ -8,11 +8,15 @@ import ai.aiArt.pojo.type.AiArtJobStatusType;
 public class AiArtGenerateImageVO {
 
 	private String jobPk;
+	private String aiUserPk;
+	private String createTimeStr;
 	private TextToImageFromDTO parameter;
 	private List<String> imgUrlList;
 	/** {@link AiArtJobStatusType} */
 	private Integer jobStatus;
 	private Integer runCount;
+	private Boolean isDelete;
+	private Boolean isFromApi;
 
 	public String getJobPk() {
 		return jobPk;
@@ -20,6 +24,22 @@ public class AiArtGenerateImageVO {
 
 	public void setJobPk(String jobPk) {
 		this.jobPk = jobPk;
+	}
+
+	public String getAiUserPk() {
+		return aiUserPk;
+	}
+
+	public void setAiUserPk(String aiUserPk) {
+		this.aiUserPk = aiUserPk;
+	}
+
+	public String getCreateTimeStr() {
+		return createTimeStr;
+	}
+
+	public void setCreateTimeStr(String createTimeStr) {
+		this.createTimeStr = createTimeStr;
 	}
 
 	public TextToImageFromDTO getParameter() {
@@ -54,10 +74,27 @@ public class AiArtGenerateImageVO {
 		this.runCount = runCount;
 	}
 
+	public Boolean getIsDelete() {
+		return isDelete;
+	}
+
+	public void setIsDelete(Boolean isDelete) {
+		this.isDelete = isDelete;
+	}
+
+	public Boolean getIsFromApi() {
+		return isFromApi;
+	}
+
+	public void setIsFromApi(Boolean isFromApi) {
+		this.isFromApi = isFromApi;
+	}
+
 	@Override
 	public String toString() {
-		return "AiArtGenerateImageVO [jobPk=" + jobPk + ", parameter=" + parameter + ", imgUrlList=" + imgUrlList
-				+ ", jobStatus=" + jobStatus + ", runCount=" + runCount + "]";
+		return "AiArtGenerateImageVO [jobPk=" + jobPk + ", aiUserPk=" + aiUserPk + ", createTimeStr=" + createTimeStr
+				+ ", parameter=" + parameter + ", imgUrlList=" + imgUrlList + ", jobStatus=" + jobStatus + ", runCount="
+				+ runCount + ", isDelete=" + isDelete + ", isFromApi=" + isFromApi + "]";
 	}
 
 }
