@@ -11,7 +11,7 @@ public class AiArtGenerateImageVO {
 	private String aiUserPk;
 	private String createTimeStr;
 	private TextToImageFromDTO parameter;
-	private List<String> imgUrlList;
+	private List<String> imgPkList;
 	/** {@link AiArtJobStatusType} */
 	private Integer jobStatus;
 	private Integer runCount;
@@ -50,12 +50,12 @@ public class AiArtGenerateImageVO {
 		this.parameter = parameter;
 	}
 
-	public List<String> getImgUrlList() {
-		return imgUrlList;
+	public List<String> getImgPkList() {
+		return imgPkList;
 	}
 
-	public void setImgUrlList(List<String> imgUrlList) {
-		this.imgUrlList = imgUrlList;
+	public void setImgPkList(List<String> imgPkList) {
+		this.imgPkList = imgPkList;
 	}
 
 	public Integer getJobStatus() {
@@ -93,7 +93,7 @@ public class AiArtGenerateImageVO {
 	@Override
 	public String toString() {
 		return "AiArtGenerateImageVO [jobPk=" + jobPk + ", aiUserPk=" + aiUserPk + ", createTimeStr=" + createTimeStr
-				+ ", parameter=" + parameter + ", imgUrlList=" + imgUrlList + ", jobStatus=" + jobStatus + ", runCount="
+				+ ", parameter=" + parameter + ", imgPkList=" + imgPkList + ", jobStatus=" + jobStatus + ", runCount="
 				+ runCount + ", isDelete=" + isDelete + ", isFromApi=" + isFromApi + "]";
 	}
 
