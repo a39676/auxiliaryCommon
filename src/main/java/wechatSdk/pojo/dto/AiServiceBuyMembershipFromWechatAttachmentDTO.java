@@ -1,6 +1,6 @@
 package wechatSdk.pojo.dto;
 
-public class BuyMembershipFromWechatAttachmentDTO {
+public class AiServiceBuyMembershipFromWechatAttachmentDTO {
 
 	private String membershipPk;
 	private String openId;

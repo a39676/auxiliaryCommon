@@ -2,7 +2,7 @@ package wechatSdk.pojo.dto;
 
 import wechatSdk.pojo.type.WechatOfficialAccountType;
 
-public class GetUserOpenIdListDTO {
+public class WechatGetUserOpenIdListDTO {
 
 	/** {@link WechatOfficialAccountType} */
 	private Integer sourceOfficialAccount;

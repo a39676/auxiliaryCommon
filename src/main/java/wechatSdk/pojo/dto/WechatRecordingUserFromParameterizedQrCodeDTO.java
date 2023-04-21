@@ -1,6 +1,6 @@
 package wechatSdk.pojo.dto;
 
-public class RecordingWechatUserFromParameterizedQrCodeDTO {
+public class WechatRecordingUserFromParameterizedQrCodeDTO {
 
 	private String userOpenId;
 	private String originOpenId;

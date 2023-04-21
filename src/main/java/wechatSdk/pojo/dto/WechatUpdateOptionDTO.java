@@ -1,6 +1,6 @@
 package wechatSdk.pojo.dto;
 
-public class UpdateWechatOptionDTO {
+public class WechatUpdateOptionDTO {
 
 	private String appId1;
 	private String appSecret1;

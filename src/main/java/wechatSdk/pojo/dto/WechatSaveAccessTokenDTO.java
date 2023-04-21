@@ -1,6 +1,6 @@
 package wechatSdk.pojo.dto;
 
-public class SaveAccessTokenDTO {
+public class WechatSaveAccessTokenDTO {
 
 	private String appId;
 	private String accessToken;

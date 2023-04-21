@@ -1,6 +1,6 @@
 package wechatSdk.pojo.dto;
 
-public class DeleteAiChatApiKeyDTO {
+public class AiServiceDeleteApiKeyDTO {
 
 	private String tmpKeyStr;
 	private String apiKey;

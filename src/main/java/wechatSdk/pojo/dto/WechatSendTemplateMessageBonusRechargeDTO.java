@@ -1,6 +1,6 @@
 package wechatSdk.pojo.dto;
 
-public class SendTemplateMessageBonusRechargeDTO {
+public class WechatSendTemplateMessageBonusRechargeDTO {
 
 	private String managerCode;
 	private String reciverOpenId;
