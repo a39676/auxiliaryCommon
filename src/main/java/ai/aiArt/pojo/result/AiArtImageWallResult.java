@@ -1,10 +1,11 @@
-package ai.aiArt.pojo.dto;
+package ai.aiArt.pojo.result;
 
 import java.util.List;
 
 import ai.aiArt.pojo.vo.AiArtImageOnWallVO;
+import auxiliaryCommon.pojo.result.CommonResult;
 
-public class AiArtImageWallDTO {
+public class AiArtImageWallResult extends CommonResult {
 
 	private List<AiArtImageOnWallVO> imgVoList;
 
