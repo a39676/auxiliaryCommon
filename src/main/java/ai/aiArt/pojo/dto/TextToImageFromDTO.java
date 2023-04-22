@@ -1,8 +1,11 @@
 package ai.aiArt.pojo.dto;
 
+import ai.aiArt.pojo.type.AiArtJobModelType;
 import ai.aiArt.pojo.type.AiArtSamplerType;
 
 public class TextToImageFromDTO {
+	/** {@link AiArtJobModelType} */
+	private String model = AiArtJobModelType.CHILLED_RE_GENERIC.getName();
 	private String prompts;
 	private String negativePrompts;
 	/** {@link AiArtSamplerType} */
@@ -15,6 +18,14 @@ public class TextToImageFromDTO {
 	private Long seed = Long.parseLong("-1");
 	private Long jobId;
 	private boolean isFromApi = false;
+
+	public String getModel() {
+		return model;
+	}
+
+	public void setModel(String model) {
+		this.model = model;
+	}
 
 	public String getPrompts() {
 		return prompts;
