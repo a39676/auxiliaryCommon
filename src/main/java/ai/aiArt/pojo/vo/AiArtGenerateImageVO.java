@@ -17,6 +17,8 @@ public class AiArtGenerateImageVO {
 	private Integer runCount;
 	private Boolean isDelete;
 	private Boolean isFromApi;
+	private Boolean isFreeJob;
+	private Boolean hasReview;
 
 	public String getJobPk() {
 		return jobPk;
@@ -90,11 +92,28 @@ public class AiArtGenerateImageVO {
 		this.isFromApi = isFromApi;
 	}
 
+	public Boolean getIsFreeJob() {
+		return isFreeJob;
+	}
+
+	public void setIsFreeJob(Boolean isFreeJob) {
+		this.isFreeJob = isFreeJob;
+	}
+
+	public Boolean getHasReview() {
+		return hasReview;
+	}
+
+	public void setHasReview(Boolean hasReview) {
+		this.hasReview = hasReview;
+	}
+
 	@Override
 	public String toString() {
 		return "AiArtGenerateImageVO [jobPk=" + jobPk + ", aiUserPk=" + aiUserPk + ", createTimeStr=" + createTimeStr
 				+ ", parameter=" + parameter + ", imgPkList=" + imgPkList + ", jobStatus=" + jobStatus + ", runCount="
-				+ runCount + ", isDelete=" + isDelete + ", isFromApi=" + isFromApi + "]";
+				+ runCount + ", isDelete=" + isDelete + ", isFromApi=" + isFromApi + ", isFreeJob=" + isFreeJob
+				+ ", hasReview=" + hasReview + "]";
 	}
 
 }

@@ -7,6 +7,7 @@ public class SendTextToImgJobResult extends CommonResult {
 	private String jobPk;
 	private boolean isFreeJob;
 	private Integer freeJobCountLeft;
+	private boolean isRunning;
 
 	public String getJobPk() {
 		return jobPk;
@@ -32,10 +33,18 @@ public class SendTextToImgJobResult extends CommonResult {
 		this.freeJobCountLeft = freeJobCountLeft;
 	}
 
+	public boolean getIsRunning() {
+		return isRunning;
+	}
+
+	public void setIsRunning(boolean isRunning) {
+		this.isRunning = isRunning;
+	}
+
 	@Override
 	public String toString() {
 		return "SendTextToImgJobResult [jobPk=" + jobPk + ", isFreeJob=" + isFreeJob + ", freeJobCountLeft="
-				+ freeJobCountLeft + "]";
+				+ freeJobCountLeft + ", isRunning=" + isRunning + "]";
 	}
 
 }
