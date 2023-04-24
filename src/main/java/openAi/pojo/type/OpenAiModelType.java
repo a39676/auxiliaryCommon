@@ -4,6 +4,7 @@ public enum OpenAiModelType {
 	
 	DAVINCI_003("text-davinci-003", 1),
 	GPT_V_3_5("gpt-3.5-turbo", 2),
+	GPT_V_4("gpt-4", 3),
 	;
 	
 	private String name;
