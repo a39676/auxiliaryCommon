@@ -2,7 +2,7 @@ package ai.automatic1111.pojo.result;
 
 import java.util.List;
 
-import ai.automatic1111.pojo.type.AiArtAutomaticModelDTO;
+import ai.automatic1111.pojo.dto.AiArtAutomaticModelDTO;
 import auxiliaryCommon.pojo.result.CommonResult;
 
 public class AiArtAutomaticGetModelResult extends CommonResult {

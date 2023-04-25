@@ -1,4 +1,4 @@
-package ai.automatic1111.pojo.type;
+package ai.automatic1111.pojo.dto;
 
 public class AiArtAutomaticModelDTO {
 
