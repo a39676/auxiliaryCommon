@@ -5,7 +5,7 @@ import java.util.List;
 import ai.aiArt.pojo.dto.TextToImageDTO;
 import auxiliaryCommon.pojo.result.CommonResult;
 
-public class AiArtGenerateImageResult extends CommonResult {
+public class AiArtGenerateImageQueryResult extends CommonResult {
 
 	private TextToImageDTO parameter;
 	private List<String> imgPkList;
