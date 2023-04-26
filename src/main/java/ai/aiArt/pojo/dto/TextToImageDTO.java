@@ -1,11 +1,11 @@
 package ai.aiArt.pojo.dto;
 
-import ai.aiArt.pojo.type.AiArtJobModelType;
 import ai.aiArt.pojo.type.AiArtSamplerType;
+import ai.automatic1111.pojo.type.AiArtModelType;
 
-public class TextToImageFromDTO {
-	/** {@link AiArtJobModelType} */
-	private String model = AiArtJobModelType.CHILLED_RE_GENERIC.getName();
+public class TextToImageDTO {
+	/** {@link AiArtModelType} */
+	private String model = AiArtModelType.CHILLED_RE_GENERIC.getName();
 	private String prompts;
 	private String negativePrompts;
 	/** {@link AiArtSamplerType} */

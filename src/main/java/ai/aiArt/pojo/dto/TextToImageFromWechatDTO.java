@@ -1,6 +1,6 @@
 package ai.aiArt.pojo.dto;
 
-public class TextToImageFromWechatDTO extends TextToImageFromDTO {
+public class TextToImageFromWechatDTO extends TextToImageDTO {
 
 	private String tmpKey;
 

@@ -2,19 +2,19 @@ package ai.aiArt.pojo.result;
 
 import java.util.List;
 
-import ai.aiArt.pojo.dto.TextToImageFromDTO;
+import ai.aiArt.pojo.dto.TextToImageDTO;
 import auxiliaryCommon.pojo.result.CommonResult;
 
 public class AiArtGenerateImageResult extends CommonResult {
 
-	private TextToImageFromDTO parameter;
+	private TextToImageDTO parameter;
 	private List<String> imgPkList;
 
-	public TextToImageFromDTO getParameter() {
+	public TextToImageDTO getParameter() {
 		return parameter;
 	}
 
-	public void setParameter(TextToImageFromDTO parameter) {
+	public void setParameter(TextToImageDTO parameter) {
 		this.parameter = parameter;
 	}
 

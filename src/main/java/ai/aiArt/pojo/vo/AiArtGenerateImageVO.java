@@ -2,7 +2,7 @@ package ai.aiArt.pojo.vo;
 
 import java.util.List;
 
-import ai.aiArt.pojo.dto.TextToImageFromDTO;
+import ai.aiArt.pojo.dto.TextToImageDTO;
 import ai.aiArt.pojo.type.AiArtJobStatusType;
 
 public class AiArtGenerateImageVO {
@@ -10,7 +10,7 @@ public class AiArtGenerateImageVO {
 	private String jobPk;
 	private String aiUserPk;
 	private String createTimeStr;
-	private TextToImageFromDTO parameter;
+	private TextToImageDTO parameter;
 	private List<String> imgPkList;
 	/** {@link AiArtJobStatusType} */
 	private Integer jobStatus;
@@ -19,6 +19,7 @@ public class AiArtGenerateImageVO {
 	private Boolean isFromApi;
 	private Boolean isFreeJob;
 	private Boolean hasReview;
+	private Integer nsfwJobCounting;
 
 	public String getJobPk() {
 		return jobPk;
@@ -44,11 +45,11 @@ public class AiArtGenerateImageVO {
 		this.createTimeStr = createTimeStr;
 	}
 
-	public TextToImageFromDTO getParameter() {
+	public TextToImageDTO getParameter() {
 		return parameter;
 	}
 
-	public void setParameter(TextToImageFromDTO parameter) {
+	public void setParameter(TextToImageDTO parameter) {
 		this.parameter = parameter;
 	}
 
@@ -108,12 +109,20 @@ public class AiArtGenerateImageVO {
 		this.hasReview = hasReview;
 	}
 
+	public Integer getNsfwJobCounting() {
+		return nsfwJobCounting;
+	}
+
+	public void setNsfwJobCounting(Integer nsfwJobCounting) {
+		this.nsfwJobCounting = nsfwJobCounting;
+	}
+
 	@Override
 	public String toString() {
 		return "AiArtGenerateImageVO [jobPk=" + jobPk + ", aiUserPk=" + aiUserPk + ", createTimeStr=" + createTimeStr
 				+ ", parameter=" + parameter + ", imgPkList=" + imgPkList + ", jobStatus=" + jobStatus + ", runCount="
 				+ runCount + ", isDelete=" + isDelete + ", isFromApi=" + isFromApi + ", isFreeJob=" + isFreeJob
-				+ ", hasReview=" + hasReview + "]";
+				+ ", hasReview=" + hasReview + ", nsfwJobCounting=" + nsfwJobCounting + "]";
 	}
 
 }
