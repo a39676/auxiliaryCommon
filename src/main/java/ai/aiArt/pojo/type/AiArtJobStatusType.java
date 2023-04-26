@@ -2,9 +2,10 @@ package ai.aiArt.pojo.type;
 
 public enum AiArtJobStatusType {
 	
-	FAILED("failed", -1),
 	WAITING("waiting", 0),
 	SUCCESS("success", 1),
+	FAILED("failed", -1),
+	FAILED_BY_AMOUNT_NOT_ENOUGH("failedByAmountNotEnough", -2),
 	;
 	
 	private String name;
