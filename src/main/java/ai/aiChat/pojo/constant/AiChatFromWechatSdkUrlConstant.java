@@ -21,4 +21,5 @@ public class AiChatFromWechatSdkUrlConstant {
 	public static final String FIND_TEXT_TO_IMAGE_JOB_LIST = "/findTextToImageJobList";
 	public static final String AI_ART_IMAGE_WALL = "/aiArtImageWall";
 	public static final String GENERATE_OTHER_LIKE_THAT = "/generateOtherLikeThat";
+	public static final String GET_PARAMETER_BY_JOB_PK = "/getParameterByJobPk";
 }
