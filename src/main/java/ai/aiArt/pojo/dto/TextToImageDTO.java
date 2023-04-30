@@ -5,7 +5,7 @@ import ai.automatic1111.pojo.type.AiArtModelType;
 
 public class TextToImageDTO {
 	/** {@link AiArtModelType} */
-	private String model = AiArtModelType.CHILLED_RE_GENERIC.getName();
+	private String model = AiArtModelType.CHILLOUTMIX_NI_PRUNED_FP_32_FIX.getName();
 	private String prompts;
 	private String negativePrompts;
 	/** {@link AiArtSamplerType} */
