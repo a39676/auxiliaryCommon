@@ -5,11 +5,11 @@ import ai.automatic1111.pojo.type.AiArtModelType;
 
 public class TextToImageDTO {
 	/** {@link AiArtModelType} */
-	private String model = AiArtModelType.CHILLOUTMIX_NI_PRUNED_FP_32_FIX.getName();
+	private Integer model = AiArtModelType.CHILLOUTMIX_NI_PRUNED_FP_32_FIX.getCode();
 	private String prompts;
 	private String negativePrompts;
 	/** {@link AiArtSamplerType} */
-	private String sampler = AiArtSamplerType.DPM_2M_Karras.getName();
+	private Integer sampler = AiArtSamplerType.DPM_2M_Karras.getCode();
 	private Integer width = 300;
 	private Integer height = 600;
 	private Integer cfgScale = 7;
@@ -19,11 +19,11 @@ public class TextToImageDTO {
 	private Long jobId;
 	private boolean isFromApi = false;
 
-	public String getModel() {
+	public Integer getModel() {
 		return model;
 	}
 
-	public void setModel(String model) {
+	public void setModel(Integer model) {
 		this.model = model;
 	}
 
@@ -43,11 +43,11 @@ public class TextToImageDTO {
 		this.negativePrompts = negativePrompts;
 	}
 
-	public String getSampler() {
+	public Integer getSampler() {
 		return sampler;
 	}
 
-	public void setSampler(String sampler) {
+	public void setSampler(Integer sampler) {
 		this.sampler = sampler;
 	}
 
@@ -117,9 +117,10 @@ public class TextToImageDTO {
 
 	@Override
 	public String toString() {
-		return "TextToImageFromDTO [prompts=" + prompts + ", negativePrompts=" + negativePrompts + ", sampler="
-				+ sampler + ", wedith=" + width + ", height=" + height + ", cfgScale=" + cfgScale + ", steps=" + steps
-				+ ", batchSize=" + batchSize + ", seed=" + seed + ", jobId=" + jobId + ", isFromApi=" + isFromApi + "]";
+		return "TextToImageDTO [model=" + model + ", prompts=" + prompts + ", negativePrompts=" + negativePrompts
+				+ ", sampler=" + sampler + ", width=" + width + ", height=" + height + ", cfgScale=" + cfgScale
+				+ ", steps=" + steps + ", batchSize=" + batchSize + ", seed=" + seed + ", jobId=" + jobId
+				+ ", isFromApi=" + isFromApi + "]";
 	}
 
 }
