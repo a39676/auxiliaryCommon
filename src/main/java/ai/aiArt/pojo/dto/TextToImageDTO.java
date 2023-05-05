@@ -1,11 +1,11 @@
 package ai.aiArt.pojo.dto;
 
 import ai.aiArt.pojo.type.AiArtSamplerType;
-import ai.automatic1111.pojo.type.AiArtModelType;
+import ai.automatic1111.pojo.type.AiArtDefaultModelType;
 
 public class TextToImageDTO {
-	/** {@link AiArtModelType} */
-	private Integer model = AiArtModelType.CHILLOUTMIX_NI_PRUNED_FP_32_FIX.getCode();
+	/** {@link AiArtDefaultModelType} */
+	private Integer model = AiArtDefaultModelType.chilloutmix_NiPrunedFp32Fix.getCode();
 	private String prompts;
 	private String negativePrompts;
 	/** {@link AiArtSamplerType} */
