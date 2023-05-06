@@ -1,6 +1,6 @@
 package ai.aiChat.pojo.type;
 
-public enum AiChatAmountType {
+public enum AiServiceAmountType {
 	
 	BONUS("bonus", 1),
 	RECHARGE("recharge", 2),
@@ -9,7 +9,7 @@ public enum AiChatAmountType {
 	private String name;
 	private Integer code;
 	
-	AiChatAmountType(String name, Integer code) {
+	AiServiceAmountType(String name, Integer code) {
 		this.name = name;
 		this.code = code;
 	}
@@ -23,8 +23,8 @@ public enum AiChatAmountType {
 		return code;
 	}
 
-	public static AiChatAmountType getType(String typeName) {
-		for(AiChatAmountType t : AiChatAmountType.values()) {
+	public static AiServiceAmountType getType(String typeName) {
+		for(AiServiceAmountType t : AiServiceAmountType.values()) {
 			if(t.getName().equals(typeName)) {
 				return t;
 			}
@@ -32,8 +32,8 @@ public enum AiChatAmountType {
 		return null;
 	}
 	
-	public static AiChatAmountType getType(Integer typeCode) {
-		for(AiChatAmountType t : AiChatAmountType.values()) {
+	public static AiServiceAmountType getType(Integer typeCode) {
+		for(AiServiceAmountType t : AiServiceAmountType.values()) {
 			if(t.getCode().equals(typeCode)) {
 				return t;
 			}
