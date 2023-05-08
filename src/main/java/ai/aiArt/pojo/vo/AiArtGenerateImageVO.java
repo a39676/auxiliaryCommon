@@ -21,6 +21,9 @@ public class AiArtGenerateImageVO {
 	private Boolean hasReview;
 	private Integer nsfwJobCounting;
 
+	private String modelName;
+	private String samplerName;
+
 	public String getJobPk() {
 		return jobPk;
 	}
@@ -117,12 +120,29 @@ public class AiArtGenerateImageVO {
 		this.nsfwJobCounting = nsfwJobCounting;
 	}
 
+	public String getModelName() {
+		return modelName;
+	}
+
+	public void setModelName(String modelName) {
+		this.modelName = modelName;
+	}
+
+	public String getSamplerName() {
+		return samplerName;
+	}
+
+	public void setSamplerName(String samplerName) {
+		this.samplerName = samplerName;
+	}
+
 	@Override
 	public String toString() {
 		return "AiArtGenerateImageVO [jobPk=" + jobPk + ", aiUserPk=" + aiUserPk + ", createTimeStr=" + createTimeStr
 				+ ", parameter=" + parameter + ", imgPkList=" + imgPkList + ", jobStatus=" + jobStatus + ", runCount="
 				+ runCount + ", isDelete=" + isDelete + ", isFromApi=" + isFromApi + ", isFreeJob=" + isFreeJob
-				+ ", hasReview=" + hasReview + ", nsfwJobCounting=" + nsfwJobCounting + "]";
+				+ ", hasReview=" + hasReview + ", nsfwJobCounting=" + nsfwJobCounting + ", modelName=" + modelName
+				+ ", samplerName=" + samplerName + "]";
 	}
 
 }
