@@ -7,6 +7,15 @@ public class TextToImageDTO {
 	/** {@link AiArtDefaultModelType} */
 	private Integer modelCode = AiArtDefaultModelType.chilloutmix_NiPrunedFp32Fix.getCode();
 	private String modelName;
+	private boolean enableHr = false;
+	private Integer denoisingStrength;
+	private Integer firstphaseWidth;
+	private Integer firstphaseHeight;
+	private Integer hrScale;
+	private String hrUpscaler;
+	private Integer hrSecondPassSteps;
+	private Integer hrResizeX;
+	private Integer hrResizeY;
 	private String prompts;
 	private String negativePrompts;
 	/** {@link AiArtSamplerType} */
@@ -34,6 +43,78 @@ public class TextToImageDTO {
 
 	public void setModelName(String modelName) {
 		this.modelName = modelName;
+	}
+
+	public boolean getEnableHr() {
+		return enableHr;
+	}
+
+	public void setEnableHr(boolean enableHr) {
+		this.enableHr = enableHr;
+	}
+
+	public Integer getDenoisingStrength() {
+		return denoisingStrength;
+	}
+
+	public void setDenoisingStrength(Integer denoisingStrength) {
+		this.denoisingStrength = denoisingStrength;
+	}
+
+	public Integer getFirstphaseWidth() {
+		return firstphaseWidth;
+	}
+
+	public void setFirstphaseWidth(Integer firstphaseWidth) {
+		this.firstphaseWidth = firstphaseWidth;
+	}
+
+	public Integer getFirstphaseHeight() {
+		return firstphaseHeight;
+	}
+
+	public void setFirstphaseHeight(Integer firstphaseHeight) {
+		this.firstphaseHeight = firstphaseHeight;
+	}
+
+	public Integer getHrScale() {
+		return hrScale;
+	}
+
+	public void setHrScale(Integer hrScale) {
+		this.hrScale = hrScale;
+	}
+
+	public String getHrUpscaler() {
+		return hrUpscaler;
+	}
+
+	public void setHrUpscaler(String hrUpscaler) {
+		this.hrUpscaler = hrUpscaler;
+	}
+
+	public Integer getHrSecondPassSteps() {
+		return hrSecondPassSteps;
+	}
+
+	public void setHrSecondPassSteps(Integer hrSecondPassSteps) {
+		this.hrSecondPassSteps = hrSecondPassSteps;
+	}
+
+	public Integer getHrResizeX() {
+		return hrResizeX;
+	}
+
+	public void setHrResizeX(Integer hrResizeX) {
+		this.hrResizeX = hrResizeX;
+	}
+
+	public Integer getHrResizeY() {
+		return hrResizeY;
+	}
+
+	public void setHrResizeY(Integer hrResizeY) {
+		this.hrResizeY = hrResizeY;
 	}
 
 	public String getPrompts() {
@@ -126,10 +207,13 @@ public class TextToImageDTO {
 
 	@Override
 	public String toString() {
-		return "TextToImageDTO [modelCode=" + modelCode + ", modelName=" + modelName + ", prompts=" + prompts
-				+ ", negativePrompts=" + negativePrompts + ", sampler=" + sampler + ", width=" + width + ", height="
-				+ height + ", cfgScale=" + cfgScale + ", steps=" + steps + ", batchSize=" + batchSize + ", seed=" + seed
-				+ ", jobId=" + jobId + ", isFromApi=" + isFromApi + "]";
+		return "TextToImageDTO [modelCode=" + modelCode + ", modelName=" + modelName + ", enableHr=" + enableHr
+				+ ", denoisingStrength=" + denoisingStrength + ", firstphaseWidth=" + firstphaseWidth
+				+ ", firstphaseHeight=" + firstphaseHeight + ", hrScale=" + hrScale + ", hrUpscaler=" + hrUpscaler
+				+ ", hrSecondPassSteps=" + hrSecondPassSteps + ", hrResizeX=" + hrResizeX + ", hrResizeY=" + hrResizeY
+				+ ", prompts=" + prompts + ", negativePrompts=" + negativePrompts + ", sampler=" + sampler + ", width="
+				+ width + ", height=" + height + ", cfgScale=" + cfgScale + ", steps=" + steps + ", batchSize="
+				+ batchSize + ", seed=" + seed + ", jobId=" + jobId + ", isFromApi=" + isFromApi + "]";
 	}
 
 }
