@@ -13,6 +13,4 @@ public class WechatSdkUrlConstant {
 
 	public static final String SEND_NOTIFY = "/sendNotify";
 
-	public static final String POST_TEMPLATE_MESSAGE_AI_ART_TXT_TO_IMG_COMPLETE = "/postTemplateMessageAiArtTxtToImgComplete";
-
 }
