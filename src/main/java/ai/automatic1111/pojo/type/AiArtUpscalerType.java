@@ -7,12 +7,13 @@ public enum AiArtUpscalerType {
 	Nearest("Nearest", 3),
 	UltraSharp_4x("4x-UltraSharp", 4),
 	foolhardy_Remacri_4x("4x_foolhardy_Remacri", 5),
-	LDSR("LDSR", 6),
+	foolhardy_Remacri_ExtraSmoother_4x("4x_foolhardy_Remacri_ExtraSmoother", 6),
 	R_ESRGAN_4x("R-ESRGAN 4x+", 7),
 	R_ESRGAN_4x_Anime6B("R-ESRGAN 4x+ Anime6B", 8),
-	ScuNET_GAN("ScuNET GAN", 9),
-	ScuNET_PSNR("ScuNET PSNR", 10),
-	SwinIR_4x("SwinIR 4x", 11),
+	AnimeSharp_4x("4x-AnimeSharp", 9),
+	Faces_04_N_180000_G_4x("4x_Faces_04_N_180000_G", 10),
+	RealisticRescaler_100000_G_4x("4x_RealisticRescaler_100000_G", 11),
+	xbrz_90k_4x("4x_xbrz_90k", 12),
 	;
 	
 	private String name;

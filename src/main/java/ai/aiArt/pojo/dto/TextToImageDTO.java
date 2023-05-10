@@ -9,9 +9,7 @@ public class TextToImageDTO {
 	private String modelName;
 	private boolean enableHr = false;
 	private Double denoisingStrength;
-	private Integer firstphaseWidth;
-	private Integer firstphaseHeight;
-	private Integer hrScale;
+	private Double hrScale;
 	private String hrUpscaler;
 	private Integer hrSecondPassSteps;
 	private Integer hrResizeX;
@@ -61,27 +59,11 @@ public class TextToImageDTO {
 		this.denoisingStrength = denoisingStrength;
 	}
 
-	public Integer getFirstphaseWidth() {
-		return firstphaseWidth;
-	}
-
-	public void setFirstphaseWidth(Integer firstphaseWidth) {
-		this.firstphaseWidth = firstphaseWidth;
-	}
-
-	public Integer getFirstphaseHeight() {
-		return firstphaseHeight;
-	}
-
-	public void setFirstphaseHeight(Integer firstphaseHeight) {
-		this.firstphaseHeight = firstphaseHeight;
-	}
-
-	public Integer getHrScale() {
+	public Double getHrScale() {
 		return hrScale;
 	}
 
-	public void setHrScale(Integer hrScale) {
+	public void setHrScale(Double hrScale) {
 		this.hrScale = hrScale;
 	}
 
@@ -208,8 +190,7 @@ public class TextToImageDTO {
 	@Override
 	public String toString() {
 		return "TextToImageDTO [modelCode=" + modelCode + ", modelName=" + modelName + ", enableHr=" + enableHr
-				+ ", denoisingStrength=" + denoisingStrength + ", firstphaseWidth=" + firstphaseWidth
-				+ ", firstphaseHeight=" + firstphaseHeight + ", hrScale=" + hrScale + ", hrUpscaler=" + hrUpscaler
+				+ ", denoisingStrength=" + denoisingStrength + ", hrScale=" + hrScale + ", hrUpscaler=" + hrUpscaler
 				+ ", hrSecondPassSteps=" + hrSecondPassSteps + ", hrResizeX=" + hrResizeX + ", hrResizeY=" + hrResizeY
 				+ ", prompts=" + prompts + ", negativePrompts=" + negativePrompts + ", sampler=" + sampler + ", width="
 				+ width + ", height=" + height + ", cfgScale=" + cfgScale + ", steps=" + steps + ", batchSize="
