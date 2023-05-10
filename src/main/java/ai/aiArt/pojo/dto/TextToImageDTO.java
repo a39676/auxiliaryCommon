@@ -10,7 +10,8 @@ public class TextToImageDTO {
 	private boolean enableHr = false;
 	private Double denoisingStrength;
 	private Double hrScale;
-	private String hrUpscaler;
+	private String hrUpscalerName;
+	private Integer hrUpscalerCode;
 	private Integer hrSecondPassSteps;
 	private Integer hrResizeX;
 	private Integer hrResizeY;
@@ -67,12 +68,20 @@ public class TextToImageDTO {
 		this.hrScale = hrScale;
 	}
 
-	public String getHrUpscaler() {
-		return hrUpscaler;
+	public String getHrUpscalerName() {
+		return hrUpscalerName;
 	}
 
-	public void setHrUpscaler(String hrUpscaler) {
-		this.hrUpscaler = hrUpscaler;
+	public void setHrUpscalerName(String hrUpscalerName) {
+		this.hrUpscalerName = hrUpscalerName;
+	}
+
+	public Integer getHrUpscalerCode() {
+		return hrUpscalerCode;
+	}
+
+	public void setHrUpscalerCode(Integer hrUpscalerCode) {
+		this.hrUpscalerCode = hrUpscalerCode;
 	}
 
 	public Integer getHrSecondPassSteps() {
@@ -190,11 +199,12 @@ public class TextToImageDTO {
 	@Override
 	public String toString() {
 		return "TextToImageDTO [modelCode=" + modelCode + ", modelName=" + modelName + ", enableHr=" + enableHr
-				+ ", denoisingStrength=" + denoisingStrength + ", hrScale=" + hrScale + ", hrUpscaler=" + hrUpscaler
-				+ ", hrSecondPassSteps=" + hrSecondPassSteps + ", hrResizeX=" + hrResizeX + ", hrResizeY=" + hrResizeY
-				+ ", prompts=" + prompts + ", negativePrompts=" + negativePrompts + ", sampler=" + sampler + ", width="
-				+ width + ", height=" + height + ", cfgScale=" + cfgScale + ", steps=" + steps + ", batchSize="
-				+ batchSize + ", seed=" + seed + ", jobId=" + jobId + ", isFromApi=" + isFromApi + "]";
+				+ ", denoisingStrength=" + denoisingStrength + ", hrScale=" + hrScale + ", hrUpscalerName="
+				+ hrUpscalerName + ", hrUpscalerCode=" + hrUpscalerCode + ", hrSecondPassSteps=" + hrSecondPassSteps
+				+ ", hrResizeX=" + hrResizeX + ", hrResizeY=" + hrResizeY + ", prompts=" + prompts
+				+ ", negativePrompts=" + negativePrompts + ", sampler=" + sampler + ", width=" + width + ", height="
+				+ height + ", cfgScale=" + cfgScale + ", steps=" + steps + ", batchSize=" + batchSize + ", seed=" + seed
+				+ ", jobId=" + jobId + ", isFromApi=" + isFromApi + "]";
 	}
 
 }
