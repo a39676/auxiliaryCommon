@@ -2,6 +2,7 @@ package ai.aiArt.pojo.dto;
 
 import ai.aiArt.pojo.type.AiArtSamplerType;
 import ai.automatic1111.pojo.type.AiArtDefaultModelType;
+import ai.automatic1111.pojo.type.AiArtUpscalerType;
 
 public class TextToImageDTO {
 	/** {@link AiArtDefaultModelType} */
@@ -10,6 +11,7 @@ public class TextToImageDTO {
 	private boolean enableHr = false;
 	private Double denoisingStrength;
 	private Double hrScale;
+	/** {@link AiArtUpscalerType} */
 	private String hrUpscalerName;
 	private Integer hrUpscalerCode;
 	private Integer hrSecondPassSteps;
