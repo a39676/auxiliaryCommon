@@ -8,7 +8,7 @@ public class TextToImageDTO {
 	/** {@link AiArtDefaultModelType} */
 	private Integer modelCode = AiArtDefaultModelType.chilloutmix_NiPrunedFp32Fix.getCode();
 	private String modelName;
-	private boolean enableHr = false;
+	private Boolean enableHr = false;
 	private Double denoisingStrength;
 	private Double hrScale;
 	/** {@link AiArtUpscalerType} */
@@ -46,11 +46,11 @@ public class TextToImageDTO {
 		this.modelName = modelName;
 	}
 
-	public boolean getEnableHr() {
+	public Boolean getEnableHr() {
 		return enableHr;
 	}
 
-	public void setEnableHr(boolean enableHr) {
+	public void setEnableHr(Boolean enableHr) {
 		this.enableHr = enableHr;
 	}
 
