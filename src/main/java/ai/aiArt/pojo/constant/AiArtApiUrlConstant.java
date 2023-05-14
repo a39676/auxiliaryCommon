@@ -10,5 +10,6 @@ public class AiArtApiUrlConstant {
 	public static final String GET_SAMPLER_LIST = "/getSamplerList";
 	public static final String RECEIVE_IMAGE_JOB_RESULT = "/receiveImgJobResultForApi";
 	public static final String HEART_BEAT = "/heartBeat";
+	public static final String GET_RERUN_JOB = "/getRerunJob";
 	
 }
