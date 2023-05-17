@@ -5,8 +5,9 @@ public enum WechatSdkCommonResultType {
 
 	SUCCESS("success", 0), 
 	TMP_KEY_EXPIRED("Temporary key expired", -1),
-
 	NOT_ENOUGH_AMOUNT("Not enought amount", -2),
+	USER_ALREADY_EXISTS("User already exists", -3),
+	
 	;
 
 	private String name;
