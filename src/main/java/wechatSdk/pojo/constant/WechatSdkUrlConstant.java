@@ -13,4 +13,9 @@ public class WechatSdkUrlConstant {
 
 	public static final String SEND_NOTIFY = "/sendNotify";
 
+	public static final String GET_OPEN_ID_LIST_FROM_WECHAT = "/getOpenIdListFromWechat";
+
+	public static final String COMPARE_LOCAL_OPEN_ID_LIST_WITH_WECHAT_OPEN_ID_LIST = "/compareLocalOpenIdListWithWechatOpenIdList";
+	public static final String REG_OPEN_ID_MANUAL = "/regOpenIdManual";
+
 }
