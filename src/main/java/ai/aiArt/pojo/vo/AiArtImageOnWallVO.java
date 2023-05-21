@@ -1,9 +1,8 @@
 package ai.aiArt.pojo.vo;
 
-public class AiArtImageOnWallVO {
+public class AiArtImageOnWallVO extends ImgVO {
 
 	private String jobPk;
-	private String imgPk;
 	private Long jobId;
 	private Long imgId;
 
@@ -13,14 +12,6 @@ public class AiArtImageOnWallVO {
 
 	public void setJobPk(String jobPk) {
 		this.jobPk = jobPk;
-	}
-
-	public String getImgPk() {
-		return imgPk;
-	}
-
-	public void setImgPk(String imgPk) {
-		this.imgPk = imgPk;
 	}
 
 	public Long getJobId() {
@@ -41,8 +32,8 @@ public class AiArtImageOnWallVO {
 
 	@Override
 	public String toString() {
-		return "AiArtImageOnWallVO [jobPk=" + jobPk + ", imgPk=" + imgPk + ", jobId=" + jobId + ", imgId=" + imgId
-				+ "]";
+		return "AiArtImageOnWallVO [jobPk=" + jobPk + ", jobId=" + jobId + ", imgId=" + imgId + ", toString()="
+				+ super.toString() + "]";
 	}
 
 }

@@ -2,18 +2,18 @@ package ai.aiArt.pojo.result;
 
 import java.util.List;
 
-import ai.aiArt.pojo.vo.AiArtGenerateImageVO;
+import ai.aiArt.pojo.vo.AiArtGenerateImageUserVO;
 import auxiliaryCommon.pojo.result.CommonResult;
 
-public class GetJobResultList extends CommonResult {
+public class GetJobResultListForUser extends CommonResult {
 
-	private List<AiArtGenerateImageVO> jobResultList;
+	private List<AiArtGenerateImageUserVO> jobResultList;
 
-	public List<AiArtGenerateImageVO> getJobResultList() {
+	public List<AiArtGenerateImageUserVO> getJobResultList() {
 		return jobResultList;
 	}
 
-	public void setJobResultList(List<AiArtGenerateImageVO> jobResultList) {
+	public void setJobResultList(List<AiArtGenerateImageUserVO> jobResultList) {
 		this.jobResultList = jobResultList;
 	}
 
