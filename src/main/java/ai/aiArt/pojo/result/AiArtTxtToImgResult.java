@@ -8,6 +8,7 @@ public class AiArtTxtToImgResult extends CommonResult {
 
 	private Long jobId;
 	private List<String> imgBase64List;
+	private List<String> imgUrlList;
 
 	public Long getJobId() {
 		return jobId;
@@ -25,9 +26,18 @@ public class AiArtTxtToImgResult extends CommonResult {
 		this.imgBase64List = imgBase64List;
 	}
 
+	public List<String> getImgUrlList() {
+		return imgUrlList;
+	}
+
+	public void setImgUrlList(List<String> imgUrlList) {
+		this.imgUrlList = imgUrlList;
+	}
+
 	@Override
 	public String toString() {
-		return "AiArtTxtToImgResult [jobId=" + jobId + ", imgBase64List=" + imgBase64List + "]";
+		return "AiArtTxtToImgResult [jobId=" + jobId + ", imgBase64List=" + imgBase64List + ", imgUrlList=" + imgUrlList
+				+ "]";
 	}
 
 }

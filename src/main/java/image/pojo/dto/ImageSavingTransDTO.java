@@ -16,6 +16,8 @@ public class ImageSavingTransDTO {
 	/** {@link ImageTagType} */
 	private Long imgTagCode;
 
+	private String imgUrl;
+
 	public LocalDateTime getValidTime() {
 		return validTime;
 	}
@@ -48,10 +50,18 @@ public class ImageSavingTransDTO {
 		this.imgBase64Str = imgBase64Str;
 	}
 
+	public String getImgUrl() {
+		return imgUrl;
+	}
+
+	public void setImgUrl(String imgUrl) {
+		this.imgUrl = imgUrl;
+	}
+
 	@Override
 	public String toString() {
 		return "ImageSavingTransDTO [imgName=" + imgName + ", validTime=" + validTime + ", imgBase64Str=" + imgBase64Str
-				+ ", imgTagCode=" + imgTagCode + "]";
+				+ ", imgTagCode=" + imgTagCode + ", imgUrl=" + imgUrl + "]";
 	}
 
 }
