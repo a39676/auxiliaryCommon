@@ -5,7 +5,7 @@ import java.util.List;
 import ai.aiArt.pojo.vo.AiArtGenerateImageAdminVO;
 import auxiliaryCommon.pojo.result.CommonResult;
 
-public class GetJobResultList extends CommonResult {
+public class GetJobResultListForAdmin extends CommonResult {
 
 	private List<AiArtGenerateImageAdminVO> jobResultList;
 
