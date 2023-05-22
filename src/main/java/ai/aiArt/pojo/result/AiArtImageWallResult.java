@@ -1,5 +1,6 @@
 package ai.aiArt.pojo.result;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import ai.aiArt.pojo.vo.AiArtImageOnWallVO;
@@ -7,7 +8,7 @@ import auxiliaryCommon.pojo.result.CommonResult;
 
 public class AiArtImageWallResult extends CommonResult {
 
-	private List<AiArtImageOnWallVO> imgVoList;
+	private List<AiArtImageOnWallVO> imgVoList = new ArrayList<>();
 
 	public List<AiArtImageOnWallVO> getImgVoList() {
 		return imgVoList;
