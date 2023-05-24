@@ -29,6 +29,7 @@ public class TextToImageDTO {
 	private Long seed = Long.parseLong("-1");
 	private Long jobId;
 	private boolean isFromApi = false;
+	private boolean isFromAdmin = false;
 
 	public Integer getModelCode() {
 		return modelCode;
@@ -198,6 +199,14 @@ public class TextToImageDTO {
 		this.isFromApi = isFromApi;
 	}
 
+	public boolean getIsFromAdmin() {
+		return isFromAdmin;
+	}
+
+	public void setIsFromAdmin(boolean isFromAdmin) {
+		this.isFromAdmin = isFromAdmin;
+	}
+
 	@Override
 	public String toString() {
 		return "TextToImageDTO [modelCode=" + modelCode + ", modelName=" + modelName + ", enableHr=" + enableHr
@@ -206,7 +215,7 @@ public class TextToImageDTO {
 				+ ", hrResizeX=" + hrResizeX + ", hrResizeY=" + hrResizeY + ", prompts=" + prompts
 				+ ", negativePrompts=" + negativePrompts + ", sampler=" + sampler + ", width=" + width + ", height="
 				+ height + ", cfgScale=" + cfgScale + ", steps=" + steps + ", batchSize=" + batchSize + ", seed=" + seed
-				+ ", jobId=" + jobId + ", isFromApi=" + isFromApi + "]";
+				+ ", jobId=" + jobId + ", isFromApi=" + isFromApi + ", isFromAdmin=" + isFromAdmin + "]";
 	}
 
 }
