@@ -5,7 +5,7 @@ import java.util.List;
 import ai.aiArt.pojo.dto.TextToImageDTO;
 import ai.aiArt.pojo.type.AiArtJobStatusType;
 
-public abstract class AiArtGenerateImageBaseVO {
+public class AiArtGenerateImageBaseVO {
 
 	private String jobPk;
 	private String createTimeStr;

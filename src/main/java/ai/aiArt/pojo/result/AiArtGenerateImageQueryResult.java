@@ -9,7 +9,6 @@ import auxiliaryCommon.pojo.result.CommonResult;
 public class AiArtGenerateImageQueryResult extends CommonResult {
 
 	private TextToImageDTO parameter;
-	private List<String> imgPkList; // TODO imageHostUpdate delete this after image wall all replace
 	private List<ImgVO> imgVoList;
 
 	public TextToImageDTO getParameter() {
@@ -18,14 +17,6 @@ public class AiArtGenerateImageQueryResult extends CommonResult {
 
 	public void setParameter(TextToImageDTO parameter) {
 		this.parameter = parameter;
-	}
-
-	public List<String> getImgPkList() {
-		return imgPkList;
-	}
-
-	public void setImgPkList(List<String> imgPkList) {
-		this.imgPkList = imgPkList;
 	}
 
 	public List<ImgVO> getImgVoList() {
@@ -38,8 +29,7 @@ public class AiArtGenerateImageQueryResult extends CommonResult {
 
 	@Override
 	public String toString() {
-		return "AiArtGenerateImageQueryResult [parameter=" + parameter + ", imgPkList=" + imgPkList + ", imgVoList="
-				+ imgVoList + "]";
+		return "AiArtGenerateImageQueryResult [parameter=" + parameter + ", imgVoList=" + imgVoList + "]";
 	}
 
 }
