@@ -9,11 +9,12 @@ public class ImageToImageDTO {
 	/** {@link AiArtDefaultModelType} */
 	private Integer modelCode = AiArtDefaultModelType.chilloutmix_NiPrunedFp32Fix.getCode();
 	private String modelName;
+	/** {@link AiArtSamplerType} */
+	private Integer sampler = AiArtSamplerType.DPM_2M_Karras.getCode();
 	private Double denoisingStrength;
 	private String prompts;
 	private String negativePrompts;
-	/** {@link AiArtSamplerType} */
-	private Integer sampler = AiArtSamplerType.DPM_2M_Karras.getCode();
+	private Integer maskBlur;
 	private Integer width = 300;
 	private Integer height = 600;
 	private Integer cfgScale = 7;
@@ -56,6 +57,14 @@ public class ImageToImageDTO {
 		this.modelName = modelName;
 	}
 
+	public Integer getSampler() {
+		return sampler;
+	}
+
+	public void setSampler(Integer sampler) {
+		this.sampler = sampler;
+	}
+
 	public Double getDenoisingStrength() {
 		return denoisingStrength;
 	}
@@ -80,12 +89,12 @@ public class ImageToImageDTO {
 		this.negativePrompts = negativePrompts;
 	}
 
-	public Integer getSampler() {
-		return sampler;
+	public Integer getMaskBlur() {
+		return maskBlur;
 	}
 
-	public void setSampler(Integer sampler) {
-		this.sampler = sampler;
+	public void setMaskBlur(Integer maskBlur) {
+		this.maskBlur = maskBlur;
 	}
 
 	public Integer getWidth() {
@@ -162,11 +171,12 @@ public class ImageToImageDTO {
 
 	@Override
 	public String toString() {
-		return "ImageToImageDTO [modelCode=" + modelCode + ", modelName=" + modelName + ", denoisingStrength="
-				+ denoisingStrength + ", prompts=" + prompts + ", negativePrompts=" + negativePrompts + ", sampler="
-				+ sampler + ", width=" + width + ", height=" + height + ", cfgScale=" + cfgScale + ", steps=" + steps
-				+ ", batchSize=" + batchSize + ", seed=" + seed + ", jobId=" + jobId + ", isFromApi=" + isFromApi
-				+ ", isFromAdmin=" + isFromAdmin + "]";
+		return "ImageToImageDTO [imagesInBase64=" + imagesInBase64 + ", maskImageInBase64=" + maskImageInBase64
+				+ ", modelCode=" + modelCode + ", modelName=" + modelName + ", sampler=" + sampler
+				+ ", denoisingStrength=" + denoisingStrength + ", prompts=" + prompts + ", negativePrompts="
+				+ negativePrompts + ", maskBlur=" + maskBlur + ", width=" + width + ", height=" + height + ", cfgScale="
+				+ cfgScale + ", steps=" + steps + ", batchSize=" + batchSize + ", seed=" + seed + ", jobId=" + jobId
+				+ ", isFromApi=" + isFromApi + ", isFromAdmin=" + isFromAdmin + "]";
 	}
 
 }
