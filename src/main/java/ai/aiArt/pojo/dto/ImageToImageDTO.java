@@ -1,26 +1,15 @@
 package ai.aiArt.pojo.dto;
 
-import java.util.List;
-
 import ai.aiArt.pojo.type.AiArtSamplerType;
 import ai.automatic1111.pojo.type.AiArtDefaultModelType;
-import ai.automatic1111.pojo.type.AiArtUpscalerType;
 
 public class ImageToImageDTO {
-	private List<String> imagesInBase64;
-	
+	private String imagesInBase64;
+	private String maskImageInBase64;
 	/** {@link AiArtDefaultModelType} */
 	private Integer modelCode = AiArtDefaultModelType.chilloutmix_NiPrunedFp32Fix.getCode();
 	private String modelName;
-	private Boolean enableHr = false;
 	private Double denoisingStrength;
-	private Double hrScale;
-	/** {@link AiArtUpscalerType} */
-	private String hrUpscalerName;
-	private Integer hrUpscalerCode;
-	private Integer hrSecondPassSteps;
-	private Integer hrResizeX;
-	private Integer hrResizeY;
 	private String prompts;
 	private String negativePrompts;
 	/** {@link AiArtSamplerType} */
@@ -33,6 +22,22 @@ public class ImageToImageDTO {
 	private Long seed = Long.parseLong("-1");
 	private Long jobId;
 	private boolean isFromApi = false;
+
+	public String getImagesInBase64() {
+		return imagesInBase64;
+	}
+
+	public void setImagesInBase64(String imagesInBase64) {
+		this.imagesInBase64 = imagesInBase64;
+	}
+
+	public String getMaskImageInBase64() {
+		return maskImageInBase64;
+	}
+
+	public void setMaskImageInBase64(String maskImageInBase64) {
+		this.maskImageInBase64 = maskImageInBase64;
+	}
 
 	public Integer getModelCode() {
 		return modelCode;
@@ -50,68 +55,12 @@ public class ImageToImageDTO {
 		this.modelName = modelName;
 	}
 
-	public Boolean getEnableHr() {
-		return enableHr;
-	}
-
-	public void setEnableHr(Boolean enableHr) {
-		this.enableHr = enableHr;
-	}
-
 	public Double getDenoisingStrength() {
 		return denoisingStrength;
 	}
 
 	public void setDenoisingStrength(Double denoisingStrength) {
 		this.denoisingStrength = denoisingStrength;
-	}
-
-	public Double getHrScale() {
-		return hrScale;
-	}
-
-	public void setHrScale(Double hrScale) {
-		this.hrScale = hrScale;
-	}
-
-	public String getHrUpscalerName() {
-		return hrUpscalerName;
-	}
-
-	public void setHrUpscalerName(String hrUpscalerName) {
-		this.hrUpscalerName = hrUpscalerName;
-	}
-
-	public Integer getHrUpscalerCode() {
-		return hrUpscalerCode;
-	}
-
-	public void setHrUpscalerCode(Integer hrUpscalerCode) {
-		this.hrUpscalerCode = hrUpscalerCode;
-	}
-
-	public Integer getHrSecondPassSteps() {
-		return hrSecondPassSteps;
-	}
-
-	public void setHrSecondPassSteps(Integer hrSecondPassSteps) {
-		this.hrSecondPassSteps = hrSecondPassSteps;
-	}
-
-	public Integer getHrResizeX() {
-		return hrResizeX;
-	}
-
-	public void setHrResizeX(Integer hrResizeX) {
-		this.hrResizeX = hrResizeX;
-	}
-
-	public Integer getHrResizeY() {
-		return hrResizeY;
-	}
-
-	public void setHrResizeY(Integer hrResizeY) {
-		this.hrResizeY = hrResizeY;
 	}
 
 	public String getPrompts() {
@@ -204,13 +153,12 @@ public class ImageToImageDTO {
 
 	@Override
 	public String toString() {
-		return "TextToImageDTO [modelCode=" + modelCode + ", modelName=" + modelName + ", enableHr=" + enableHr
-				+ ", denoisingStrength=" + denoisingStrength + ", hrScale=" + hrScale + ", hrUpscalerName="
-				+ hrUpscalerName + ", hrUpscalerCode=" + hrUpscalerCode + ", hrSecondPassSteps=" + hrSecondPassSteps
-				+ ", hrResizeX=" + hrResizeX + ", hrResizeY=" + hrResizeY + ", prompts=" + prompts
-				+ ", negativePrompts=" + negativePrompts + ", sampler=" + sampler + ", width=" + width + ", height="
-				+ height + ", cfgScale=" + cfgScale + ", steps=" + steps + ", batchSize=" + batchSize + ", seed=" + seed
-				+ ", jobId=" + jobId + ", isFromApi=" + isFromApi + "]";
+		return "ImageToImageDTO [modelCode=" + modelCode + ", modelName=" + modelName + ", denoisingStrength="
+				+ denoisingStrength + ", prompts=" + prompts + ", negativePrompts=" + negativePrompts + ", sampler="
+				+ sampler + ", width=" + width + ", height=" + height + ", cfgScale=" + cfgScale + ", steps=" + steps
+				+ ", batchSize=" + batchSize + ", seed=" + seed + ", jobId=" + jobId + ", isFromApi=" + isFromApi + "]";
 	}
+
+	
 
 }
