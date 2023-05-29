@@ -2,15 +2,18 @@ package ai.aiArt.pojo.vo;
 
 import java.util.List;
 
-import ai.aiArt.pojo.dto.TextToImageDTO;
+import ai.aiArt.pojo.dto.ImageToImageDTO;
 import ai.aiArt.pojo.type.AiArtJobStatusType;
+import net.sf.json.JSONObject;
 
 public class AiArtGenerateImageBaseVO {
 
 	private String jobPk;
 	private String createTimeStr;
 	private List<ImgVO> imgVoList;
-	private TextToImageDTO parameter;
+	/** {@link TextToImageDTO} */
+	/** {@link ImageToImageDTO} */
+	private JSONObject parameter;
 	/** {@link AiArtJobStatusType} */
 	private Integer jobStatus;
 	private Integer runCount;
@@ -42,11 +45,11 @@ public class AiArtGenerateImageBaseVO {
 		this.imgVoList = imgVoList;
 	}
 
-	public TextToImageDTO getParameter() {
+	public JSONObject getParameter() {
 		return parameter;
 	}
 
-	public void setParameter(TextToImageDTO parameter) {
+	public void setParameter(JSONObject parameter) {
 		this.parameter = parameter;
 	}
 
@@ -93,8 +96,8 @@ public class AiArtGenerateImageBaseVO {
 	@Override
 	public String toString() {
 		return "AiArtGenerateImageBaseVO [jobPk=" + jobPk + ", createTimeStr=" + createTimeStr + ", imgVoList="
-				+ imgVoList + ", parameter=" + parameter + ", jobStatus=" + jobStatus + ", runCount=" + runCount
-				+ ", isFreeJob=" + isFreeJob + ", modelName=" + modelName + ", samplerName=" + samplerName + "]";
+				+ imgVoList + ", jobStatus=" + jobStatus + ", runCount=" + runCount + ", isFreeJob=" + isFreeJob
+				+ ", modelName=" + modelName + ", samplerName=" + samplerName + "]";
 	}
 
 }
