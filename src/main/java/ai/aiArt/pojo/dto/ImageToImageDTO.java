@@ -22,6 +22,7 @@ public class ImageToImageDTO {
 	private Long seed = Long.parseLong("-1");
 	private Long jobId;
 	private boolean isFromApi = false;
+	private boolean isFromAdmin = false;
 
 	public String getImagesInBase64() {
 		return imagesInBase64;
@@ -151,14 +152,21 @@ public class ImageToImageDTO {
 		this.isFromApi = isFromApi;
 	}
 
+	public boolean getIsFromAdmin() {
+		return isFromAdmin;
+	}
+
+	public void setIsFromAdmin(boolean isFromAdmin) {
+		this.isFromAdmin = isFromAdmin;
+	}
+
 	@Override
 	public String toString() {
 		return "ImageToImageDTO [modelCode=" + modelCode + ", modelName=" + modelName + ", denoisingStrength="
 				+ denoisingStrength + ", prompts=" + prompts + ", negativePrompts=" + negativePrompts + ", sampler="
 				+ sampler + ", width=" + width + ", height=" + height + ", cfgScale=" + cfgScale + ", steps=" + steps
-				+ ", batchSize=" + batchSize + ", seed=" + seed + ", jobId=" + jobId + ", isFromApi=" + isFromApi + "]";
+				+ ", batchSize=" + batchSize + ", seed=" + seed + ", jobId=" + jobId + ", isFromApi=" + isFromApi
+				+ ", isFromAdmin=" + isFromAdmin + "]";
 	}
-
-	
 
 }
