@@ -4,7 +4,7 @@ import java.util.List;
 
 import auxiliaryCommon.pojo.result.CommonResult;
 
-public class AiArtTxtToImgResult extends CommonResult {
+public class AiArtImgResult extends CommonResult {
 
 	private Long jobId;
 	private List<String> imgBase64List;
