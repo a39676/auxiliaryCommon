@@ -15,6 +15,10 @@ public class ImageToImageDTO {
 	private String prompts;
 	private String negativePrompts;
 	private Integer maskBlur;
+	/** true: whole picture; false: only masked */
+	private boolean inpaintFullRes = false;
+	/** true:Inpaint masked; false: Inpaint not masked */
+	private boolean inpaintingMaskInvert = true;
 	private Integer width = 300;
 	private Integer height = 600;
 	private Integer cfgScale = 7;
@@ -97,6 +101,22 @@ public class ImageToImageDTO {
 		this.maskBlur = maskBlur;
 	}
 
+	public boolean getInpaintFullRes() {
+		return inpaintFullRes;
+	}
+
+	public void setInpaintFullRes(boolean inpaintFullRes) {
+		this.inpaintFullRes = inpaintFullRes;
+	}
+
+	public boolean getInpaintingMaskInvert() {
+		return inpaintingMaskInvert;
+	}
+
+	public void setInpaintingMaskInvert(boolean inpaintingMaskInvert) {
+		this.inpaintingMaskInvert = inpaintingMaskInvert;
+	}
+
 	public Integer getWidth() {
 		return width;
 	}
@@ -174,9 +194,10 @@ public class ImageToImageDTO {
 		return "ImageToImageDTO [imagesInBase64=" + imagesInBase64 + ", maskImageInBase64=" + maskImageInBase64
 				+ ", modelCode=" + modelCode + ", modelName=" + modelName + ", sampler=" + sampler
 				+ ", denoisingStrength=" + denoisingStrength + ", prompts=" + prompts + ", negativePrompts="
-				+ negativePrompts + ", maskBlur=" + maskBlur + ", width=" + width + ", height=" + height + ", cfgScale="
-				+ cfgScale + ", steps=" + steps + ", batchSize=" + batchSize + ", seed=" + seed + ", jobId=" + jobId
-				+ ", isFromApi=" + isFromApi + ", isFromAdmin=" + isFromAdmin + "]";
+				+ negativePrompts + ", maskBlur=" + maskBlur + ", inpaintFullRes=" + inpaintFullRes
+				+ ", inpaintingMaskInvert=" + inpaintingMaskInvert + ", width=" + width + ", height=" + height
+				+ ", cfgScale=" + cfgScale + ", steps=" + steps + ", batchSize=" + batchSize + ", seed=" + seed
+				+ ", jobId=" + jobId + ", isFromApi=" + isFromApi + ", isFromAdmin=" + isFromAdmin + "]";
 	}
 
 }
