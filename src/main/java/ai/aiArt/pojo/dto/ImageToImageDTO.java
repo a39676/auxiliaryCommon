@@ -191,8 +191,7 @@ public class ImageToImageDTO {
 
 	@Override
 	public String toString() {
-		return "ImageToImageDTO [imagesInBase64=" + imagesInBase64 + ", maskImageInBase64=" + maskImageInBase64
-				+ ", modelCode=" + modelCode + ", modelName=" + modelName + ", sampler=" + sampler
+		return "ImageToImageDTO [modelCode=" + modelCode + ", modelName=" + modelName + ", sampler=" + sampler
 				+ ", denoisingStrength=" + denoisingStrength + ", prompts=" + prompts + ", negativePrompts="
 				+ negativePrompts + ", maskBlur=" + maskBlur + ", inpaintFullRes=" + inpaintFullRes
 				+ ", inpaintingMaskInvert=" + inpaintingMaskInvert + ", width=" + width + ", height=" + height
