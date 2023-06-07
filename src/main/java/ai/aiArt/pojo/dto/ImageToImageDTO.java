@@ -17,7 +17,7 @@ public class ImageToImageDTO {
 	private Integer maskBlur;
 	/** true: whole picture; false: only masked */
 	private boolean inpaintFullRes = false;
-	/** true:Inpaint masked; false: Inpaint not masked */
+	/** true: Inpaint not masked; false: Inpaint masked */
 	private boolean inpaintingMaskInvert = true;
 	private Integer width = 300;
 	private Integer height = 600;
