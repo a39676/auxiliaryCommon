@@ -12,5 +12,6 @@ public class AiArtApiUrlConstant {
 	public static final String RECEIVE_IMAGE_JOB_RESULT = "/receiveImgJobResultForApi";
 	public static final String HEART_BEAT = "/heartBeat";
 	public static final String GET_RERUN_JOB = "/getRerunJob";
-	
+	public static final String RECEIVE_IMAGE_JOB_RESULT_AND_GET_RERUN_JOB = "/receiveImgJobResultForApiAndGetRerunJob";
+
 }
