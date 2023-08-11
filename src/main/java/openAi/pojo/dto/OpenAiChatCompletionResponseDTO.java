@@ -5,10 +5,10 @@ import java.util.List;
 
 import openAi.pojo.type.OpenAiModelType;
 
-public class OpanAiChatCompletionResponseDTO {
+public class OpenAiChatCompletionResponseDTO {
 
-	private List<OpanAiChatCompletionResponseChoiceDTO> choices;
-	private OpanAiChatCompletionResponseUsageDTO usage;
+	private List<OpenAiChatCompletionResponseChoiceDTO> choices;
+	private OpenAiChatCompletionResponseUsageDTO usage;
 	/** seconds of date */
 	private Long created;
 	private String id;
@@ -17,26 +17,28 @@ public class OpanAiChatCompletionResponseDTO {
 	/** example: chat.completion */
 	private String object;
 
-	public List<OpanAiChatCompletionResponseChoiceDTO> getChoices() {
+	private OpenAiChatCompletionErrorResponseErrorDTO error;
+
+	public List<OpenAiChatCompletionResponseChoiceDTO> getChoices() {
 		return choices;
 	}
 
-	public void setChoices(List<OpanAiChatCompletionResponseChoiceDTO> choices) {
+	public void setChoices(List<OpenAiChatCompletionResponseChoiceDTO> choices) {
 		this.choices = choices;
 	}
 
-	public void addChoices(OpanAiChatCompletionResponseChoiceDTO choice) {
+	public void addChoices(OpenAiChatCompletionResponseChoiceDTO choice) {
 		if (this.choices == null) {
 			this.choices = new ArrayList<>();
 		}
 		this.choices.add(choice);
 	}
 
-	public OpanAiChatCompletionResponseUsageDTO getUsage() {
+	public OpenAiChatCompletionResponseUsageDTO getUsage() {
 		return usage;
 	}
 
-	public void setUsage(OpanAiChatCompletionResponseUsageDTO usage) {
+	public void setUsage(OpenAiChatCompletionResponseUsageDTO usage) {
 		this.usage = usage;
 	}
 
@@ -72,10 +74,18 @@ public class OpanAiChatCompletionResponseDTO {
 		this.object = object;
 	}
 
+	public OpenAiChatCompletionErrorResponseErrorDTO getError() {
+		return error;
+	}
+
+	public void setError(OpenAiChatCompletionErrorResponseErrorDTO error) {
+		this.error = error;
+	}
+
 	@Override
 	public String toString() {
 		return "OpanAiChatCompletionResponseDTO [choices=" + choices + ", usage=" + usage + ", created=" + created
-				+ ", id=" + id + ", model=" + model + ", object=" + object + "]";
+				+ ", id=" + id + ", model=" + model + ", object=" + object + ", error=" + error + "]";
 	}
 
 }

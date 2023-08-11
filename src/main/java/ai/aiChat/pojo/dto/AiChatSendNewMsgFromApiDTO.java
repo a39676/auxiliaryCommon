@@ -3,13 +3,13 @@ package ai.aiChat.pojo.dto;
 import java.util.List;
 import java.util.Map;
 
-import openAi.pojo.dto.OpanAiChatCompletionMessageDTO;
+import openAi.pojo.dto.OpenAiChatCompletionMessageDTO;
 
 public class AiChatSendNewMsgFromApiDTO {
 
 	private String apiKey;
 	private String model;
-	private List<OpanAiChatCompletionMessageDTO> messages;
+	private List<OpenAiChatCompletionMessageDTO> messages;
 	private Double temperature = 1D;
 	private Double top_p = 1D;
 	private Integer n = 1;
@@ -35,11 +35,11 @@ public class AiChatSendNewMsgFromApiDTO {
 		this.model = model;
 	}
 
-	public List<OpanAiChatCompletionMessageDTO> getMessages() {
+	public List<OpenAiChatCompletionMessageDTO> getMessages() {
 		return messages;
 	}
 
-	public void setMessages(List<OpanAiChatCompletionMessageDTO> messages) {
+	public void setMessages(List<OpenAiChatCompletionMessageDTO> messages) {
 		this.messages = messages;
 	}
 

@@ -1,20 +1,20 @@
 package ai.aiChat.pojo.result;
 
-import openAi.pojo.dto.OpanAiChatCompletionMessageDTO;
+import openAi.pojo.dto.OpenAiChatCompletionMessageDTO;
 import openAi.pojo.type.OpenAiChatCompletionFinishType;
 import wechatApi.pojo.result.WechatApiCommonResult;
 
 public class AiChatSendNewMessageResult extends WechatApiCommonResult {
 
-	private OpanAiChatCompletionMessageDTO msgDTO;
+	private OpenAiChatCompletionMessageDTO msgDTO;
 	private OpenAiChatCompletionFinishType finishType;
 	private Integer usage;
 
-	public OpanAiChatCompletionMessageDTO getMsgDTO() {
+	public OpenAiChatCompletionMessageDTO getMsgDTO() {
 		return msgDTO;
 	}
 
-	public void setMsgDTO(OpanAiChatCompletionMessageDTO msgDTO) {
+	public void setMsgDTO(OpenAiChatCompletionMessageDTO msgDTO) {
 		this.msgDTO = msgDTO;
 	}
 

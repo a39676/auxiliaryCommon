@@ -3,17 +3,17 @@ package ai.aiChat.pojo.result;
 import java.util.List;
 
 import auxiliaryCommon.pojo.result.CommonResult;
-import openAi.pojo.dto.OpanAiChatCompletionMessageDTO;
+import openAi.pojo.dto.OpenAiChatCompletionMessageDTO;
 
 public class GetAiChatHistoryResult extends CommonResult {
 
-	private List<OpanAiChatCompletionMessageDTO> msgList;
+	private List<OpenAiChatCompletionMessageDTO> msgList;
 
-	public List<OpanAiChatCompletionMessageDTO> getMsgList() {
+	public List<OpenAiChatCompletionMessageDTO> getMsgList() {
 		return msgList;
 	}
 
-	public void setMsgList(List<OpanAiChatCompletionMessageDTO> msgList) {
+	public void setMsgList(List<OpenAiChatCompletionMessageDTO> msgList) {
 		this.msgList = msgList;
 	}
 

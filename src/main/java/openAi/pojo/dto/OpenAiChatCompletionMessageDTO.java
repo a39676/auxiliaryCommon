@@ -2,7 +2,7 @@ package openAi.pojo.dto;
 
 import openAi.pojo.type.OpenAiChatCompletionMessageRoleType;
 
-public class OpanAiChatCompletionMessageDTO {
+public class OpenAiChatCompletionMessageDTO {
 
 	/** {@link OpenAiChatCompletionMessageRoleType} */
 	private String role;

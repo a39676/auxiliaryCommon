@@ -2,18 +2,18 @@ package openAi.pojo.dto;
 
 import openAi.pojo.type.OpenAiChatCompletionFinishType;
 
-public class OpanAiChatCompletionResponseChoiceDTO {
+public class OpenAiChatCompletionResponseChoiceDTO {
 
 	/** {@link OpenAiChatCompletionFinishType} */
 	private String finish_reason;
 	private Integer index;
-	private OpanAiChatCompletionMessageDTO message;
+	private OpenAiChatCompletionMessageDTO message;
 
-	public OpanAiChatCompletionMessageDTO getMessage() {
+	public OpenAiChatCompletionMessageDTO getMessage() {
 		return message;
 	}
 
-	public void setMessage(OpanAiChatCompletionMessageDTO message) {
+	public void setMessage(OpenAiChatCompletionMessageDTO message) {
 		this.message = message;
 	}
 

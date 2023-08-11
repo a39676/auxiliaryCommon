@@ -1,6 +1,6 @@
 package openAi.pojo.dto;
 
-public class OpanAiChatCompletionResponseUsageDTO {
+public class OpenAiChatCompletionResponseUsageDTO {
 
 	private Integer completion_tokens;
 	private Integer prompt_tokens;
