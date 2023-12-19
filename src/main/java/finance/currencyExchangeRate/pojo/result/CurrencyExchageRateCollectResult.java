@@ -8,9 +8,17 @@ import finance.currencyExchangeRate.pojo.dto.CurrencyExchageRateDataDTO;
 
 public class CurrencyExchageRateCollectResult extends CommonResult {
 
+	private String key;
 	private List<CurrencyExchageRateDataDTO> dataList;
-
 	private boolean isDailyQuery = true;
+
+	public String getKey() {
+		return key;
+	}
+
+	public void setKey(String key) {
+		this.key = key;
+	}
 
 	public List<CurrencyExchageRateDataDTO> getDataList() {
 		return dataList;
@@ -37,7 +45,8 @@ public class CurrencyExchageRateCollectResult extends CommonResult {
 
 	@Override
 	public String toString() {
-		return "CurrencyExchageRateCollectResult [dataList=" + dataList + ", isDailyQuery=" + isDailyQuery + "]";
+		return "CurrencyExchageRateCollectResult [key=" + key + ", dataList=" + dataList + ", isDailyQuery="
+				+ isDailyQuery + "]";
 	}
 
 }
