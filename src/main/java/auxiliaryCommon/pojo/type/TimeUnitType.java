@@ -2,15 +2,15 @@ package auxiliaryCommon.pojo.type;
 
 public enum TimeUnitType {
 	
-	nanoSecond("nanoSecond", "纳秒",  0),
-	milliSecond("milliSecond", "毫秒", 1),
-	second("second", "秒", 2),
-	minute("minute", "分", 3),
-	hour("hour", "时", 4),
-	day("day", "日", 5),
-	week("week", "周", 6),
-	month("month", "月", 7),
-	year("year", "年", 8),
+	NANO_SECOND("nanoSecond", "纳秒",  0),
+	MILLION_SECOND("millionSecond", "毫秒", 1),
+	SECOND("second", "秒", 2),
+	MINUTE("minute", "分", 3),
+	HOUR("hour", "时", 4),
+	DAY("day", "日", 5),
+	WEEK("week", "周", 6),
+	MONTH("month", "月", 7),
+	YEAR("year", "年", 8),
 	;
 	
 	private String name;
