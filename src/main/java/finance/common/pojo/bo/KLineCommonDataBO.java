@@ -3,6 +3,8 @@ package finance.common.pojo.bo;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
+import finance.common.pojo.type.IntervalType;
+
 public class KLineCommonDataBO implements Comparable<KLineCommonDataBO> {
 
 	private Long id;
@@ -24,6 +26,8 @@ public class KLineCommonDataBO implements Comparable<KLineCommonDataBO> {
 	private LocalDateTime createTime;
 
 	private Boolean isDelete;
+
+	private IntervalType interval;
 
 	public Long getId() {
 		return id;
@@ -103,6 +107,14 @@ public class KLineCommonDataBO implements Comparable<KLineCommonDataBO> {
 
 	public void setIsDelete(Boolean isDelete) {
 		this.isDelete = isDelete;
+	}
+
+	public IntervalType getInterval() {
+		return interval;
+	}
+
+	public void setInterval(IntervalType interval) {
+		this.interval = interval;
 	}
 
 	@Override
