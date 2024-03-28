@@ -6,6 +6,9 @@ import java.time.LocalDateTime;
 import auxiliaryCommon.pojo.result.CommonResult;
 
 public class FilterPriceResult extends CommonResult {
+	private BigDecimal startPrice;
+	private BigDecimal endPrice;
+
 	private BigDecimal maxPrice;
 	private BigDecimal minPrice;
 
@@ -14,6 +17,22 @@ public class FilterPriceResult extends CommonResult {
 
 	private LocalDateTime startTime;
 	private LocalDateTime endTime;
+
+	public BigDecimal getStartPrice() {
+		return startPrice;
+	}
+
+	public void setStartPrice(BigDecimal startPrice) {
+		this.startPrice = startPrice;
+	}
+
+	public BigDecimal getEndPrice() {
+		return endPrice;
+	}
+
+	public void setEndPrice(BigDecimal endPrice) {
+		this.endPrice = endPrice;
+	}
 
 	public LocalDateTime getMaxPriceDateTime() {
 		return maxPriceDateTime;
@@ -65,9 +84,9 @@ public class FilterPriceResult extends CommonResult {
 
 	@Override
 	public String toString() {
-		return "FilterBODataResult [maxPrice=" + maxPrice + ", minPrice=" + minPrice + ", maxPriceDateTime="
-				+ maxPriceDateTime + ", minPriceDateTime=" + minPriceDateTime + ", startTime=" + startTime
-				+ ", endTime=" + endTime + "]";
+		return "FilterPriceResult [startPrice=" + startPrice + ", endPrice=" + endPrice + ", maxPrice=" + maxPrice
+				+ ", minPrice=" + minPrice + ", maxPriceDateTime=" + maxPriceDateTime + ", minPriceDateTime="
+				+ minPriceDateTime + ", startTime=" + startTime + ", endTime=" + endTime + "]";
 	}
 
 }
