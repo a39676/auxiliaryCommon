@@ -8,6 +8,7 @@ public enum TelegramBotType {
 	CRYPTO_COIN_LOW_PRICE_NOTICE_BOT("CryptoCoinLowPriceNoticeBot", 4),
 	URGE_NOTICE("UrgeNotice", 5),
 	AI_CHAT_NOTICE("aiChatNoticeBot", 6),
+	NORMAL_MSG("normalMsgBot", 7),
 	;
 	
 	private String name;
