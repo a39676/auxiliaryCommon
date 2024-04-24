@@ -5,14 +5,12 @@ import finance.cryptoCoin.pojo.type.CryptoCoinDataSourceType;
 public class CryptoCoinDailyDataQueryDTO {
 
 	private String coinName;
-
 	private String currencyName;
-
+	private Long startTime;
+	private Long endTime;
 	private Integer counting;
-
 	/** {@link CryptoCoinDataSourceType} **/
 	private Integer dataSourceCode;
-
 	private String apiKey;
 
 	public String getCoinName() {
@@ -29,6 +27,22 @@ public class CryptoCoinDailyDataQueryDTO {
 
 	public void setCurrencyName(String currencyName) {
 		this.currencyName = currencyName;
+	}
+
+	public Long getStartTime() {
+		return startTime;
+	}
+
+	public void setStartTime(Long startTime) {
+		this.startTime = startTime;
+	}
+
+	public Long getEndTime() {
+		return endTime;
+	}
+
+	public void setEndTime(Long endTime) {
+		this.endTime = endTime;
 	}
 
 	public Integer getCounting() {
@@ -57,7 +71,8 @@ public class CryptoCoinDailyDataQueryDTO {
 
 	@Override
 	public String toString() {
-		return "CryptoCoinDailyDataQueryDTO [coinName=" + coinName + ", currencyName=" + currencyName + ", counting="
-				+ counting + ", dataSourceCode=" + dataSourceCode + ", apiKey=" + apiKey + "]";
+		return "CryptoCoinDailyDataQueryDTO [coinName=" + coinName + ", currencyName=" + currencyName + ", startTime="
+				+ startTime + ", endTime=" + endTime + ", counting=" + counting + ", dataSourceCode=" + dataSourceCode
+				+ ", apiKey=" + apiKey + "]";
 	}
 }

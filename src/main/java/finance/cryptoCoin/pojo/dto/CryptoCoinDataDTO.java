@@ -2,40 +2,31 @@ package finance.cryptoCoin.pojo.dto;
 
 import java.util.List;
 
+import finance.cryptoCoin.pojo.bo.CryptoCoinPriceCommonDataBO;
 import finance.cryptoCoin.pojo.type.CryptoCoinDataSourceType;
 
 public class CryptoCoinDataDTO {
 
-	private String cryptoCoinTypeName;
+	private String symbol;
 
-	private String currencyName;
-
-	private List<CryptoCoinDataSubDTO> priceHistoryData;
+	private List<CryptoCoinPriceCommonDataBO> priceHistoryData;
 
 	/** {@link CryptoCoinDataSourceType} **/
 	private Integer dataSourceCode;
 
-	public String getCryptoCoinTypeName() {
-		return cryptoCoinTypeName;
+	public String getSymbol() {
+		return symbol;
 	}
 
-	public void setCryptoCoinTypeName(String cryptoCoinTypeName) {
-		this.cryptoCoinTypeName = cryptoCoinTypeName;
+	public void setSymbol(String symbol) {
+		this.symbol = symbol;
 	}
 
-	public String getCurrencyName() {
-		return currencyName;
-	}
-
-	public void setCurrencyName(String currencyName) {
-		this.currencyName = currencyName;
-	}
-
-	public List<CryptoCoinDataSubDTO> getPriceHistoryData() {
+	public List<CryptoCoinPriceCommonDataBO> getPriceHistoryData() {
 		return priceHistoryData;
 	}
 
-	public void setPriceHistoryData(List<CryptoCoinDataSubDTO> priceHistoryData) {
+	public void setPriceHistoryData(List<CryptoCoinPriceCommonDataBO> priceHistoryData) {
 		this.priceHistoryData = priceHistoryData;
 	}
 
@@ -49,8 +40,8 @@ public class CryptoCoinDataDTO {
 
 	@Override
 	public String toString() {
-		return "CryptoCoinDataDTO [cryptoCoinTypeName=" + cryptoCoinTypeName + ", currencyName=" + currencyName
-				+ ", priceHistoryData=" + priceHistoryData + ", dataSourceCode=" + dataSourceCode + "]";
+		return "CryptoCoinDataDTO [symbol=" + symbol + ", priceHistoryData=" + priceHistoryData + ", dataSourceCode="
+				+ dataSourceCode + "]";
 	}
 
 }
