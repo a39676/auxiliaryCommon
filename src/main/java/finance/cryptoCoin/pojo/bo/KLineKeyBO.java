@@ -1,4 +1,4 @@
-package finance.cryptoCoin.binance.pojo.dto;
+package finance.cryptoCoin.pojo.bo;
 
 import java.util.Objects;
 
