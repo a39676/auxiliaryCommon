@@ -1,4 +1,4 @@
-package finance.cryptoCoin.technicalAnalysis.pojo.bo;
+package finance.technicalAnalysis.pojo.bo;
 
 import java.math.BigDecimal;
 

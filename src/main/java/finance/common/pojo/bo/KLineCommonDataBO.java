@@ -118,6 +118,14 @@ public class KLineCommonDataBO implements Comparable<KLineCommonDataBO> {
 	}
 
 	@Override
+	public String toString() {
+		return "KLineCommonDataBO [id=" + id + ", startPrice=" + startPrice + ", endPrice=" + endPrice + ", highPrice="
+				+ highPrice + ", lowPrice=" + lowPrice + ", volume=" + volume + ", startTime=" + startTime
+				+ ", endTime=" + endTime + ", createTime=" + createTime + ", isDelete=" + isDelete + ", interval="
+				+ interval + "]";
+	}
+
+	@Override
 	public int compareTo(KLineCommonDataBO o) {
 		return compareStartTime(o, this);
 	}
