@@ -73,7 +73,7 @@ public class TechnicalAnalysisUnit {
 		return bollDataList;
 	}
 
-	private <E extends KLineCommonDataBO> List<BigDecimal> getClosePriceList(List<E> dataList) {
+	public <E extends KLineCommonDataBO> List<BigDecimal> getClosePriceList(List<E> dataList) {
 		List<BigDecimal> closePriceList = new ArrayList<>();
 		for (KLineCommonDataBO data : dataList) {
 			closePriceList.add(data.getEndPrice());
@@ -81,7 +81,7 @@ public class TechnicalAnalysisUnit {
 		return closePriceList;
 	}
 
-	private BigDecimal getAvgOfClosePrice(List<BigDecimal> dataList) {
+	public BigDecimal getAvgOfClosePrice(List<BigDecimal> dataList) {
 		if (dataList == null || dataList.isEmpty()) {
 			return null;
 		}
