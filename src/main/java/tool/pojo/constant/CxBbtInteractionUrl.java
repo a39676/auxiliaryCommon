@@ -9,5 +9,4 @@ public class CxBbtInteractionUrl {
 	public static final String CN_STOCK_MARKET_DATA = "/cnStockMarketData";
 	public static final String GET_CRYPTO_COIN_OPTION = "/getCryptoCoinOption";
 	public static final String WORKER_PING = "/ping";
-	public static final String MAKR_SURE_ALIVE_WITH_CTHULHU = "/workerAlive";
 }
