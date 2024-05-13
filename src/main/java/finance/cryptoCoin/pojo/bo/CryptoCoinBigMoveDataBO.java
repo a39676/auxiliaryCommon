@@ -2,12 +2,17 @@ package finance.cryptoCoin.pojo.bo;
 
 import java.math.BigDecimal;
 
+import auxiliaryCommon.pojo.type.TimeUnitType;
+
 public class CryptoCoinBigMoveDataBO implements Comparable<CryptoCoinBigMoveDataBO> {
 
 	private String symbol;
 	private String redirect;
 	private BigDecimal rate;
 	private BigDecimal newPrice;
+	private Integer timeRange;
+	/** {@link TimeUnitType} */
+	private Integer timeUnitTypeCode;
 	private String bigMoveTimeStr;
 
 	public String getSymbol() {
@@ -42,6 +47,22 @@ public class CryptoCoinBigMoveDataBO implements Comparable<CryptoCoinBigMoveData
 		this.newPrice = newPrice;
 	}
 
+	public Integer getTimeRange() {
+		return timeRange;
+	}
+
+	public void setTimeRange(Integer timeRange) {
+		this.timeRange = timeRange;
+	}
+
+	public Integer getTimeUnitTypeCode() {
+		return timeUnitTypeCode;
+	}
+
+	public void setTimeUnitTypeCode(Integer timeUnitTypeCode) {
+		this.timeUnitTypeCode = timeUnitTypeCode;
+	}
+
 	public String getBigMoveTimeStr() {
 		return bigMoveTimeStr;
 	}
@@ -53,7 +74,8 @@ public class CryptoCoinBigMoveDataBO implements Comparable<CryptoCoinBigMoveData
 	@Override
 	public String toString() {
 		return "CryptoCoinBigMoveDataBO [symbol=" + symbol + ", redirect=" + redirect + ", rate=" + rate + ", newPrice="
-				+ newPrice + ", bigMoveTimeStr=" + bigMoveTimeStr + "]";
+				+ newPrice + ", timeRange=" + timeRange + ", intervalTypeCode=" + timeUnitTypeCode + ", bigMoveTimeStr="
+				+ bigMoveTimeStr + "]";
 	}
 
 	@Override
