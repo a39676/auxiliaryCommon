@@ -72,7 +72,7 @@ public class CryptoCoinBigMoveSummaryDataBO implements Comparable<CryptoCoinBigM
 	public String toString() {
 		return "CryptoCoinBigMoveSummaryDataBO [symbol=" + symbol + ", totalRiseRate=" + totalRiseRate
 				+ ", riseCounter=" + riseCounter + ", totalFallRate=" + totalFallRate + ", fallCounter=" + fallCounter
-				+ ", titalRate=" + totalRate + ", totalCounter=" + totalCounter + "]";
+				+ ", totalRate=" + totalRate + ", totalCounter=" + totalCounter + "]";
 	}
 
 	@Override
