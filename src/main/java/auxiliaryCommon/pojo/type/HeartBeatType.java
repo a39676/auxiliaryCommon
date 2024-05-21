@@ -2,7 +2,10 @@ package auxiliaryCommon.pojo.type;
 
 public enum HeartBeatType {
 
-	BBT("bbt", 1), WORKER1("worker1", 2),;
+	BBT("bbt", 0), 
+	WORKER1("worker1", 1),
+	MONITOR("monitor", 2),
+	;
 
 	private String name;
 	private Integer code;
