@@ -9,6 +9,7 @@ public enum TelegramBotType {
 	URGE_NOTICE("UrgeNotice", 5),
 	AI_CHAT_NOTICE("aiChatNoticeBot", 6),
 	NORMAL_MSG("normalMsgBot", 7),
+	CCM_NOTICE("ccmNoticeBot", 8),
 	;
 	
 	private String name;
