@@ -2,7 +2,7 @@ package finance.cryptoCoin.binance.pojo.dto;
 
 import java.math.BigDecimal;
 
-public class DepthLevelDTO {
+public class CryptoCoinBinanceDepthLevelDTO {
 
 	private BigDecimal price;
 	private BigDecimal value;

@@ -3,12 +3,12 @@ package finance.cryptoCoin.binance.pojo.dto;
 import java.time.LocalDateTime;
 import java.util.List;
 
-public class DepthCompleteDTO {
+public class CryptoCoinBinanceDepthCompleteDTO {
 
 	private LocalDateTime updateTime;
 	private String symbol;
-	private List<DepthLevelDTO> sellerList;
-	private List<DepthLevelDTO> buyerList;
+	private List<CryptoCoinBinanceDepthLevelDTO> sellerList;
+	private List<CryptoCoinBinanceDepthLevelDTO> buyerList;
 
 	public LocalDateTime getUpdateTime() {
 		return updateTime;
@@ -26,19 +26,19 @@ public class DepthCompleteDTO {
 		this.symbol = symbol;
 	}
 
-	public List<DepthLevelDTO> getSellerList() {
+	public List<CryptoCoinBinanceDepthLevelDTO> getSellerList() {
 		return sellerList;
 	}
 
-	public void setSellerList(List<DepthLevelDTO> sellerList) {
+	public void setSellerList(List<CryptoCoinBinanceDepthLevelDTO> sellerList) {
 		this.sellerList = sellerList;
 	}
 
-	public List<DepthLevelDTO> getBuyerList() {
+	public List<CryptoCoinBinanceDepthLevelDTO> getBuyerList() {
 		return buyerList;
 	}
 
-	public void setBuyerList(List<DepthLevelDTO> buyerList) {
+	public void setBuyerList(List<CryptoCoinBinanceDepthLevelDTO> buyerList) {
 		this.buyerList = buyerList;
 	}
 
