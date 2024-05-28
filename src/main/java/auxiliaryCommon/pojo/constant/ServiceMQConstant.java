@@ -8,4 +8,5 @@ public class ServiceMQConstant {
 	public static final String CCM_NOTICE = "CryptoCoinCcmNotice";
 	public static final String HEART_BEAT = "HeartBeat";
 
+	public static final String NOTICE_TEST_GROUP = "NoticeTestGroup";
 }
