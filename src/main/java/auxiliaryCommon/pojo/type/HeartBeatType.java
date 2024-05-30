@@ -5,7 +5,6 @@ public enum HeartBeatType {
 	BBT("bbt", 0), 
 	WORKER1("worker1", 1),
 	MONITOR("monitor", 2),
-	MONITOR1("monitor1", 3),
 	;
 
 	private String name;
