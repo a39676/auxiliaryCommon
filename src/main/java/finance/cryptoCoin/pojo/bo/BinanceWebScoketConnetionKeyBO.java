@@ -2,10 +2,14 @@ package finance.cryptoCoin.pojo.bo;
 
 import java.util.Objects;
 
+import finance.cryptoCoin.binance.pojo.type.BinanceWsConnectType;
+
 public class BinanceWebScoketConnetionKeyBO {
 
 	private String symbol;
 	private String interval;
+	private BinanceWsConnectType connectType;
+	private String listenKey;
 
 	public String getSymbol() {
 		return symbol;
@@ -23,9 +27,26 @@ public class BinanceWebScoketConnetionKeyBO {
 		this.interval = interval;
 	}
 
+	public BinanceWsConnectType getConnectType() {
+		return connectType;
+	}
+
+	public void setConnectType(BinanceWsConnectType connectType) {
+		this.connectType = connectType;
+	}
+
+	public String getListenKey() {
+		return listenKey;
+	}
+
+	public void setListenKey(String listenKey) {
+		this.listenKey = listenKey;
+	}
+
 	@Override
 	public String toString() {
-		return "BinanceWebScoketConnetionKeyBO [symbol=" + symbol + ", interval=" + interval + "]";
+		return "BinanceWebScoketConnetionKeyBO [symbol=" + symbol + ", interval=" + interval + ", connectType="
+				+ connectType + ", listenKey=" + listenKey + "]";
 	}
 
 	@Override
@@ -42,7 +63,8 @@ public class BinanceWebScoketConnetionKeyBO {
 		if (getClass() != obj.getClass())
 			return false;
 		BinanceWebScoketConnetionKeyBO other = (BinanceWebScoketConnetionKeyBO) obj;
-		return Objects.equals(interval, other.interval) && Objects.equals(symbol, other.symbol);
+		return Objects.equals(interval, other.interval) && Objects.equals(symbol, other.symbol)
+				&& Objects.equals(connectType, other.connectType) && Objects.equals(listenKey, other.listenKey);
 	}
 
 }
