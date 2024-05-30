@@ -8,6 +8,7 @@ public class CryptoCoinBinanceWebScoketConnetionKeyBO {
 
 	private String symbol;
 	private String interval;
+	private Integer kLineStreamGroupId;
 	private BinanceWsConnectType connectType;
 	private String listenKey;
 
@@ -25,6 +26,14 @@ public class CryptoCoinBinanceWebScoketConnetionKeyBO {
 
 	public void setInterval(String interval) {
 		this.interval = interval;
+	}
+
+	public Integer getkLineStreamGroupId() {
+		return kLineStreamGroupId;
+	}
+
+	public void setkLineStreamGroupId(Integer kLineStreamGroupId) {
+		this.kLineStreamGroupId = kLineStreamGroupId;
 	}
 
 	public BinanceWsConnectType getConnectType() {
@@ -45,8 +54,9 @@ public class CryptoCoinBinanceWebScoketConnetionKeyBO {
 
 	@Override
 	public String toString() {
-		return "BinanceWebScoketConnetionKeyBO [symbol=" + symbol + ", interval=" + interval + ", connectType="
-				+ connectType + ", listenKey=" + listenKey + "]";
+		return "CryptoCoinBinanceWebScoketConnetionKeyBO [symbol=" + symbol + ", interval=" + interval
+				+ ", kLineStreamGroupId=" + kLineStreamGroupId + ", connectType=" + connectType + ", listenKey="
+				+ listenKey + "]";
 	}
 
 	@Override
@@ -64,6 +74,7 @@ public class CryptoCoinBinanceWebScoketConnetionKeyBO {
 			return false;
 		CryptoCoinBinanceWebScoketConnetionKeyBO other = (CryptoCoinBinanceWebScoketConnetionKeyBO) obj;
 		return Objects.equals(interval, other.interval) && Objects.equals(symbol, other.symbol)
+				&& Objects.equals(kLineStreamGroupId, other.kLineStreamGroupId)
 				&& Objects.equals(connectType, other.connectType) && Objects.equals(listenKey, other.listenKey);
 	}
 
