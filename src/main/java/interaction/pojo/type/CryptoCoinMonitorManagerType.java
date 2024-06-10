@@ -2,11 +2,11 @@ package interaction.pojo.type;
 
 public enum CryptoCoinMonitorManagerType {
 	
-	refreshOption("refreshOption", 0),
-	refreshCryptoCoinOption("refreshCryptoCoinOption", 1),
-	refreshCryptoCoinPriceRangeOption("refreshCryptoCoinPriceRangeOption", 2),
-	restartCryptoCoinWebSocketClient("restartCryptoCoinWebSocketClient", 3),
-	clearAllOldRedisKey("clearAllOldRedisKey", 4),
+	REFRESH_OPTION("refreshOption", 0),
+	REFRESH_CRYPTO_COIN_OPTION("refreshCryptoCoinOption", 1),
+	REFRESH_CRYPTO_COIN_PRICE_RANGE_OPTION("refreshCryptoCoinPriceRangeOption", 2),
+	RESTART_CRYPTO_COIN_WEB_SOCKET_CLIENT("restartCryptoCoinWebSocketClient", 3),
+	CLEAN_ALL_OLD_REDIS_KEY("clearAllOldRedisKey", 4),
 	;
 	
 	private String name;
