@@ -6,6 +6,7 @@ import java.util.List;
 public class CryptoCoinBinanceDepthCompleteDTO {
 
 	private LocalDateTime updateTime;
+	private Long lastUpdateId;
 	private String symbol;
 	private List<CryptoCoinBinanceDepthLevelDTO> sellerList;
 	private List<CryptoCoinBinanceDepthLevelDTO> buyerList;
@@ -16,6 +17,14 @@ public class CryptoCoinBinanceDepthCompleteDTO {
 
 	public void setUpdateTime(LocalDateTime updateTime) {
 		this.updateTime = updateTime;
+	}
+
+	public Long getLastUpdateId() {
+		return lastUpdateId;
+	}
+
+	public void setLastUpdateId(Long lastUpdateId) {
+		this.lastUpdateId = lastUpdateId;
 	}
 
 	public String getSymbol() {
@@ -44,8 +53,8 @@ public class CryptoCoinBinanceDepthCompleteDTO {
 
 	@Override
 	public String toString() {
-		return "DepthCompleteDTO [updateTime=" + updateTime + ", symbol=" + symbol + ", sellerList=" + sellerList
-				+ ", buyerList=" + buyerList + "]";
+		return "CryptoCoinBinanceDepthCompleteDTO [updateTime=" + updateTime + ", lastUpdateId=" + lastUpdateId
+				+ ", symbol=" + symbol + ", sellerList=" + sellerList + ", buyerList=" + buyerList + "]";
 	}
 
 }
