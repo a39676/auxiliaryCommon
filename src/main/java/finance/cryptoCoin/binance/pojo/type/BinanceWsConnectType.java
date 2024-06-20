@@ -6,6 +6,7 @@ public enum BinanceWsConnectType {
     BOOK_TICKER("bookTicker", 2),
     DEPTH("depth", 3),
     USER_DATA("userData", 4),
+    FORCE_ORDER("forceOrder", 5),
 	;
 
 	private String name;
