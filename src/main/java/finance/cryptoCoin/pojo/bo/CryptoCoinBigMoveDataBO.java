@@ -14,6 +14,7 @@ public class CryptoCoinBigMoveDataBO implements Comparable<CryptoCoinBigMoveData
 	/** {@link TimeUnitType} */
 	private Integer timeUnitTypeCode;
 	private String bigMoveTimeStr;
+	private Integer version;
 
 	public String getSymbol() {
 		return symbol;
@@ -71,11 +72,19 @@ public class CryptoCoinBigMoveDataBO implements Comparable<CryptoCoinBigMoveData
 		this.bigMoveTimeStr = bigMoveTimeStr;
 	}
 
+	public Integer getVersion() {
+		return version;
+	}
+
+	public void setVersion(Integer version) {
+		this.version = version;
+	}
+
 	@Override
 	public String toString() {
 		return "CryptoCoinBigMoveDataBO [symbol=" + symbol + ", redirect=" + redirect + ", rate=" + rate + ", newPrice="
-				+ newPrice + ", timeRange=" + timeRange + ", intervalTypeCode=" + timeUnitTypeCode + ", bigMoveTimeStr="
-				+ bigMoveTimeStr + "]";
+				+ newPrice + ", timeRange=" + timeRange + ", timeUnitTypeCode=" + timeUnitTypeCode + ", bigMoveTimeStr="
+				+ bigMoveTimeStr + ", version=" + version + "]";
 	}
 
 	@Override
