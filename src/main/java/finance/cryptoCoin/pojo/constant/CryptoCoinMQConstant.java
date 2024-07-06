@@ -11,5 +11,6 @@ public class CryptoCoinMQConstant {
 	public static final String CCM_NOTICE = "CryptoCoinCcmNotice";
 	public static final String SET_ORDER = "CryptoCoinSetOrder";
 	public static final String ORDER_RESULT_FEEDBACK = "CryptoCoinOrderResultFeedback";
+	public static final String INDEX_DATA = "CryptoCoinIndexData";
 
 }
