@@ -2,7 +2,10 @@ package finance.cryptoCoin.binance.pojo.type;
 
 public enum BinancePositionSideType {
 
-	LONG("LONG", 1), SHORT("SHORT", 2),;
+	LONG("LONG", 1), 
+	SHORT("SHORT", 2),
+	BOTH("BOTH", 3),
+	;
 
 	private String name;
 	private Integer code;
