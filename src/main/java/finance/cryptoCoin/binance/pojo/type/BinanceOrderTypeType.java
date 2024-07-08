@@ -23,7 +23,7 @@ public enum BinanceOrderTypeType {
 		return name;
 	}
 
-	Integer getCode() {
+	public Integer getCode() {
 		return code;
 	}
 
