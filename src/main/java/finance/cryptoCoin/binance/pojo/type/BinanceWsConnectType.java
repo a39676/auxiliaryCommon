@@ -21,7 +21,7 @@ public enum BinanceWsConnectType {
 		return name;
 	}
 
-	Integer getCode() {
+	public Integer getCode() {
 		return code;
 	}
 

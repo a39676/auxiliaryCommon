@@ -24,7 +24,7 @@ public enum BinanceUserDataEventType {
 		return name;
 	}
 
-	Integer getCode() {
+	public Integer getCode() {
 		return code;
 	}
 

@@ -6,16 +6,16 @@ import finance.cryptoCoin.binance.pojo.type.BinancePositionSideType;
 
 public class CryptoCoinBinanceFutureOrderDTO {
 
-	private String symbol;
-	private Double amount;
+	protected String symbol;
+	protected Double amount;
 	/** {@link BinanceOrderSideType} */
-	private Integer orderSideCode;
+	protected Integer orderSideCode;
 	/** {@link BinancePositionSideType} */
-	private Integer positionSideCode;
+	protected Integer positionSideCode;
 	/** {@link BinanceOrderTypeType} */
-	private Integer orderTypeCode;
+	protected Integer orderTypeCode;
 	/** 配合限价设置,根据 现价 * preOrderRatio=下单价格; 如空,以现价发出限价单; 例: 设置限价为现价的 97% 则设置为 -3 */
-	private Double preOrderRatio;
+	protected Double preOrderRatio;
 
 	public String getSymbol() {
 		return symbol;

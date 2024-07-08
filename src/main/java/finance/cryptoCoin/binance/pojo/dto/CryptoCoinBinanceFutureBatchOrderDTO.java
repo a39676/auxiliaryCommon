@@ -16,7 +16,9 @@ public class CryptoCoinBinanceFutureBatchOrderDTO extends CryptoCoinBinanceFutur
 
 	@Override
 	public String toString() {
-		return "CryptoCoinBinanceFutureBatchOrderDTO [symbols=" + symbols + "]";
+		return "CryptoCoinBinanceFutureBatchOrderDTO [symbols=" + symbols + ", symbol=" + symbol + ", amount=" + amount
+				+ ", orderSideCode=" + orderSideCode + ", positionSideCode=" + positionSideCode + ", orderTypeCode="
+				+ orderTypeCode + ", preOrderRatio=" + preOrderRatio + "]";
 	}
 
 }
