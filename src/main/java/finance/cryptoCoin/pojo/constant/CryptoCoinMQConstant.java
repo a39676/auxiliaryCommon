@@ -14,5 +14,6 @@ public class CryptoCoinMQConstant {
 	public static final String INDEX_DATA = "CryptoCoinIndexData";
 	public static final String BINANCE_UM_FUTURE_ORDER = "CryptoCoinBinanceUmFutureOrder";
 	public static final String BINANCE_UM_BTC_ARBITRAGE_WITH_BATCH = "CryptoCoinBinanceUmBtcArbitrageWithBatch";
+	public static final String BINANCE_UM_FUTURE_ORDER_MODIFY = "CryptoCoinBinanceUmFutureOrderModify";
 
 }

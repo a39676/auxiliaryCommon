@@ -5,15 +5,15 @@ public enum BinanceOrderExecutionType {
 	/** The order has been accepted into the engine. */
 	NEW("NEW", 1) ,
 	/** The order has been canceled by the user. */
-	CANCELED("CANCELED", 1) ,
+	CANCELED("CANCELED", 2) ,
 	/** The order has been rejected and was not processed  */
-	REJECTED("REJECTED", 1) ,
+	REJECTED("REJECTED", 3) ,
 	/** Part of the order or all of the order's quantity has filled. */
-	TRADE("TRADE", 1) ,
+	TRADE("TRADE", 4) ,
 	/** The order was canceled according to the order type's rules  */
-	EXPIRED("EXPIRED", 1) ,
+	EXPIRED("EXPIRED", 5) ,
 	/** The order has expired due to STP trigger. */
-	TRADE_PREVENTION("TRADE_PREVENTION", 1) ,
+	TRADE_PREVENTION("TRADE_PREVENTION", 6) ,
 	;
 
 	private String name;
