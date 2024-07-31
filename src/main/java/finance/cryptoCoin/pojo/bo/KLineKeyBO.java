@@ -2,9 +2,12 @@ package finance.cryptoCoin.pojo.bo;
 
 import java.util.Objects;
 
+import finance.common.pojo.type.IntervalType;
+
 public class KLineKeyBO {
 
 	private String symbol;
+	/** {@link IntervalType} */
 	private String interval;
 
 	public String getSymbol() {
