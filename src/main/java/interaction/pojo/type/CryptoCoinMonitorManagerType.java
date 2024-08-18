@@ -7,7 +7,8 @@ public enum CryptoCoinMonitorManagerType {
 	REFRESH_CRYPTO_COIN_PRICE_RANGE_OPTION("refreshCryptoCoinPriceRangeOption", 2),
 	RESTART_CRYPTO_COIN_WEB_SOCKET_CLIENT("restartCryptoCoinWebSocketClient", 3),
 	CLEAN_ALL_OLD_REDIS_KEY("clearAllOldRedisKey", 4), 
-	REFRESH_BINANCE_TRADING_OPTION("refreshBinanceTradingOption", 5);
+	REFRESH_BINANCE_TRADING_OPTION("refreshBinanceTradingOption", 5),
+	REFRESH_CRYPTO_COIN_INDEX_GAP_OPTION("refreshCryptoCoinIndexGapOption", 6),
 	;
 
 	private String name;
