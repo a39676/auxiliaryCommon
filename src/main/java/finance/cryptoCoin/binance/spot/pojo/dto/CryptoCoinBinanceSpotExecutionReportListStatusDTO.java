@@ -1,4 +1,4 @@
-package finance.cryptoCoin.binance.pojo.dto;
+package finance.cryptoCoin.binance.spot.pojo.dto;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -6,7 +6,7 @@ import java.util.List;
 
 import finance.cryptoCoin.binance.pojo.type.BinanceUserDataEventType;
 
-public class CryptoCoinBinanceExecutionReportListStatusDTO {
+public class CryptoCoinBinanceSpotExecutionReportListStatusDTO {
 
 	private BinanceUserDataEventType eventType = BinanceUserDataEventType.LIST_STATUS;
 	private LocalDateTime eventTime;
@@ -18,7 +18,7 @@ public class CryptoCoinBinanceExecutionReportListStatusDTO {
 	private String listRejectReason;
 	private String ListClientOrderId;
 	private LocalDateTime transactionType;
-	private List<CryptoCoinBinanceListStatusObjectDTO> objectList = new ArrayList<>();
+	private List<CryptoCoinBinanceSpotListStatusObjectDTO> objectList = new ArrayList<>();
 
 	public BinanceUserDataEventType getEventType() {
 		return eventType;
@@ -100,11 +100,11 @@ public class CryptoCoinBinanceExecutionReportListStatusDTO {
 		this.transactionType = transactionType;
 	}
 
-	public List<CryptoCoinBinanceListStatusObjectDTO> getObjectList() {
+	public List<CryptoCoinBinanceSpotListStatusObjectDTO> getObjectList() {
 		return objectList;
 	}
 
-	public void setObjectList(List<CryptoCoinBinanceListStatusObjectDTO> objectList) {
+	public void setObjectList(List<CryptoCoinBinanceSpotListStatusObjectDTO> objectList) {
 		this.objectList = objectList;
 	}
 

@@ -1,15 +1,15 @@
-package finance.cryptoCoin.binance.pojo.dto;
+package finance.cryptoCoin.binance.spot.pojo.dto;
 
 import java.time.LocalDateTime;
 import java.util.List;
 
-public class CryptoCoinBinanceDepthCompleteDTO {
+public class CryptoCoinBinanceSpotDepthCompleteDTO {
 
 	private LocalDateTime updateTime;
 	private Long lastUpdateId;
 	private String symbol;
-	private List<CryptoCoinBinanceDepthLevelDTO> sellerList;
-	private List<CryptoCoinBinanceDepthLevelDTO> buyerList;
+	private List<CryptoCoinBinanceSpotDepthLevelDTO> sellerList;
+	private List<CryptoCoinBinanceSpotDepthLevelDTO> buyerList;
 
 	public LocalDateTime getUpdateTime() {
 		return updateTime;
@@ -35,19 +35,19 @@ public class CryptoCoinBinanceDepthCompleteDTO {
 		this.symbol = symbol;
 	}
 
-	public List<CryptoCoinBinanceDepthLevelDTO> getSellerList() {
+	public List<CryptoCoinBinanceSpotDepthLevelDTO> getSellerList() {
 		return sellerList;
 	}
 
-	public void setSellerList(List<CryptoCoinBinanceDepthLevelDTO> sellerList) {
+	public void setSellerList(List<CryptoCoinBinanceSpotDepthLevelDTO> sellerList) {
 		this.sellerList = sellerList;
 	}
 
-	public List<CryptoCoinBinanceDepthLevelDTO> getBuyerList() {
+	public List<CryptoCoinBinanceSpotDepthLevelDTO> getBuyerList() {
 		return buyerList;
 	}
 
-	public void setBuyerList(List<CryptoCoinBinanceDepthLevelDTO> buyerList) {
+	public void setBuyerList(List<CryptoCoinBinanceSpotDepthLevelDTO> buyerList) {
 		this.buyerList = buyerList;
 	}
 

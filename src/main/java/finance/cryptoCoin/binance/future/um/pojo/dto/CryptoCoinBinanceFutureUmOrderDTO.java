@@ -1,4 +1,4 @@
-package finance.cryptoCoin.binance.pojo.dto;
+package finance.cryptoCoin.binance.future.um.pojo.dto;
 
 import java.math.BigDecimal;
 
@@ -9,7 +9,7 @@ import finance.cryptoCoin.binance.pojo.type.BinancePositionSideType;
 /**
  * 
  */
-public class CryptoCoinBinanceFutureOrderDTO {
+public class CryptoCoinBinanceFutureUmOrderDTO {
 
 	protected String symbol;
 	protected Double amount;

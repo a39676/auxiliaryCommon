@@ -1,6 +1,6 @@
-package finance.cryptoCoin.binance.pojo.dto;
+package finance.cryptoCoin.binance.spot.pojo.dto;
 
-public class CryptoCoinBinanceListStatusObjectDTO {
+public class CryptoCoinBinanceSpotListStatusObjectDTO {
 
 	private String symbol;
 	private Long id;

@@ -1,4 +1,4 @@
-package finance.cryptoCoin.binance.pojo.dto;
+package finance.cryptoCoin.binance.future.um.pojo.dto;
 
 import java.math.BigDecimal;
 import java.util.List;

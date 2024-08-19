@@ -1,6 +1,6 @@
-package finance.cryptoCoin.binance.pojo.dto;
+package finance.cryptoCoin.binance.future.um.pojo.dto;
 
-public class CryptoCoinBinanceGetLongShortPositionRatioDetailDTO {
+public class CryptoCoinBinanceFutureUmGetLongShortPositionRatioDetailDTO {
 
 	private String symbol; // "BTCUSDT"
 	private Double longAccount; // "0.5352"

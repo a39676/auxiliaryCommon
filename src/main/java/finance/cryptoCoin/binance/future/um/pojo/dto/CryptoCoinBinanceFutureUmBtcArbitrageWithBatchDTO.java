@@ -1,8 +1,8 @@
-package finance.cryptoCoin.binance.pojo.dto;
+package finance.cryptoCoin.binance.future.um.pojo.dto;
 
 import java.util.List;
 
-public class CryptoCoinBinanceBtArbitrageWithBatchDTO {
+public class CryptoCoinBinanceFutureUmBtcArbitrageWithBatchDTO {
 
 	private List<String> symbols;
 	private Double singleAmount;

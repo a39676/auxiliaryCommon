@@ -1,10 +1,10 @@
-package finance.cryptoCoin.binance.pojo.dto;
+package finance.cryptoCoin.binance.spot.pojo.dto;
 
 import java.time.LocalDateTime;
 
 import finance.cryptoCoin.binance.pojo.type.BinanceUserDataEventType;
 
-public class CryptoCoinBinanceExecutionReportDTO {
+public class CryptoCoinBinanceSpotExecutionReportDTO {
 	private BinanceUserDataEventType eventType;
 	private LocalDateTime eventTime;
 	private String symbol;

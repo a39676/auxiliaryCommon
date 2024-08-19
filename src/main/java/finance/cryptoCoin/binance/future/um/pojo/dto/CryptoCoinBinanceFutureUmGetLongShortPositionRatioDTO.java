@@ -1,8 +1,8 @@
-package finance.cryptoCoin.binance.pojo.dto;
+package finance.cryptoCoin.binance.future.um.pojo.dto;
 
 import finance.common.pojo.type.IntervalType;
 
-public class CryptoCoinBinanceGetLongShortPositionRatioDTO {
+public class CryptoCoinBinanceFutureUmGetLongShortPositionRatioDTO {
 
 	private String symbol;
 	private IntervalType intervalType;

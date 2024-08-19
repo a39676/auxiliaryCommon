@@ -1,6 +1,6 @@
-package finance.cryptoCoin.binance.pojo.dto;
+package finance.cryptoCoin.binance.spot.pojo.dto;
 
-public class CryptoCoinBinanceBalanceArraySubDTO {
+public class CryptoCoinBinanceSpotBalanceArraySubDTO {
 
 	/** "ETH" Asset */
 	private String assetName;

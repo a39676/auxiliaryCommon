@@ -1,8 +1,8 @@
-package finance.cryptoCoin.binance.pojo.dto;
+package finance.cryptoCoin.binance.spot.pojo.dto;
 
 import java.math.BigDecimal;
 
-public class CryptoCoinBinanceDepthLevelDTO {
+public class CryptoCoinBinanceSpotDepthLevelDTO {
 
 	private BigDecimal price;
 	private BigDecimal value;
