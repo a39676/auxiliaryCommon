@@ -3,11 +3,13 @@ package finance.cryptoCoin.binance.pojo.type;
 public enum BinanceWsConnectType {
 
 	K_LINE_SPOT("kLineSpot", 1),
-	K_LINE_FUTURE_UM("kLineFutureUm", 6),
-    BOOK_TICKER("bookTicker", 2),
+    SPOT_BOOK_TICKER("spotBookTicker", 2),
     DEPTH("depth", 3),
     USER_DATA("userData", 4),
     FORCE_ORDER("forceOrder", 5),
+    K_LINE_FUTURE_UM("kLineFutureUm", 6),
+    FUTURE_UM_ALL_BOOK_TICKER("futureUmAllBookTicker", 7),
+    FUTURE_UM_ALL_TRADE("futureUmAllTrade", 8),
 	;
 
 	private String name;
