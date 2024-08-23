@@ -2,6 +2,8 @@ package finance.cryptoCoin.pojo.bo;
 
 import java.math.BigDecimal;
 
+import finance.cryptoCoin.pojo.type.CryptoCoinBigMoveDataType;
+
 public class CryptoCoinBigTradeDataBO {
 
 	private String symbol;
@@ -10,6 +12,8 @@ public class CryptoCoinBigTradeDataBO {
 	private BigDecimal quantity;
 	private Boolean isMaker;
 	private String bigTradeTimeStr;
+	/** {@link CryptoCoinBigMoveDataType} */
+	private Integer dataType;
 
 	public String getSymbol() {
 		return symbol;
@@ -57,6 +61,14 @@ public class CryptoCoinBigTradeDataBO {
 
 	public void setBigTradeTimeStr(String bigTradeTimeStr) {
 		this.bigTradeTimeStr = bigTradeTimeStr;
+	}
+
+	public Integer getDataType() {
+		return dataType;
+	}
+
+	public void setDataType(Integer dataType) {
+		this.dataType = dataType;
 	}
 
 	@Override
