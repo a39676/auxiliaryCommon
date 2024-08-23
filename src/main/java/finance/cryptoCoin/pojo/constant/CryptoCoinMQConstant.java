@@ -5,7 +5,8 @@ public class CryptoCoinMQConstant {
 	public static final String MANAGE = "CryptoCoinManage";
 	public static final String DAILY_DATA_QUERY = "CryptoCoinDailyDataQuery";
 	public static final String DAILY_DATA = "CryptoCoinDailyData";
-	public static final String BIG_MOVE_DATA = "CryptoCoinBigMoveData";
+	public static final String BIG_MOVE_SPOT_DATA = "CryptoCoinBigMoveSpotData";
+	public static final String BIG_TRADE_FUTURE_UM_DATA = "CryptoCoinBigTradeFutureUmData";
 	public static final String NORMAL_MESSAGE_QUEUE = "CryptoCoinNormalMsg";
 	public static final String MID_SMALL_CAPITALIZATION_MSG = "CryptoCoinMidSmallCapMsg";
 	public static final String CCM_NOTICE = "CryptoCoinCcmNotice";
