@@ -9,6 +9,7 @@ public enum CryptoCoinMonitorManagerType {
 	CLEAN_ALL_OLD_REDIS_KEY("clearAllOldRedisKey", 4), 
 	REFRESH_BINANCE_TRADING_OPTION("refreshBinanceTradingOption", 5),
 	REFRESH_CRYPTO_COIN_INDEX_GAP_OPTION("refreshCryptoCoinIndexGapOption", 6),
+	RECONNECT_BINANCE_BIG_TRADE_STREAM("refreshBinanceBigTradeStream", 7),
 	;
 
 	private String name;
