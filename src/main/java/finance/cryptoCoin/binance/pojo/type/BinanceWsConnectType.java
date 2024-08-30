@@ -10,6 +10,7 @@ public enum BinanceWsConnectType {
     K_LINE_FUTURE_UM("kLineFutureUm", 6),
     FUTURE_UM_ALL_BOOK_TICKER("futureUmAllBookTicker", 7),
     FUTURE_UM_ALL_TRADE("futureUmAllTrade", 8),
+    FUTURE_UM_ALL_FORCE_ORDER("futureUmAllForceOrder", 9),
 	;
 
 	private String name;
