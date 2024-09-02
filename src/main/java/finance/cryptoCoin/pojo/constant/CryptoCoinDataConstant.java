@@ -49,15 +49,4 @@ public class CryptoCoinDataConstant {
 	 */
 	public static final int CRYPTO_COIN_60MINUTE_DATA_LIVE_HOURS = 24 * 5;
 	
-	/** 
-	 * 2024-07-06
-	 * 中小市值指数保留ID
-	 * */
-	public static final Integer LOW_CAP_INDEX_CATALOG_ID = -2;
-	
-	/** 
-	 * 2024-07-06
-	 * 中小市值指数保留 coin type
-	 * */
-	public static final String LOW_CAP_INDEX_CATALOG_NAME = "LowCap";
 }
