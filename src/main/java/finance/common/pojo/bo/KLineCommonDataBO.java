@@ -127,10 +127,10 @@ public class KLineCommonDataBO implements Comparable<KLineCommonDataBO> {
 
 	@Override
 	public int compareTo(KLineCommonDataBO o) {
-		return compareStartTime(o, this);
+		return compareStartTime(this, o);
 	}
 
-	private int compareStartTime(KLineCommonDataBO o, KLineCommonDataBO t) {
+	private int compareStartTime(KLineCommonDataBO t, KLineCommonDataBO o) {
 		if (o.getStartTime() == null || t.getStartTime() == null) {
 			if (o.getStartTime() == null && t.getStartTime() == null) {
 				return 0;
