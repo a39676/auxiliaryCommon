@@ -5,11 +5,12 @@ import java.math.BigDecimal;
 import finance.cryptoCoin.binance.pojo.type.BinanceOrderSideType;
 import finance.cryptoCoin.binance.pojo.type.BinanceOrderTypeType;
 import finance.cryptoCoin.binance.pojo.type.BinancePositionSideType;
+import finance.cryptoCoin.common.pojo.dto.CryptoCoinOrderCommonDTO;
 
 /**
  * 
  */
-public class CryptoCoinBinanceFutureUmOrderDTO {
+public class CryptoCoinBinanceFutureUmOrderDTO extends CryptoCoinOrderCommonDTO {
 
 	protected String symbol;
 	protected Double amount;
@@ -23,6 +24,30 @@ public class CryptoCoinBinanceFutureUmOrderDTO {
 	protected Double preOrderRatio;
 	/** 仅为平仓单使用, 设置为平仓百分比, 例: 设置平仓比例为现有持仓的 30%, 则设置 30 */
 	protected BigDecimal closePositionQuantityRatio;
+
+	public Integer getUserId() {
+		return userId;
+	}
+
+	public void setUserId(Integer userId) {
+		this.userId = userId;
+	}
+
+	public String getUserNickname() {
+		return userNickname;
+	}
+
+	public void setUserNickname(String userNickname) {
+		this.userNickname = userNickname;
+	}
+
+	public String getTotpCode() {
+		return totpCode;
+	}
+
+	public void setTotpCode(String totpCode) {
+		this.totpCode = totpCode;
+	}
 
 	public String getSymbol() {
 		return symbol;
@@ -82,10 +107,10 @@ public class CryptoCoinBinanceFutureUmOrderDTO {
 
 	@Override
 	public String toString() {
-		return "CryptoCoinBinanceFutureOrderDTO [symbol=" + symbol + ", amount=" + amount + ", orderSideCode="
-				+ orderSideCode + ", positionSideCode=" + positionSideCode + ", orderTypeCode=" + orderTypeCode
-				+ ", preOrderRatio=" + preOrderRatio + ", closePositionQuantityRatio=" + closePositionQuantityRatio
-				+ "]";
+		return "CryptoCoinBinanceFutureUmOrderDTO [userId=" + userId + ", userNickname=" + userNickname + ", totpCode="
+				+ totpCode + ", symbol=" + symbol + ", amount=" + amount + ", orderSideCode=" + orderSideCode
+				+ ", positionSideCode=" + positionSideCode + ", orderTypeCode=" + orderTypeCode + ", preOrderRatio="
+				+ preOrderRatio + ", closePositionQuantityRatio=" + closePositionQuantityRatio + "]";
 	}
 
 }

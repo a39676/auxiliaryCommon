@@ -3,6 +3,7 @@ package finance.cryptoCoin.binance.pojo.dto;
 public class CryptoCoinBinanceUserKeysDTO {
 
 	private Integer localUserId;
+	private String nickname;
 	private String binanceApiKey;
 	private String binanceSecretKey;
 	private String gateIoApiKey;
@@ -14,6 +15,14 @@ public class CryptoCoinBinanceUserKeysDTO {
 
 	public void setLocalUserId(Integer localUserId) {
 		this.localUserId = localUserId;
+	}
+
+	public String getNickname() {
+		return nickname;
+	}
+
+	public void setNickname(String nickname) {
+		this.nickname = nickname;
 	}
 
 	public String getBinanceApiKey() {
@@ -50,9 +59,9 @@ public class CryptoCoinBinanceUserKeysDTO {
 
 	@Override
 	public String toString() {
-		return "CryptoCoinBinanceUserKeysDTO [localUserId=" + localUserId + ", binanceApiKey=" + binanceApiKey
-				+ ", binanceSecretKey=" + binanceSecretKey + ", gateIoApiKey=" + gateIoApiKey + ", gateIoSecretKey="
-				+ gateIoSecretKey + "]";
+		return "CryptoCoinBinanceUserKeysDTO [localUserId=" + localUserId + ", nickname=" + nickname
+				+ ", binanceApiKey=" + binanceApiKey + ", binanceSecretKey=" + binanceSecretKey + ", gateIoApiKey="
+				+ gateIoApiKey + ", gateIoSecretKey=" + gateIoSecretKey + "]";
 	}
 
 }

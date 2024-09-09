@@ -15,11 +15,11 @@ public class TimeBasedOneTimePassword {
 	private static final int timePeriod = 30;
 	private static final CodeVerifier verifier = new DefaultCodeVerifier(codeGenerator, timeProvider);
 
-	public static boolean isValid(String secret, String actualCode) {
+	public boolean isValid(String secret, String actualCode) {
 		return verifier.isValidCode(secret, actualCode);
 	}
 	
-	public static String generatorCode(String secret) {
+	public String generatorCode(String secret) {
 		long currentBucket = Math.floorDiv(timeProvider.getTime(), timePeriod);
 		try {
 			return codeGenerator.generate(secret, currentBucket);

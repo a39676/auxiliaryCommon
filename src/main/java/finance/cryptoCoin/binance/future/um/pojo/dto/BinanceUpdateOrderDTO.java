@@ -5,8 +5,9 @@ import java.util.List;
 
 import finance.cryptoCoin.binance.pojo.type.BinanceOrderSideType;
 import finance.cryptoCoin.binance.pojo.type.BinancePositionSideType;
+import finance.cryptoCoin.common.pojo.dto.CryptoCoinOrderCommonDTO;
 
-public class BinanceUpdateOrderDTO {
+public class BinanceUpdateOrderDTO extends CryptoCoinOrderCommonDTO {
 
 	private List<String> symbols;
 	private String orderId;

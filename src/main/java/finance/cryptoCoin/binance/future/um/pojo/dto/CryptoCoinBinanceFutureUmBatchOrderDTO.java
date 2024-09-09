@@ -14,12 +14,10 @@ public class CryptoCoinBinanceFutureUmBatchOrderDTO extends CryptoCoinBinanceFut
 		this.symbols = symbols;
 	}
 
+
 	@Override
 	public String toString() {
-		return "CryptoCoinBinanceFutureBatchOrderDTO [symbols=" + symbols + ", symbol=" + symbol + ", amount=" + amount
-				+ ", orderSideCode=" + orderSideCode + ", positionSideCode=" + positionSideCode + ", orderTypeCode="
-				+ orderTypeCode + ", preOrderRatio=" + preOrderRatio + ", closePositionQuantityRatio="
-				+ closePositionQuantityRatio + "]";
+		return "CryptoCoinBinanceFutureUmBatchOrderDTO [symbols=" + symbols + "]";
 	}
 
 }
