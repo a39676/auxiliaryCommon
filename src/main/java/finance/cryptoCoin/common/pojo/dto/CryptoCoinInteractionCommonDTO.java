@@ -1,6 +1,6 @@
 package finance.cryptoCoin.common.pojo.dto;
 
-public class CryptoCoinOrderCommonDTO {
+public class CryptoCoinInteractionCommonDTO {
 	protected Integer userId;
 	protected String userNickname;
 	protected String totpCode;

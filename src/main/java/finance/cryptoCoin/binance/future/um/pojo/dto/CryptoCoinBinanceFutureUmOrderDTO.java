@@ -5,12 +5,12 @@ import java.math.BigDecimal;
 import finance.cryptoCoin.binance.pojo.type.BinanceOrderSideType;
 import finance.cryptoCoin.binance.pojo.type.BinanceOrderTypeType;
 import finance.cryptoCoin.binance.pojo.type.BinancePositionSideType;
-import finance.cryptoCoin.common.pojo.dto.CryptoCoinOrderCommonDTO;
+import finance.cryptoCoin.common.pojo.dto.CryptoCoinInteractionCommonDTO;
 
 /**
  * 
  */
-public class CryptoCoinBinanceFutureUmOrderDTO extends CryptoCoinOrderCommonDTO {
+public class CryptoCoinBinanceFutureUmOrderDTO extends CryptoCoinInteractionCommonDTO {
 
 	protected String symbol;
 	protected Double amount;
