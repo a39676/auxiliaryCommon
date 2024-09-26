@@ -19,7 +19,7 @@ public class CryptoCoinBinanceSpotAccountInfoDTO {
 	private Boolean preventSor;
 	private Long updateTime;
 	private String accountType;
-	private CryptoCoinBinanceSpotBalancesDetailDTO balances;
+	private List<CryptoCoinBinanceSpotBalancesDetailDTO> balances;
 	private List<String> permissions;
 	private Long uid;
 
@@ -127,11 +127,11 @@ public class CryptoCoinBinanceSpotAccountInfoDTO {
 		this.accountType = accountType;
 	}
 
-	public CryptoCoinBinanceSpotBalancesDetailDTO getBalances() {
+	public List<CryptoCoinBinanceSpotBalancesDetailDTO> getBalances() {
 		return balances;
 	}
 
-	public void setBalances(CryptoCoinBinanceSpotBalancesDetailDTO balances) {
+	public void setBalances(List<CryptoCoinBinanceSpotBalancesDetailDTO> balances) {
 		this.balances = balances;
 	}
 
