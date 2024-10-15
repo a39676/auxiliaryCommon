@@ -2,42 +2,38 @@ package finance.cryptoCoin.binance.future.um.pojo.dto;
 
 import java.math.BigDecimal;
 
-public class CryptoCoinBinanceFutureUmPositionDetailDTO {
+public class CryptoCoinBinanceFutureCmPositionDetailDTO {
 
-	/** "BTCUSDT", // 交易对 */
+	/** "BTCUSD_201225" */
 	private String symbol;
-	/** "0.000", // 头寸数量，符号代表多空方向, 正数为多，负数为空 */
+	/** "0" */
 	private BigDecimal positionAmt;
-	/** "0.00000", // 开仓均价 */
+	/** "0.0" */
 	private BigDecimal entryPrice;
-	/** "0.0", // 盈亏平衡价 */
+	/** "0.0", // break-even pric */
 	private BigDecimal breakEvenPrice;
-	/** "6679.50671178", // 当前标记价格 */
+	/** "0.00000000" */
 	private BigDecimal markPrice;
-	/** "0.00000000", // 持仓未实现盈亏 */
+	/** "0.00000000" */
 	private BigDecimal unRealizedProfit;
-	/** "0", // 参考强平价格 */
+	/** "0" */
 	private BigDecimal liquidationPrice;
-	/** "10", // 当前杠杆倍数 */
+	/** "125" */
 	private Integer leverage;
-	/** "20000000", // 当前杠杆倍数允许的名义价值上限 */
-	private BigDecimal maxNotionalValue;
+	/** "50", // maximum quantity of base asse */
+	private BigDecimal maxQty;
 	/** "cross", "isolated", // 逐仓模式或全仓模式 */
 	private String marginType;
 	/** "0.00000000", // 逐仓保证金 */
 	private BigDecimal isolatedMargin;
-	/** "false", */
+	/** "false" */
 	private Boolean isAutoAddMargin;
 	/** "BOTH", // 持仓方向 */
 	private String positionSide;
-	/** "0", */
-	private String notional;
-	/** "0", */
-	private String isolatedWallet;
-	/** 1625474304765 // 更新时间 */
+	/** 0" */
+	private String notionalValue;
+	/** 0 */
 	private Long updateTime;
-	private Boolean isolated; // : false,
-	private String adlQuantile; // : 2
 
 	public String getSymbol() {
 		return symbol;
@@ -103,12 +99,12 @@ public class CryptoCoinBinanceFutureUmPositionDetailDTO {
 		this.leverage = leverage;
 	}
 
-	public BigDecimal getMaxNotionalValue() {
-		return maxNotionalValue;
+	public BigDecimal getMaxQty() {
+		return maxQty;
 	}
 
-	public void setMaxNotionalValue(BigDecimal maxNotionalValue) {
-		this.maxNotionalValue = maxNotionalValue;
+	public void setMaxQty(BigDecimal maxQty) {
+		this.maxQty = maxQty;
 	}
 
 	public String getMarginType() {
@@ -143,20 +139,12 @@ public class CryptoCoinBinanceFutureUmPositionDetailDTO {
 		this.positionSide = positionSide;
 	}
 
-	public String getNotional() {
-		return notional;
+	public String getNotionalValue() {
+		return notionalValue;
 	}
 
-	public void setNotional(String notional) {
-		this.notional = notional;
-	}
-
-	public String getIsolatedWallet() {
-		return isolatedWallet;
-	}
-
-	public void setIsolatedWallet(String isolatedWallet) {
-		this.isolatedWallet = isolatedWallet;
+	public void setNotionalValue(String notionalValue) {
+		this.notionalValue = notionalValue;
 	}
 
 	public Long getUpdateTime() {
@@ -167,31 +155,14 @@ public class CryptoCoinBinanceFutureUmPositionDetailDTO {
 		this.updateTime = updateTime;
 	}
 
-	public Boolean getIsolated() {
-		return isolated;
-	}
-
-	public void setIsolated(Boolean isolated) {
-		this.isolated = isolated;
-	}
-
-	public String getAdlQuantile() {
-		return adlQuantile;
-	}
-
-	public void setAdlQuantile(String adlQuantile) {
-		this.adlQuantile = adlQuantile;
-	}
-
 	@Override
 	public String toString() {
-		return "CryptoCoinBinanceUmFuturePositionDetailDTO [symbol=" + symbol + ", positionAmt=" + positionAmt
+		return "CryptoCoinBinanceFutureCmPositionDetailDTO [symbol=" + symbol + ", positionAmt=" + positionAmt
 				+ ", entryPrice=" + entryPrice + ", breakEvenPrice=" + breakEvenPrice + ", markPrice=" + markPrice
 				+ ", unRealizedProfit=" + unRealizedProfit + ", liquidationPrice=" + liquidationPrice + ", leverage="
-				+ leverage + ", maxNotionalValue=" + maxNotionalValue + ", marginType=" + marginType
-				+ ", isolatedMargin=" + isolatedMargin + ", isAutoAddMargin=" + isAutoAddMargin + ", positionSide="
-				+ positionSide + ", notional=" + notional + ", isolatedWallet=" + isolatedWallet + ", updateTime="
-				+ updateTime + ", isolated=" + isolated + ", adlQuantile=" + adlQuantile + "]";
+				+ leverage + ", maxQty=" + maxQty + ", marginType=" + marginType + ", isolatedMargin=" + isolatedMargin
+				+ ", isAutoAddMargin=" + isAutoAddMargin + ", positionSide=" + positionSide + ", notionalValue="
+				+ notionalValue + ", updateTime=" + updateTime + "]";
 	}
 
 }

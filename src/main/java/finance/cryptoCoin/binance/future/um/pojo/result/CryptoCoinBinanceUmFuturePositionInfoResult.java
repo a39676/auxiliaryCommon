@@ -4,14 +4,14 @@ import java.util.List;
 import java.util.Map;
 
 import auxiliaryCommon.pojo.result.CommonResult;
+import finance.cryptoCoin.binance.future.pojo.dto.CryptoCoinBinanceFuturePositionMapKey;
 import finance.cryptoCoin.binance.future.um.pojo.dto.CryptoCoinBinanceFutureUmPositionDetailDTO;
-import finance.cryptoCoin.binance.future.um.pojo.dto.CryptoCoinBinanceFutureUmPositionMapKey;
 
 public class CryptoCoinBinanceUmFuturePositionInfoResult extends CommonResult {
 
 	private List<CryptoCoinBinanceFutureUmPositionDetailDTO> positionList;
 
-	private Map<CryptoCoinBinanceFutureUmPositionMapKey, CryptoCoinBinanceFutureUmPositionDetailDTO> positionMap;
+	private Map<CryptoCoinBinanceFuturePositionMapKey, CryptoCoinBinanceFutureUmPositionDetailDTO> positionMap;
 
 	public List<CryptoCoinBinanceFutureUmPositionDetailDTO> getPositionList() {
 		return positionList;
@@ -21,12 +21,12 @@ public class CryptoCoinBinanceUmFuturePositionInfoResult extends CommonResult {
 		this.positionList = positionList;
 	}
 
-	public Map<CryptoCoinBinanceFutureUmPositionMapKey, CryptoCoinBinanceFutureUmPositionDetailDTO> getPositionMap() {
+	public Map<CryptoCoinBinanceFuturePositionMapKey, CryptoCoinBinanceFutureUmPositionDetailDTO> getPositionMap() {
 		return positionMap;
 	}
 
 	public void setPositionMap(
-			Map<CryptoCoinBinanceFutureUmPositionMapKey, CryptoCoinBinanceFutureUmPositionDetailDTO> positionMap) {
+			Map<CryptoCoinBinanceFuturePositionMapKey, CryptoCoinBinanceFutureUmPositionDetailDTO> positionMap) {
 		this.positionMap = positionMap;
 	}
 

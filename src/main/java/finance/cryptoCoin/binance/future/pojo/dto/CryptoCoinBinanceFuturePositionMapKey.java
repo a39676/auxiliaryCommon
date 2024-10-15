@@ -1,10 +1,11 @@
-package finance.cryptoCoin.binance.future.um.pojo.dto;
+package finance.cryptoCoin.binance.future.pojo.dto;
 
 import java.util.Objects;
 
 import finance.cryptoCoin.binance.pojo.type.BinancePositionSideType;
 
-public class CryptoCoinBinanceFutureUmPositionMapKey {
+/** UM same as CM */
+public class CryptoCoinBinanceFuturePositionMapKey {
 
 	private String symbol;
 	/** {@link BinancePositionSideType} */
@@ -44,7 +45,7 @@ public class CryptoCoinBinanceFutureUmPositionMapKey {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		CryptoCoinBinanceFutureUmPositionMapKey other = (CryptoCoinBinanceFutureUmPositionMapKey) obj;
+		CryptoCoinBinanceFuturePositionMapKey other = (CryptoCoinBinanceFuturePositionMapKey) obj;
 		return Objects.equals(positionSide, other.positionSide) && Objects.equals(symbol, other.symbol);
 	}
 
