@@ -2,6 +2,10 @@ package finance.cryptoCoin.binance.future.cm.pojo.dto;
 
 import java.math.BigDecimal;
 
+import finance.cryptoCoin.binance.pojo.type.BinanceOrderExecutionType;
+import finance.cryptoCoin.binance.pojo.type.BinanceOrderSideType;
+import finance.cryptoCoin.binance.pojo.type.BinancePositionSideType;
+
 public class CryptoCoinBinanceFutureCmOpenOrderResponseSubDTO {
 
 	private BigDecimal avgPrice; // "0.0",
@@ -13,9 +17,9 @@ public class CryptoCoinBinanceFutureCmOpenOrderResponseSubDTO {
 	private String origType; // "TRAILING_STOP_MARKET",
 	private BigDecimal price; // "0",
 	private Boolean reduceOnly; // false,
-	private String side; // "BUY",
-	private String positionSide; // "SHORT",
-	private String status; // "NEW",
+	private BinanceOrderSideType side; // "BUY",
+	private BinancePositionSideType positionSide; // "SHORT",
+	private BinanceOrderExecutionType status; // "NEW",
 	private BigDecimal stopPrice; // "9300", // please ignore when order type is TRAILING_STOP_MARKET
 	private Boolean closePosition; // false, // if Close-All
 	private String symbol; // "BTCUSD_200925",
@@ -100,27 +104,27 @@ public class CryptoCoinBinanceFutureCmOpenOrderResponseSubDTO {
 		this.reduceOnly = reduceOnly;
 	}
 
-	public String getSide() {
+	public BinanceOrderSideType getSide() {
 		return side;
 	}
 
-	public void setSide(String side) {
+	public void setSide(BinanceOrderSideType side) {
 		this.side = side;
 	}
 
-	public String getPositionSide() {
+	public BinancePositionSideType getPositionSide() {
 		return positionSide;
 	}
 
-	public void setPositionSide(String positionSide) {
+	public void setPositionSide(BinancePositionSideType positionSide) {
 		this.positionSide = positionSide;
 	}
 
-	public String getStatus() {
+	public BinanceOrderExecutionType getStatus() {
 		return status;
 	}
 
-	public void setStatus(String status) {
+	public void setStatus(BinanceOrderExecutionType status) {
 		this.status = status;
 	}
 
