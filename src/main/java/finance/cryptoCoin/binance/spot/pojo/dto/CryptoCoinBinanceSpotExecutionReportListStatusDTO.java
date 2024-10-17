@@ -4,11 +4,11 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
-import finance.cryptoCoin.binance.pojo.type.BinanceUserDataEventType;
+import finance.cryptoCoin.binance.spot.pojo.type.BinanceSpotUserDataEventType;
 
 public class CryptoCoinBinanceSpotExecutionReportListStatusDTO {
 
-	private BinanceUserDataEventType eventType = BinanceUserDataEventType.LIST_STATUS;
+	private BinanceSpotUserDataEventType eventType = BinanceSpotUserDataEventType.LIST_STATUS;
 	private LocalDateTime eventTime;
 	private String symbol;
 	private Long orderListId;
@@ -20,11 +20,11 @@ public class CryptoCoinBinanceSpotExecutionReportListStatusDTO {
 	private LocalDateTime transactionType;
 	private List<CryptoCoinBinanceSpotListStatusObjectDTO> objectList = new ArrayList<>();
 
-	public BinanceUserDataEventType getEventType() {
+	public BinanceSpotUserDataEventType getEventType() {
 		return eventType;
 	}
 
-	public void setEventType(BinanceUserDataEventType eventType) {
+	public void setEventType(BinanceSpotUserDataEventType eventType) {
 		this.eventType = eventType;
 	}
 

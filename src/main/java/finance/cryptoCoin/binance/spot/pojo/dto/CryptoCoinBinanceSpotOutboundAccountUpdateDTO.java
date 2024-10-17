@@ -3,12 +3,12 @@ package finance.cryptoCoin.binance.spot.pojo.dto;
 import java.time.LocalDateTime;
 import java.util.List;
 
-import finance.cryptoCoin.binance.pojo.type.BinanceUserDataEventType;
+import finance.cryptoCoin.binance.spot.pojo.type.BinanceSpotUserDataEventType;
 
 public class CryptoCoinBinanceSpotOutboundAccountUpdateDTO {
 
 	/** "outboundAccountPosition" Event type */
-	private BinanceUserDataEventType eventType;
+	private BinanceSpotUserDataEventType eventType;
 	/** Event Time */
 	private LocalDateTime eventTime;
 	/** Time of last account update */
@@ -16,11 +16,11 @@ public class CryptoCoinBinanceSpotOutboundAccountUpdateDTO {
 	/** Balances Array */
 	private List<CryptoCoinBinanceSpotBalanceArraySubDTO> balancesArraay;
 
-	public BinanceUserDataEventType getEventType() {
+	public BinanceSpotUserDataEventType getEventType() {
 		return eventType;
 	}
 
-	public void setEventType(BinanceUserDataEventType eventType) {
+	public void setEventType(BinanceSpotUserDataEventType eventType) {
 		this.eventType = eventType;
 	}
 

@@ -2,21 +2,21 @@ package finance.cryptoCoin.binance.spot.pojo.dto;
 
 import java.time.LocalDateTime;
 
-import finance.cryptoCoin.binance.pojo.type.BinanceUserDataEventType;
+import finance.cryptoCoin.binance.spot.pojo.type.BinanceSpotUserDataEventType;
 
 public class CryptoCoinBinanceSpotBalanceUpdateDTO {
 
-	private BinanceUserDataEventType eventType;
+	private BinanceSpotUserDataEventType eventType;
 	private LocalDateTime eventTime;
 	private String asset;
 	private Double balanceDelta;
 	private LocalDateTime clearTime;
 
-	public BinanceUserDataEventType getEventType() {
+	public BinanceSpotUserDataEventType getEventType() {
 		return eventType;
 	}
 
-	public void setEventType(BinanceUserDataEventType eventType) {
+	public void setEventType(BinanceSpotUserDataEventType eventType) {
 		this.eventType = eventType;
 	}
 

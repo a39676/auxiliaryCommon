@@ -2,10 +2,10 @@ package finance.cryptoCoin.binance.spot.pojo.dto;
 
 import java.time.LocalDateTime;
 
-import finance.cryptoCoin.binance.pojo.type.BinanceUserDataEventType;
+import finance.cryptoCoin.binance.spot.pojo.type.BinanceSpotUserDataEventType;
 
 public class CryptoCoinBinanceSpotExecutionReportDTO {
-	private BinanceUserDataEventType eventType;
+	private BinanceSpotUserDataEventType eventType;
 	private LocalDateTime eventTime;
 	private String symbol;
 	private String clientOrderId;
@@ -38,11 +38,11 @@ public class CryptoCoinBinanceSpotExecutionReportDTO {
 	private LocalDateTime workingTime;
 	private String selfTradePreventionMode;
 
-	public BinanceUserDataEventType getEventType() {
+	public BinanceSpotUserDataEventType getEventType() {
 		return eventType;
 	}
 
-	public void setEventType(BinanceUserDataEventType eventType) {
+	public void setEventType(BinanceSpotUserDataEventType eventType) {
 		this.eventType = eventType;
 	}
 

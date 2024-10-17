@@ -1,6 +1,6 @@
-package finance.cryptoCoin.binance.pojo.type;
+package finance.cryptoCoin.binance.spot.pojo.type;
 
-public enum BinanceUserDataEventType {
+public enum BinanceSpotUserDataEventType {
 
 	/** 余额变动?出入币? */
 	OUTBOUND_ACCOUNT_POSITION("outboundAccountPosition", 1),
@@ -15,7 +15,7 @@ public enum BinanceUserDataEventType {
 	private String name;
 	private Integer code;
 
-	BinanceUserDataEventType(String name, Integer code) {
+	BinanceSpotUserDataEventType(String name, Integer code) {
 		this.name = name;
 		this.code = code;
 	}
@@ -28,8 +28,8 @@ public enum BinanceUserDataEventType {
 		return code;
 	}
 
-	public static BinanceUserDataEventType getType(String typeName) {
-		for (BinanceUserDataEventType t : BinanceUserDataEventType.values()) {
+	public static BinanceSpotUserDataEventType getType(String typeName) {
+		for (BinanceSpotUserDataEventType t : BinanceSpotUserDataEventType.values()) {
 			if (t.getName().equals(typeName)) {
 				return t;
 			}
