@@ -25,6 +25,10 @@ public enum BinanceOrderExecutionType {
 	FILLED("FILLED", 9),
 	/** Currently unused */
 	PENDING_CANCEL("PENDING_CANCEL", 10),
+	/** Liquidation Execution */
+	CALCULATED("CALCULATED", 11),
+	/** Order modified */
+	AMENDMENT("AMENDMENT", 12)
 	;
 
 	private String name;

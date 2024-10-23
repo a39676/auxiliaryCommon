@@ -9,6 +9,9 @@ public enum BinanceOrderTypeType {
     TAKE_PROFIT("TAKE_PROFIT", 5),
     TAKE_PROFIT_LIMIT("TAKE_PROFIT_LIMIT", 6),
     LIMIT_MAKER("LIMIT_MAKER", 7),
+    STOP("STOP", 8),
+    LIQUIDATION("LIQUIDATION", 9),
+    TRAILING_STOP_MARKET("TRAILING_STOP_MARKET", 10),
 	;
 
 	private String name;
