@@ -21,4 +21,10 @@ public class CryptoCoinBinanceFutureCmAccountConfigLeverageUpdateDTO {
 		this.leverage = leverage;
 	}
 
+	@Override
+	public String toString() {
+		return "CryptoCoinBinanceFutureCmAccountConfigLeverageUpdateDTO [symbol=" + symbol + ", leverage=" + leverage
+				+ "]";
+	}
+
 }

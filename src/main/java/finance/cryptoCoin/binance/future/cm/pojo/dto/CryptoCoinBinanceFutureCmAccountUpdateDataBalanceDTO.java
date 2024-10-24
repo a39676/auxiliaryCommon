@@ -41,4 +41,11 @@ public class CryptoCoinBinanceFutureCmAccountUpdateDataBalanceDTO {
 		this.balanceChangeExceptPnlAndCommision = balanceChangeExceptPnlAndCommision;
 	}
 
+	@Override
+	public String toString() {
+		return "CryptoCoinBinanceFutureCmAccountUpdateDataBalanceDTO [asset=" + asset + ", walletBalance="
+				+ walletBalance + ", crossWalletBalance=" + crossWalletBalance + ", balanceChangeExceptPnlAndCommision="
+				+ balanceChangeExceptPnlAndCommision + "]";
+	}
+
 }

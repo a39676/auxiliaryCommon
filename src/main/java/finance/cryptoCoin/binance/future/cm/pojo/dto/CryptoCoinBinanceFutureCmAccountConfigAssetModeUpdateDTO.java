@@ -12,4 +12,9 @@ public class CryptoCoinBinanceFutureCmAccountConfigAssetModeUpdateDTO {
 		this.isMultiAssetsMode = isMultiAssetsMode;
 	}
 
+	@Override
+	public String toString() {
+		return "CryptoCoinBinanceFutureCmAccountConfigAssetModeUpdateDTO [isMultiAssetsMode=" + isMultiAssetsMode + "]";
+	}
+
 }

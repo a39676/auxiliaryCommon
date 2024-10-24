@@ -43,4 +43,10 @@ public class CryptoCoinBinanceFutureCmAccountUpdateDTO {
 		this.updateData = updateData;
 	}
 
+	@Override
+	public String toString() {
+		return "CryptoCoinBinanceFutureCmAccountUpdateDTO [event=" + event + ", eventTime=" + eventTime
+				+ ", transcationTime=" + transcationTime + ", updateData=" + updateData + "]";
+	}
+
 }
