@@ -32,10 +32,4 @@ public class CryptoCoinBinanceFutureCmAccountUpdateDataDTO {
 		this.positionList = positionList;
 	}
 
-	@Override
-	public String toString() {
-		return "CryptoCoinBinanceFutureCmAccountUpdateDataDTO [eventReasonType=" + eventReasonType + ", balanceList="
-				+ balanceList + ", positionList=" + positionList + "]";
-	}
-
 }

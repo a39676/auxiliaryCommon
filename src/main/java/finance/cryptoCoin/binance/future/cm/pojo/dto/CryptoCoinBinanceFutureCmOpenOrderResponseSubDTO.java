@@ -216,16 +216,4 @@ public class CryptoCoinBinanceFutureCmOpenOrderResponseSubDTO {
 		this.priceProtect = priceProtect;
 	}
 
-	@Override
-	public String toString() {
-		return "CryptoCoinBinanceFutureCmOpenOrderResponseSubDTO [avgPrice=" + avgPrice + ", clientOrderId="
-				+ clientOrderId + ", cumBase=" + cumBase + ", executedQty=" + executedQty + ", orderId=" + orderId
-				+ ", origQty=" + origQty + ", origType=" + origType + ", price=" + price + ", reduceOnly=" + reduceOnly
-				+ ", side=" + side + ", positionSide=" + positionSide + ", status=" + status + ", stopPrice="
-				+ stopPrice + ", closePosition=" + closePosition + ", symbol=" + symbol + ", time=" + time
-				+ ", timeInForce=" + timeInForce + ", type=" + type + ", activatePrice=" + activatePrice
-				+ ", priceRate=" + priceRate + ", updateTime=" + updateTime + ", workingType=" + workingType
-				+ ", priceProtect=" + priceProtect + "]";
-	}
-
 }

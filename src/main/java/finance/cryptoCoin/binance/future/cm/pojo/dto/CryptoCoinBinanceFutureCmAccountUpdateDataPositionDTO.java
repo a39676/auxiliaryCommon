@@ -88,12 +88,4 @@ public class CryptoCoinBinanceFutureCmAccountUpdateDataPositionDTO {
 		this.positionSide = positionSide;
 	}
 
-	@Override
-	public String toString() {
-		return "CryptoCoinBinanceFutureCmAccountUpdateDataPositionDTO [symbol=" + symbol + ", positionAmount="
-				+ positionAmount + ", endPrice=" + endPrice + ", breakEventPrice=" + breakEventPrice
-				+ ", accumulatedRealized=" + accumulatedRealized + ", unrealizedPnl=" + unrealizedPnl + ", marginType="
-				+ marginType + ", isolatedWallet=" + isolatedWallet + ", positionSide=" + positionSide + "]";
-	}
-
 }

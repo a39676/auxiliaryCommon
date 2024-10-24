@@ -52,11 +52,4 @@ public class CryptoCoinBinanceFutureCmAccountConfigUpdateDTO {
 		this.assetMode = assetMode;
 	}
 
-	@Override
-	public String toString() {
-		return "CryptoCoinBinanceFutureCmAccountConfigUpdateDTO [event=" + event + ", eventTime=" + eventTime
-				+ ", transcationTime=" + transcationTime + ", leverageUpdate=" + leverageUpdate + ", assetMode="
-				+ assetMode + "]";
-	}
-
 }

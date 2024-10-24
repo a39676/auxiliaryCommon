@@ -342,23 +342,4 @@ public class CryptoCoinBinanceFutureCmOrderUpdateDetailDTO {
 		this.tifGtdOrderAutoCancelTime = tifGtdOrderAutoCancelTime;
 	}
 
-	@Override
-	public String toString() {
-		return "CryptoCoinBinanceFutureCmOrderUpdateDetailDTO [symbol=" + symbol + ", clientOrderId=" + clientOrderId
-				+ ", orderSide=" + orderSide + ", orderType=" + orderType + ", timeInForce=" + timeInForce
-				+ ", originalQuantity=" + originalQuantity + ", originalPrice=" + originalPrice + ", avgPrice="
-				+ avgPrice + ", stopPrice=" + stopPrice + ", executionType=" + executionType + ", orderStatus="
-				+ orderStatus + ", orderId=" + orderId + ", orderLastFilledQuantity=" + orderLastFilledQuantity
-				+ ", orderFilledAccumulatedQuantity=" + orderFilledAccumulatedQuantity + ", lastFilledPrice="
-				+ lastFilledPrice + ", commissionAsset=" + commissionAsset + ", commission=" + commission
-				+ ", orderTradeTime=" + orderTradeTime + ", tradeId=" + tradeId + ", bidsNotional=" + bidsNotional
-				+ ", askNotional=" + askNotional + ", isMaker=" + isMaker + ", reduceOnly=" + reduceOnly
-				+ ", stopPriceWorkingTYpe=" + stopPriceWorkingTYpe + ", originalOrderType=" + originalOrderType
-				+ ", positionSide=" + positionSide + ", isClosePosition=" + isClosePosition + ", activationPrice="
-				+ activationPrice + ", callbackRate=" + callbackRate + ", isPriceProtection=" + isPriceProtection
-				+ ", si=" + si + ", ss=" + ss + ", realizedProfit=" + realizedProfit + ", stpMode=" + stpMode
-				+ ", priceMatchMode=" + priceMatchMode + ", tifGtdOrderAutoCancelTime=" + tifGtdOrderAutoCancelTime
-				+ "]";
-	}
-
 }

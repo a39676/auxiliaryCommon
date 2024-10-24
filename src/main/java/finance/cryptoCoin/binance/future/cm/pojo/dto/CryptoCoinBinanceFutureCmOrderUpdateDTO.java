@@ -43,10 +43,4 @@ public class CryptoCoinBinanceFutureCmOrderUpdateDTO {
 		this.orderDetail = orderDetail;
 	}
 
-	@Override
-	public String toString() {
-		return "CryptoCoinBinanceFutureCmOrderUpdateDTO [event=" + event + ", eventTime=" + eventTime
-				+ ", transcationTime=" + transcationTime + ", orderDetail=" + orderDetail + "]";
-	}
-
 }
