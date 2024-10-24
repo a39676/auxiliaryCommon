@@ -3,11 +3,11 @@ package finance.cryptoCoin.binance.future.cm.pojo.type;
 public enum BinanceFutureCmUserDataEventType {
 
 	/** Balance和Position更新推送 */
-	ACCOUNT_UPDATE("accountUpdate", 1),
+	ACCOUNT_UPDATE("ACCOUNT_UPDATE", 1),
 	/** 订单/交易 更新推送 */
-	ORDER_TRADE_UPDATE("orderTradeUpdate", 2),
+	ORDER_TRADE_UPDATE("ORDER_TRADE_UPDATE", 2),
 	/** 杠杆倍数等账户配置 更新推送 */
-	ACCOUNT_CONFIG_UPDATE("accountConfigUpdate", 3),
+	ACCOUNT_CONFIG_UPDATE("ACCOUNT_CONFIG_UPDATE", 3),
 	/** 追加保证金通知 */
 	MARGIN_CALL("MARGIN_CALL", 4),
 	/** 策略更新 */
