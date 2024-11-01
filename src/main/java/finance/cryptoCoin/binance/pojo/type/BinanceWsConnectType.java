@@ -5,12 +5,14 @@ public enum BinanceWsConnectType {
 	K_LINE_SPOT("kLineSpot", 1),
     SPOT_BOOK_TICKER("spotBookTicker", 2),
     DEPTH("depth", 3),
-    USER_DATA("userData", 4),
     FORCE_ORDER("forceOrder", 5),
     K_LINE_FUTURE_UM("kLineFutureUm", 6),
     FUTURE_UM_ALL_BOOK_TICKER("futureUmAllBookTicker", 7),
     FUTURE_UM_ALL_TRADE("futureUmAllTrade", 8),
     FUTURE_UM_ALL_FORCE_ORDER("futureUmAllForceOrder", 9),
+    USER_DATA_SPOT("userDataSpot", 11),
+    USER_DATA_FUTURE_UM("userDataFutureUM", 12),
+    USER_DATA_FUTURE_CM("userDataFutureCm", 13),
 	;
 
 	private String name;
