@@ -1,5 +1,7 @@
 package finance.cryptoCoin.binance.pojo.dto;
 
+import java.util.Objects;
+
 public class CryptoCoinBinanceUserKeysDTO {
 
 	private Integer localUserId;
@@ -62,6 +64,27 @@ public class CryptoCoinBinanceUserKeysDTO {
 		return "CryptoCoinBinanceUserKeysDTO [localUserId=" + localUserId + ", nickname=" + nickname
 				+ ", binanceApiKey=" + binanceApiKey + ", binanceSecretKey=" + binanceSecretKey + ", gateIoApiKey="
 				+ gateIoApiKey + ", gateIoSecretKey=" + gateIoSecretKey + "]";
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(binanceApiKey, binanceSecretKey, gateIoApiKey, gateIoSecretKey, localUserId, nickname);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		CryptoCoinBinanceUserKeysDTO other = (CryptoCoinBinanceUserKeysDTO) obj;
+		return Objects.equals(binanceApiKey, other.binanceApiKey)
+				&& Objects.equals(binanceSecretKey, other.binanceSecretKey)
+				&& Objects.equals(gateIoApiKey, other.gateIoApiKey)
+				&& Objects.equals(gateIoSecretKey, other.gateIoSecretKey)
+				&& Objects.equals(localUserId, other.localUserId) && Objects.equals(nickname, other.nickname);
 	}
 
 }
