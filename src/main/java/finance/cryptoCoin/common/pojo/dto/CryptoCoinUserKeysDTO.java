@@ -1,8 +1,8 @@
-package finance.cryptoCoin.binance.pojo.dto;
+package finance.cryptoCoin.common.pojo.dto;
 
 import java.util.Objects;
 
-public class CryptoCoinBinanceUserKeysDTO {
+public class CryptoCoinUserKeysDTO {
 
 	private Integer localUserId;
 	private String nickname;
@@ -10,6 +10,7 @@ public class CryptoCoinBinanceUserKeysDTO {
 	private String binanceSecretKey;
 	private String gateIoApiKey;
 	private String gateIoSecretKey;
+	private Boolean connectBinanceUserDataStream = false;
 
 	public Integer getLocalUserId() {
 		return localUserId;
@@ -59,16 +60,26 @@ public class CryptoCoinBinanceUserKeysDTO {
 		this.gateIoSecretKey = gateIoSecretKey;
 	}
 
+	public Boolean getConnectBinanceUserDataStream() {
+		return connectBinanceUserDataStream;
+	}
+
+	public void setConnectBinanceUserDataStream(Boolean connectBinanceUserDataStream) {
+		this.connectBinanceUserDataStream = connectBinanceUserDataStream;
+	}
+
 	@Override
 	public String toString() {
-		return "CryptoCoinBinanceUserKeysDTO [localUserId=" + localUserId + ", nickname=" + nickname
-				+ ", binanceApiKey=" + binanceApiKey + ", binanceSecretKey=" + binanceSecretKey + ", gateIoApiKey="
-				+ gateIoApiKey + ", gateIoSecretKey=" + gateIoSecretKey + "]";
+		return "CryptoCoinUserKeysDTO [localUserId=" + localUserId + ", nickname=" + nickname + ", binanceApiKey="
+				+ binanceApiKey + ", binanceSecretKey=" + binanceSecretKey + ", gateIoApiKey=" + gateIoApiKey
+				+ ", gateIoSecretKey=" + gateIoSecretKey + ", connectBinanceUserDataStream="
+				+ connectBinanceUserDataStream + "]";
 	}
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(binanceApiKey, binanceSecretKey, gateIoApiKey, gateIoSecretKey, localUserId, nickname);
+		return Objects.hash(binanceApiKey, binanceSecretKey, connectBinanceUserDataStream, gateIoApiKey,
+				gateIoSecretKey, localUserId, nickname);
 	}
 
 	@Override
@@ -79,9 +90,10 @@ public class CryptoCoinBinanceUserKeysDTO {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		CryptoCoinBinanceUserKeysDTO other = (CryptoCoinBinanceUserKeysDTO) obj;
+		CryptoCoinUserKeysDTO other = (CryptoCoinUserKeysDTO) obj;
 		return Objects.equals(binanceApiKey, other.binanceApiKey)
 				&& Objects.equals(binanceSecretKey, other.binanceSecretKey)
+				&& Objects.equals(connectBinanceUserDataStream, other.connectBinanceUserDataStream)
 				&& Objects.equals(gateIoApiKey, other.gateIoApiKey)
 				&& Objects.equals(gateIoSecretKey, other.gateIoSecretKey)
 				&& Objects.equals(localUserId, other.localUserId) && Objects.equals(nickname, other.nickname);
