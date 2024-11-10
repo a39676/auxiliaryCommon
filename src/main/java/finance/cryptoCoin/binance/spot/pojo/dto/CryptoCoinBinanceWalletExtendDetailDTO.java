@@ -6,6 +6,8 @@ public class CryptoCoinBinanceWalletExtendDetailDTO extends CryptoCoinBinanceWal
 
 	private BigDecimal balanceInUSDT;
 
+	private BigDecimal percentOfAmountInAccount;
+
 	public BigDecimal getBalanceInUSDT() {
 		return balanceInUSDT;
 	}
@@ -14,9 +16,18 @@ public class CryptoCoinBinanceWalletExtendDetailDTO extends CryptoCoinBinanceWal
 		this.balanceInUSDT = balanceInUSDT;
 	}
 
+	public BigDecimal getPercentOfAmountInAccount() {
+		return percentOfAmountInAccount;
+	}
+
+	public void setPercentOfAmountInAccount(BigDecimal percentOfAmountInAccount) {
+		this.percentOfAmountInAccount = percentOfAmountInAccount;
+	}
+
 	@Override
 	public String toString() {
-		return "CryptoCoinBinanceWalletExtendDetailDTO [balanceInUSDT=" + balanceInUSDT + "]";
+		return "CryptoCoinBinanceWalletExtendDetailDTO [balanceInUSDT=" + balanceInUSDT + ", percentOfAmountInAccount="
+				+ percentOfAmountInAccount + "]";
 	}
 
 }
