@@ -10,7 +10,7 @@ import finance.cryptoCoin.common.pojo.dto.CryptoCoinInteractionCommonDTO;
 /**
  * 
  */
-public class CryptoCoinBinanceFutureUmOrderDTO extends CryptoCoinInteractionCommonDTO {
+public class CryptoCoinBinanceFutureUmSetOrderDTO extends CryptoCoinInteractionCommonDTO {
 
 	protected String symbol;
 	protected Double amount;

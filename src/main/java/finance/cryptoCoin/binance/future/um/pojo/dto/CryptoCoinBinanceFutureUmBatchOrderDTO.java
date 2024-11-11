@@ -2,7 +2,7 @@ package finance.cryptoCoin.binance.future.um.pojo.dto;
 
 import java.util.List;
 
-public class CryptoCoinBinanceFutureUmBatchOrderDTO extends CryptoCoinBinanceFutureUmOrderDTO {
+public class CryptoCoinBinanceFutureUmBatchOrderDTO extends CryptoCoinBinanceFutureUmSetOrderDTO {
 
 	private List<String> symbols;
 
