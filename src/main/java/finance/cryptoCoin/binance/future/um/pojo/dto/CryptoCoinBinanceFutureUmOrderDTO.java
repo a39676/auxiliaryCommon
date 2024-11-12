@@ -1,18 +1,21 @@
 package finance.cryptoCoin.binance.future.um.pojo.dto;
 
 import java.math.BigDecimal;
+import java.time.LocalDateTime;
 
 import finance.cryptoCoin.binance.pojo.type.BinanceOrderExecutionType;
 import finance.cryptoCoin.binance.pojo.type.BinanceOrderSideType;
+import finance.cryptoCoin.binance.pojo.type.BinanceOrderTypeType;
 import finance.cryptoCoin.binance.pojo.type.BinancePositionSideType;
 import finance.cryptoCoin.binance.pojo.type.BinanceTimeInForceType;
+import finance.cryptoCoin.common.pojo.dto.CryptoCoinInteractionCommonDTO;
 
-public class CryptoCoinBinanceFutureUmOpenOrderResponseSubDTO {
+public class CryptoCoinBinanceFutureUmOrderDTO extends CryptoCoinInteractionCommonDTO {
 
 	private BigDecimal avgPrice; // ": "0.00000",
 	private String clientOrderId; // ": "abc",
-	private String cumQuote; // ": "0",
-	private String executedQty; // ": "0",
+	private BigDecimal cumQuote; // ": "0",
+	private BigDecimal executedQty; // ": "0",
 	private String orderId; // ": 1917641,
 	private BigDecimal origQty; // ": "0.40",
 	private String origType; // ": "TRAILING_STOP_MARKET",
@@ -24,14 +27,14 @@ public class CryptoCoinBinanceFutureUmOpenOrderResponseSubDTO {
 	private BigDecimal stopPrice; // ": "9300", // please ignore when order type is TRAILING_STOP_MARKET
 	private Boolean closePosition; // ": false, // if Close-All
 	private String symbol; // ": "BTCUSDT",
-	private Long time; // ": 1579276756075, // order time
+	private LocalDateTime time; // ": 1579276756075, // order time
 	private BinanceTimeInForceType timeInForce; // ": "GTC",
-	private String type; // ": "TRAILING_STOP_MARKET",
+	private BinanceOrderTypeType type; // ": "TRAILING_STOP_MARKET",
 	private BigDecimal activatePrice; // ": "9020", // activation price, only return with TRAILING_STOP_MARKET order
 	private BigDecimal priceRate; // ": "0.3", // callback rate, only return with TRAILING_STOP_MARKET order
-	private Long updateTime; // ": 1579276756075, // update time
+	private LocalDateTime updateTime; // ": 1579276756075, // update time
 	private String workingType; // ": "CONTRACT_PRICE",
-	private String priceProtect; // ": false, // if conditional order trigger is protected
+	private Boolean priceProtect; // ": false, // if conditional order trigger is protected
 	private String priceMatch; // ": "NONE", //price match mode
 	private String selfTradePreventionMode; // ": "NONE", //self trading preventation mode
 	private String goodTillDate; // ": 0 //order pre-set auot cancel time for TIF GTD order
@@ -52,19 +55,19 @@ public class CryptoCoinBinanceFutureUmOpenOrderResponseSubDTO {
 		this.clientOrderId = clientOrderId;
 	}
 
-	public String getCumQuote() {
+	public BigDecimal getCumQuote() {
 		return cumQuote;
 	}
 
-	public void setCumQuote(String cumQuote) {
+	public void setCumQuote(BigDecimal cumQuote) {
 		this.cumQuote = cumQuote;
 	}
 
-	public String getExecutedQty() {
+	public BigDecimal getExecutedQty() {
 		return executedQty;
 	}
 
-	public void setExecutedQty(String executedQty) {
+	public void setExecutedQty(BigDecimal executedQty) {
 		this.executedQty = executedQty;
 	}
 
@@ -156,11 +159,11 @@ public class CryptoCoinBinanceFutureUmOpenOrderResponseSubDTO {
 		this.symbol = symbol;
 	}
 
-	public Long getTime() {
+	public LocalDateTime getTime() {
 		return time;
 	}
 
-	public void setTime(Long time) {
+	public void setTime(LocalDateTime time) {
 		this.time = time;
 	}
 
@@ -172,11 +175,11 @@ public class CryptoCoinBinanceFutureUmOpenOrderResponseSubDTO {
 		this.timeInForce = timeInForce;
 	}
 
-	public String getType() {
+	public BinanceOrderTypeType getType() {
 		return type;
 	}
 
-	public void setType(String type) {
+	public void setType(BinanceOrderTypeType type) {
 		this.type = type;
 	}
 
@@ -196,11 +199,11 @@ public class CryptoCoinBinanceFutureUmOpenOrderResponseSubDTO {
 		this.priceRate = priceRate;
 	}
 
-	public Long getUpdateTime() {
+	public LocalDateTime getUpdateTime() {
 		return updateTime;
 	}
 
-	public void setUpdateTime(Long updateTime) {
+	public void setUpdateTime(LocalDateTime updateTime) {
 		this.updateTime = updateTime;
 	}
 
@@ -212,11 +215,11 @@ public class CryptoCoinBinanceFutureUmOpenOrderResponseSubDTO {
 		this.workingType = workingType;
 	}
 
-	public String getPriceProtect() {
+	public Boolean getPriceProtect() {
 		return priceProtect;
 	}
 
-	public void setPriceProtect(String priceProtect) {
+	public void setPriceProtect(Boolean priceProtect) {
 		this.priceProtect = priceProtect;
 	}
 
@@ -246,15 +249,15 @@ public class CryptoCoinBinanceFutureUmOpenOrderResponseSubDTO {
 
 	@Override
 	public String toString() {
-		return "CryptoCoinBinanceFutureUmOpenOrderResponseSubDTO [avgPrice=" + avgPrice + ", clientOrderId="
-				+ clientOrderId + ", cumQuote=" + cumQuote + ", executedQty=" + executedQty + ", orderId=" + orderId
-				+ ", origQty=" + origQty + ", origType=" + origType + ", price=" + price + ", reduceOnly=" + reduceOnly
-				+ ", side=" + side + ", positionSide=" + positionSide + ", status=" + status + ", stopPrice="
-				+ stopPrice + ", closePosition=" + closePosition + ", symbol=" + symbol + ", time=" + time
-				+ ", timeInForce=" + timeInForce + ", type=" + type + ", activatePrice=" + activatePrice
-				+ ", priceRate=" + priceRate + ", updateTime=" + updateTime + ", workingType=" + workingType
-				+ ", priceProtect=" + priceProtect + ", priceMatch=" + priceMatch + ", selfTradePreventionMode="
-				+ selfTradePreventionMode + ", goodTillDate=" + goodTillDate + "]";
+		return "CryptoCoinBinanceFutureUmOrderHistoryDTO [avgPrice=" + avgPrice + ", clientOrderId=" + clientOrderId
+				+ ", cumQuote=" + cumQuote + ", executedQty=" + executedQty + ", orderId=" + orderId + ", origQty="
+				+ origQty + ", origType=" + origType + ", price=" + price + ", reduceOnly=" + reduceOnly + ", side="
+				+ side + ", positionSide=" + positionSide + ", status=" + status + ", stopPrice=" + stopPrice
+				+ ", closePosition=" + closePosition + ", symbol=" + symbol + ", time=" + time + ", timeInForce="
+				+ timeInForce + ", type=" + type + ", activatePrice=" + activatePrice + ", priceRate=" + priceRate
+				+ ", updateTime=" + updateTime + ", workingType=" + workingType + ", priceProtect=" + priceProtect
+				+ ", priceMatch=" + priceMatch + ", selfTradePreventionMode=" + selfTradePreventionMode
+				+ ", goodTillDate=" + goodTillDate + "]";
 	}
 
 }
