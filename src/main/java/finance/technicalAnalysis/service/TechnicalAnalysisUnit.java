@@ -27,16 +27,17 @@ public class TechnicalAnalysisUnit {
 		BigDecimal d = new BigDecimal(50);
 		BigDecimal j = k.multiply(new BigDecimal(3)).subtract(d.multiply(new BigDecimal(2)));
 		for (int i = 0; i < dataList.size(); i++) {
-			KLineCommonDataBO data = dataList.get(i);
+			KLineCommonDataBO kLine = dataList.get(i);
 			KdjBO bo = new KdjBO();
-			rsvDividend = data.getEndPrice().subtract(data.getLowPrice());
-			rsvDivisor = data.getHighPrice().subtract(data.getLowPrice());
-			rsv = rsvDividend.divide(rsvDivisor, SCALE_FOR_PRICE_CALCULATE, RoundingMode.HALF_UP);
+			rsvDividend = kLine.getEndPrice().subtract(kLine.getLowPrice());
+			rsvDivisor = kLine.getHighPrice().subtract(kLine.getLowPrice());
+			rsv = rsvDividend.divide(rsvDivisor, SCALE_FOR_PRICE_CALCULATE, RoundingMode.HALF_UP)
+					.multiply(new BigDecimal(100));
 			k = k.multiply(new BigDecimal(2)).divide(new BigDecimal(3), SCALE_FOR_PRICE_CALCULATE, RoundingMode.HALF_UP)
 					.add(rsv.divide(new BigDecimal(3), SCALE_FOR_PRICE_CALCULATE, RoundingMode.HALF_UP));
 			d = d.multiply(new BigDecimal(2)).divide(new BigDecimal(3), SCALE_FOR_PRICE_CALCULATE, RoundingMode.HALF_UP)
 					.add(k.divide(new BigDecimal(3), SCALE_FOR_PRICE_CALCULATE, RoundingMode.HALF_UP));
-			j = k.multiply(new BigDecimal(3)).add(d.multiply(new BigDecimal(2)));
+			j = k.multiply(new BigDecimal(3)).subtract(d.multiply(new BigDecimal(2)));
 			bo.setRsv(rsv);
 			bo.setK(k);
 			bo.setD(d);
