@@ -60,8 +60,8 @@ public class TechnicalAnalysisUnit {
 		for (int i = 0; i < dataList.size() - defaultMaSize; i++) {
 			List<E> subDataList = dataList.subList(i, i + defaultMaSize);
 			List<BigDecimal> closePriceList = getClosePriceList(subDataList);
-			BigDecimal avgClose = getAvgOfClosePrice(closePriceList);
-			BigDecimal variance = getVarianceOfClosePrice(closePriceList, avgClose);
+			BigDecimal avgClose = getAvgOfFromList(closePriceList);
+			BigDecimal variance = getVarianceFromList(closePriceList, avgClose);
 			BigDecimal standardDeviation = new BigDecimal(Math.sqrt(variance.doubleValue()));
 
 			bollData = new BollBO();
@@ -82,7 +82,7 @@ public class TechnicalAnalysisUnit {
 		return closePriceList;
 	}
 
-	public BigDecimal getAvgOfClosePrice(List<BigDecimal> dataList) {
+	public BigDecimal getAvgOfFromList(List<BigDecimal> dataList) {
 		if (dataList == null || dataList.isEmpty()) {
 			return null;
 		}
@@ -94,7 +94,7 @@ public class TechnicalAnalysisUnit {
 		return avg;
 	}
 
-	private BigDecimal getVarianceOfClosePrice(List<BigDecimal> dataList, BigDecimal avg) {
+	private BigDecimal getVarianceFromList(List<BigDecimal> dataList, BigDecimal avg) {
 		BigDecimal variance = BigDecimal.ZERO;
 		for (int i = 0; i < dataList.size(); i++) {
 			variance = variance.add(new BigDecimal(Math.pow(dataList.get(i).subtract(avg).doubleValue(), 2)));
@@ -131,7 +131,7 @@ public class TechnicalAnalysisUnit {
 				for (int subListIndex = dataIndex; subListIndex > dataIndex - maSetting; subListIndex--) {
 					closePriceList.add(dataList.get(subListIndex).getEndPrice());
 				}
-				BigDecimal tmpMA = getAvgOfClosePrice(closePriceList);
+				BigDecimal tmpMA = getAvgOfFromList(closePriceList);
 				tmpMaList.add(tmpMA);
 			}
 			bo.getMaList().add(tmpMaList);
