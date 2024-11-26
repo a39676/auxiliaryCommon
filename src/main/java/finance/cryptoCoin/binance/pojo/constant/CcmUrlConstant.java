@@ -18,5 +18,7 @@ public class CcmUrlConstant {
 	public static final String GET_ORDERS_BY_SYMBOL_SPOT = "/getOrdersBySymbolSpot";
 	public static final String GET_FLEXIBLE_PRODUCT_POSITION = "/getFlexibleProductPosition";
 	public static final String GET_WALLET_BALANCE = "/getWalletBalance";
+	
+	public static final String GET_ACCOUNT_SUMMARY = "/getAccountSummary";
 
 }
