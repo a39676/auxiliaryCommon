@@ -10,6 +10,8 @@ public class CryptoCoinUserKeysDTO {
 	private String binanceSecretKey;
 	private String gateIoApiKey;
 	private String gateIoSecretKey;
+	private String okxApiKey;
+	private String okxSecretKey;
 	private Boolean connectBinanceUserDataStream = false;
 
 	public Integer getLocalUserId() {
@@ -60,6 +62,22 @@ public class CryptoCoinUserKeysDTO {
 		this.gateIoSecretKey = gateIoSecretKey;
 	}
 
+	public String getOkxApiKey() {
+		return okxApiKey;
+	}
+
+	public void setOkxApiKey(String okxApiKey) {
+		this.okxApiKey = okxApiKey;
+	}
+
+	public String getOkxSecretKey() {
+		return okxSecretKey;
+	}
+
+	public void setOkxSecretKey(String okxSecretKey) {
+		this.okxSecretKey = okxSecretKey;
+	}
+
 	public Boolean getConnectBinanceUserDataStream() {
 		return connectBinanceUserDataStream;
 	}
@@ -72,14 +90,14 @@ public class CryptoCoinUserKeysDTO {
 	public String toString() {
 		return "CryptoCoinUserKeysDTO [localUserId=" + localUserId + ", nickname=" + nickname + ", binanceApiKey="
 				+ binanceApiKey + ", binanceSecretKey=" + binanceSecretKey + ", gateIoApiKey=" + gateIoApiKey
-				+ ", gateIoSecretKey=" + gateIoSecretKey + ", connectBinanceUserDataStream="
-				+ connectBinanceUserDataStream + "]";
+				+ ", gateIoSecretKey=" + gateIoSecretKey + ", okxApiKey=" + okxApiKey + ", okxSecretKey=" + okxSecretKey
+				+ ", connectBinanceUserDataStream=" + connectBinanceUserDataStream + "]";
 	}
 
 	@Override
 	public int hashCode() {
 		return Objects.hash(binanceApiKey, binanceSecretKey, connectBinanceUserDataStream, gateIoApiKey,
-				gateIoSecretKey, localUserId, nickname);
+				gateIoSecretKey, localUserId, nickname, okxApiKey, okxSecretKey);
 	}
 
 	@Override
@@ -96,7 +114,8 @@ public class CryptoCoinUserKeysDTO {
 				&& Objects.equals(connectBinanceUserDataStream, other.connectBinanceUserDataStream)
 				&& Objects.equals(gateIoApiKey, other.gateIoApiKey)
 				&& Objects.equals(gateIoSecretKey, other.gateIoSecretKey)
-				&& Objects.equals(localUserId, other.localUserId) && Objects.equals(nickname, other.nickname);
+				&& Objects.equals(localUserId, other.localUserId) && Objects.equals(nickname, other.nickname)
+				&& Objects.equals(okxApiKey, other.okxApiKey) && Objects.equals(okxSecretKey, other.okxSecretKey);
 	}
 
 }
