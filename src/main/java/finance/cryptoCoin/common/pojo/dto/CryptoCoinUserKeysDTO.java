@@ -12,6 +12,7 @@ public class CryptoCoinUserKeysDTO {
 	private String gateIoSecretKey;
 	private String okxApiKey;
 	private String okxSecretKey;
+	private String okxPassPhrase;
 	private Boolean connectBinanceUserDataStream = false;
 
 	public Integer getLocalUserId() {
@@ -78,6 +79,14 @@ public class CryptoCoinUserKeysDTO {
 		this.okxSecretKey = okxSecretKey;
 	}
 
+	public String getOkxPassPhrase() {
+		return okxPassPhrase;
+	}
+
+	public void setOkxPassPhrase(String okxPassPhrase) {
+		this.okxPassPhrase = okxPassPhrase;
+	}
+
 	public Boolean getConnectBinanceUserDataStream() {
 		return connectBinanceUserDataStream;
 	}
@@ -91,13 +100,14 @@ public class CryptoCoinUserKeysDTO {
 		return "CryptoCoinUserKeysDTO [localUserId=" + localUserId + ", nickname=" + nickname + ", binanceApiKey="
 				+ binanceApiKey + ", binanceSecretKey=" + binanceSecretKey + ", gateIoApiKey=" + gateIoApiKey
 				+ ", gateIoSecretKey=" + gateIoSecretKey + ", okxApiKey=" + okxApiKey + ", okxSecretKey=" + okxSecretKey
-				+ ", connectBinanceUserDataStream=" + connectBinanceUserDataStream + "]";
+				+ ", okxPassPhrase=" + okxPassPhrase + ", connectBinanceUserDataStream=" + connectBinanceUserDataStream
+				+ "]";
 	}
 
 	@Override
 	public int hashCode() {
 		return Objects.hash(binanceApiKey, binanceSecretKey, connectBinanceUserDataStream, gateIoApiKey,
-				gateIoSecretKey, localUserId, nickname, okxApiKey, okxSecretKey);
+				gateIoSecretKey, localUserId, nickname, okxApiKey, okxPassPhrase, okxSecretKey);
 	}
 
 	@Override
@@ -115,7 +125,8 @@ public class CryptoCoinUserKeysDTO {
 				&& Objects.equals(gateIoApiKey, other.gateIoApiKey)
 				&& Objects.equals(gateIoSecretKey, other.gateIoSecretKey)
 				&& Objects.equals(localUserId, other.localUserId) && Objects.equals(nickname, other.nickname)
-				&& Objects.equals(okxApiKey, other.okxApiKey) && Objects.equals(okxSecretKey, other.okxSecretKey);
+				&& Objects.equals(okxApiKey, other.okxApiKey) && Objects.equals(okxPassPhrase, other.okxPassPhrase)
+				&& Objects.equals(okxSecretKey, other.okxSecretKey);
 	}
 
 }
