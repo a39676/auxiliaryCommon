@@ -12,6 +12,8 @@ public enum BinanceOrderTypeType {
     STOP("STOP", 8),
     LIQUIDATION("LIQUIDATION", 9),
     TRAILING_STOP_MARKET("TRAILING_STOP_MARKET", 10),
+    TAKE_PROFIT_MARKET("TAKE_PROFIT_MARKET", 11),
+    STOP_MARKET("STOP_MARKET", 12),
 	;
 
 	private String name;
