@@ -11,8 +11,10 @@ public class CryptoCoinMQConstant {
 	public static final String NORMAL_MESSAGE_QUEUE = "CryptoCoinNormalMsg";
 	public static final String MID_SMALL_CAPITALIZATION_MSG = "CryptoCoinMidSmallCapMsg";
 	public static final String CCM_NOTICE = "CryptoCoinCcmNotice";
-	public static final String SET_ORDER = "CryptoCoinSetOrder";
 	public static final String ORDER_RESULT_FEEDBACK = "CryptoCoinOrderResultFeedback";
+	
+	public static final String CRYPTO_COIN_SPOT_ORDER = "CryptoCoinSpotOrder";
+	
 	public static final String BINANCE_UM_FUTURE_ORDER = "CryptoCoinBinanceUmFutureOrder";
 	public static final String BINANCE_UM_BTC_ARBITRAGE_WITH_BATCH = "CryptoCoinBinanceUmBtcArbitrageWithBatch";
 	public static final String BINANCE_UM_FUTURE_ORDER_MODIFY = "CryptoCoinBinanceUmFutureOrderModify";
