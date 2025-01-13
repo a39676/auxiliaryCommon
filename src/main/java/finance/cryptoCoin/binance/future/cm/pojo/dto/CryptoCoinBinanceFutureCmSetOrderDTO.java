@@ -17,7 +17,7 @@ public class CryptoCoinBinanceFutureCmSetOrderDTO extends CryptoCoinInteractionC
 	private Integer positionSideCode;
 	/** {@link BinanceOrderTypeType} */
 	private Integer orderTypeCode;
-	private boolean reduceOnly;
+	private Boolean reduceOnly;
 	private BigDecimal price;
 
 	public String getSymbol() {
@@ -60,11 +60,11 @@ public class CryptoCoinBinanceFutureCmSetOrderDTO extends CryptoCoinInteractionC
 		this.orderTypeCode = orderTypeCode;
 	}
 
-	public boolean getReduceOnly() {
+	public Boolean getReduceOnly() {
 		return reduceOnly;
 	}
 
-	public void setReduceOnly(boolean reduceOnly) {
+	public void setReduceOnly(Boolean reduceOnly) {
 		this.reduceOnly = reduceOnly;
 	}
 
