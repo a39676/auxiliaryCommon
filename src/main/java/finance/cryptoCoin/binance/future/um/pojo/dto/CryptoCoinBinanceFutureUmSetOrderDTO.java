@@ -12,18 +12,18 @@ import finance.cryptoCoin.common.pojo.dto.CryptoCoinInteractionCommonDTO;
  */
 public class CryptoCoinBinanceFutureUmSetOrderDTO extends CryptoCoinInteractionCommonDTO {
 
-	protected String symbol;
-	protected Double amount;
+	private String symbol;
+	private Double amount;
 	/** {@link BinanceOrderSideType} */
-	protected Integer orderSideCode;
+	private Integer orderSideCode;
 	/** {@link BinancePositionSideType} */
-	protected Integer positionSideCode;
+	private Integer positionSideCode;
 	/** {@link BinanceOrderTypeType} */
-	protected Integer orderTypeCode;
+	private Integer orderTypeCode;
 	/** 配合限价设置,根据 现价 * preOrderRatio=下单价格; 如空,以现价发出限价单; 例: 设置限价为现价的 97% 则设置为 -3 */
-	protected Double preOrderRatio;
+	private Double preOrderRatio;
 	/** 仅为平仓单使用, 设置为平仓百分比, 例: 设置平仓比例为现有持仓的 30%, 则设置 30 */
-	protected BigDecimal closePositionQuantityRatio;
+	private BigDecimal closePositionQuantityRatio;
 
 	public Integer getUserId() {
 		return userId;
