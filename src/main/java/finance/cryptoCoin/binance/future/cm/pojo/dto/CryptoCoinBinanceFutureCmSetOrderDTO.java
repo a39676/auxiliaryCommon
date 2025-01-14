@@ -5,6 +5,7 @@ import java.math.BigDecimal;
 import finance.cryptoCoin.binance.pojo.type.BinanceOrderSideType;
 import finance.cryptoCoin.binance.pojo.type.BinanceOrderTypeType;
 import finance.cryptoCoin.binance.pojo.type.BinancePositionSideType;
+import finance.cryptoCoin.binance.pojo.type.BinanceTimeInForceType;
 import finance.cryptoCoin.common.pojo.dto.CryptoCoinInteractionCommonDTO;
 
 public class CryptoCoinBinanceFutureCmSetOrderDTO extends CryptoCoinInteractionCommonDTO {
@@ -17,7 +18,8 @@ public class CryptoCoinBinanceFutureCmSetOrderDTO extends CryptoCoinInteractionC
 	private Integer positionSideCode;
 	/** {@link BinanceOrderTypeType} */
 	private Integer orderTypeCode;
-	private Boolean reduceOnly;
+	/** {@link BinanceTimeInForceType} */
+	private Integer timeInForceCode = BinanceTimeInForceType.GTC.getCode();
 	private BigDecimal price;
 
 	public String getSymbol() {
@@ -60,12 +62,12 @@ public class CryptoCoinBinanceFutureCmSetOrderDTO extends CryptoCoinInteractionC
 		this.orderTypeCode = orderTypeCode;
 	}
 
-	public Boolean getReduceOnly() {
-		return reduceOnly;
+	public Integer getTimeInForceCode() {
+		return timeInForceCode;
 	}
 
-	public void setReduceOnly(Boolean reduceOnly) {
-		this.reduceOnly = reduceOnly;
+	public void setTimeInForceCode(Integer timeInForceCode) {
+		this.timeInForceCode = timeInForceCode;
 	}
 
 	public BigDecimal getPrice() {
@@ -80,7 +82,7 @@ public class CryptoCoinBinanceFutureCmSetOrderDTO extends CryptoCoinInteractionC
 	public String toString() {
 		return "CryptoCoinBinanceFutureCmSetOrderDTO [symbol=" + symbol + ", quantity=" + quantity + ", orderSideCode="
 				+ orderSideCode + ", positionSideCode=" + positionSideCode + ", orderTypeCode=" + orderTypeCode
-				+ ", reduceOnly=" + reduceOnly + ", price=" + price + "]";
+				+ ", timeInForceCode=" + timeInForceCode + ", price=" + price + "]";
 	}
 
 }
