@@ -20,4 +20,5 @@ public class CryptoCoinMQConstant {
 	public static final String BINANCE_UM_FUTURE_ORDER_MODIFY = "CryptoCoinBinanceUmFutureOrderModify";
 
 	public static final String BINANCE_CM_FUTURE_ORDER = "CryptoCoinBinanceCmFutureOrder";
+	public static final String BINANCE_CM_FUTURE_CANCEL_ORDER = "CryptoCoinBinanceCmFutureCancelOrder";
 }
