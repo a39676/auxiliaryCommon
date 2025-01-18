@@ -7,7 +7,7 @@ import finance.cryptoCoin.binance.pojo.type.BinanceOrderTypeType;
 import finance.cryptoCoin.binance.pojo.type.BinancePositionSideType;
 import finance.cryptoCoin.common.pojo.dto.CryptoCoinInteractionCommonDTO;
 
-public class CryptoCoinBinanceFutureCmCancelOrderDTO extends CryptoCoinInteractionCommonDTO {
+public class CryptoCoinBinanceFutureCmCancelMultipleOrderDTO extends CryptoCoinInteractionCommonDTO {
 
 	private String symbol;
 	/** {@link BinanceOrderSideType} */
