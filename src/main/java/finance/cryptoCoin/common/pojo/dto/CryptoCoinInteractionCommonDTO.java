@@ -2,7 +2,7 @@ package finance.cryptoCoin.common.pojo.dto;
 
 import finance.cryptoCoin.common.pojo.type.CryptoExchangeType;
 
-public class CryptoCoinInteractionCommonDTO {
+public abstract class CryptoCoinInteractionCommonDTO {
 	
 	protected String totpCode;
 	/** {@link CryptoExchangeType} */
