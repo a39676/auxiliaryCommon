@@ -2,9 +2,9 @@ package finance.cryptoCoin.binance.future.um.pojo.dto;
 
 import java.util.List;
 
-import finance.cryptoCoin.common.pojo.dto.CryptoCoinInteractionCommonDTO;
+import finance.cryptoCoin.common.pojo.dto.CryptoCoinInteractionSingleUserCommonDTO;
 
-public class CryptoCoinBinanceFutureUmBtcArbitrageWithBatchDTO extends CryptoCoinInteractionCommonDTO {
+public class CryptoCoinBinanceFutureUmBtcArbitrageWithBatchDTO extends CryptoCoinInteractionSingleUserCommonDTO {
 
 	private List<String> symbols;
 	private Double singleAmount;

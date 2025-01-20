@@ -1,8 +1,8 @@
 package finance.cryptoCoin.binance.future.cm.pojo.dto;
 
-import finance.cryptoCoin.common.pojo.dto.CryptoCoinInteractionCommonDTO;
+import finance.cryptoCoin.common.pojo.dto.CryptoCoinInteractionSingleUserCommonDTO;
 
-public class CryptoCoinBinanceFutureCmCancelOrderByIdDTO extends CryptoCoinInteractionCommonDTO {
+public class CryptoCoinBinanceFutureCmCancelOrderByIdDTO extends CryptoCoinInteractionSingleUserCommonDTO {
 
 	private String symbol;
 	private String orderId;

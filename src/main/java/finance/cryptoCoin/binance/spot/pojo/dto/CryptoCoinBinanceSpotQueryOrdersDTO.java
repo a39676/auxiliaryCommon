@@ -1,8 +1,8 @@
 package finance.cryptoCoin.binance.spot.pojo.dto;
 
-import finance.cryptoCoin.common.pojo.dto.CryptoCoinInteractionCommonDTO;
+import finance.cryptoCoin.common.pojo.dto.CryptoCoinInteractionSingleUserCommonDTO;
 
-public class CryptoCoinBinanceSpotQueryOrdersDTO extends CryptoCoinInteractionCommonDTO {
+public class CryptoCoinBinanceSpotQueryOrdersDTO extends CryptoCoinInteractionSingleUserCommonDTO {
 
 	private String symbol;
 

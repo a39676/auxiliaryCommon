@@ -8,9 +8,9 @@ import finance.cryptoCoin.binance.pojo.type.BinanceOrderSideType;
 import finance.cryptoCoin.binance.pojo.type.BinanceOrderTypeType;
 import finance.cryptoCoin.binance.pojo.type.BinancePositionSideType;
 import finance.cryptoCoin.binance.pojo.type.BinanceTimeInForceType;
-import finance.cryptoCoin.common.pojo.dto.CryptoCoinInteractionCommonDTO;
+import finance.cryptoCoin.common.pojo.dto.CryptoCoinInteractionSingleUserCommonDTO;
 
-public class CryptoCoinBinanceFutureUmOrderDTO extends CryptoCoinInteractionCommonDTO {
+public class CryptoCoinBinanceFutureUmOrderDTO extends CryptoCoinInteractionSingleUserCommonDTO {
 
 	private BigDecimal avgPrice; // ": "0.00000",
 	private String clientOrderId; // ": "abc",

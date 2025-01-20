@@ -5,12 +5,12 @@ import java.math.BigDecimal;
 import finance.cryptoCoin.binance.pojo.type.BinanceOrderSideType;
 import finance.cryptoCoin.binance.pojo.type.BinanceOrderTypeType;
 import finance.cryptoCoin.binance.pojo.type.BinancePositionSideType;
-import finance.cryptoCoin.common.pojo.dto.CryptoCoinInteractionCommonDTO;
+import finance.cryptoCoin.common.pojo.dto.CryptoCoinInteractionSingleUserCommonDTO;
 
 /**
  * 
  */
-public class CryptoCoinBinanceFutureUmSetOrderDTO extends CryptoCoinInteractionCommonDTO {
+public class CryptoCoinBinanceFutureUmSetOrderDTO extends CryptoCoinInteractionSingleUserCommonDTO {
 
 	private String symbol;
 	private Double amount;
@@ -24,22 +24,6 @@ public class CryptoCoinBinanceFutureUmSetOrderDTO extends CryptoCoinInteractionC
 	private Double preOrderRatio;
 	/** 仅为平仓单使用, 设置为平仓百分比, 例: 设置平仓比例为现有持仓的 30%, 则设置 30 */
 	private BigDecimal closePositionQuantityRatio;
-
-	public Integer getUserId() {
-		return userId;
-	}
-
-	public void setUserId(Integer userId) {
-		this.userId = userId;
-	}
-
-	public String getUserNickname() {
-		return userNickname;
-	}
-
-	public void setUserNickname(String userNickname) {
-		this.userNickname = userNickname;
-	}
 
 	public String getTotpCode() {
 		return totpCode;
@@ -107,10 +91,10 @@ public class CryptoCoinBinanceFutureUmSetOrderDTO extends CryptoCoinInteractionC
 
 	@Override
 	public String toString() {
-		return "CryptoCoinBinanceFutureUmOrderDTO [userId=" + userId + ", userNickname=" + userNickname + ", totpCode="
-				+ totpCode + ", symbol=" + symbol + ", amount=" + amount + ", orderSideCode=" + orderSideCode
-				+ ", positionSideCode=" + positionSideCode + ", orderTypeCode=" + orderTypeCode + ", preOrderRatio="
-				+ preOrderRatio + ", closePositionQuantityRatio=" + closePositionQuantityRatio + "]";
+		return "CryptoCoinBinanceFutureUmSetOrderDTO [symbol=" + symbol + ", amount=" + amount + ", orderSideCode="
+				+ orderSideCode + ", positionSideCode=" + positionSideCode + ", orderTypeCode=" + orderTypeCode
+				+ ", preOrderRatio=" + preOrderRatio + ", closePositionQuantityRatio=" + closePositionQuantityRatio
+				+ ", totpCode=" + totpCode + ", exchangeCode=" + exchangeCode + "]";
 	}
 
 }

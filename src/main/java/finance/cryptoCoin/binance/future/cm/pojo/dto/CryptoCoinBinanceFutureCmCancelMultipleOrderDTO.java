@@ -5,9 +5,9 @@ import java.math.BigDecimal;
 import finance.cryptoCoin.binance.pojo.type.BinanceOrderSideType;
 import finance.cryptoCoin.binance.pojo.type.BinanceOrderTypeType;
 import finance.cryptoCoin.binance.pojo.type.BinancePositionSideType;
-import finance.cryptoCoin.common.pojo.dto.CryptoCoinInteractionCommonDTO;
+import finance.cryptoCoin.common.pojo.dto.CryptoCoinInteractionSingleUserCommonDTO;
 
-public class CryptoCoinBinanceFutureCmCancelMultipleOrderDTO extends CryptoCoinInteractionCommonDTO {
+public class CryptoCoinBinanceFutureCmCancelMultipleOrderDTO extends CryptoCoinInteractionSingleUserCommonDTO {
 
 	private String symbol;
 	/** {@link BinanceOrderSideType} */
@@ -80,7 +80,8 @@ public class CryptoCoinBinanceFutureCmCancelMultipleOrderDTO extends CryptoCoinI
 	public String toString() {
 		return "CryptoCoinBinanceFutureCmCancelOrderDTO [symbol=" + symbol + ", orderSideCode=" + orderSideCode
 				+ ", positionSideCode=" + positionSideCode + ", orderTypeCode=" + orderTypeCode + ", maxPrice="
-				+ cancelIfOrderPriceHigherThan + ", minPrice=" + cancelIfOrderPriceLowerThan + ", cancelAllOpenOrder=" + cancelAllOpenOrder + "]";
+				+ cancelIfOrderPriceHigherThan + ", minPrice=" + cancelIfOrderPriceLowerThan + ", cancelAllOpenOrder="
+				+ cancelAllOpenOrder + "]";
 	}
 
 }
