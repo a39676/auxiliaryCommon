@@ -1,5 +1,6 @@
 package finance.cryptoCoin.common.pojo.dto;
 
+import java.util.Map;
 import java.util.Objects;
 
 public class CryptoCoinUserKeysDTO {
@@ -14,6 +15,7 @@ public class CryptoCoinUserKeysDTO {
 	private String okxSecretKey;
 	private String okxPassPhrase;
 	private Boolean connectBinanceUserDataStream = false;
+	private Map<String, CryptoCoinUserSymbolRateDTO> symbolRateMap;
 
 	public Integer getLocalUserId() {
 		return localUserId;
@@ -95,19 +97,27 @@ public class CryptoCoinUserKeysDTO {
 		this.connectBinanceUserDataStream = connectBinanceUserDataStream;
 	}
 
+	public Map<String, CryptoCoinUserSymbolRateDTO> getSymbolRateMap() {
+		return symbolRateMap;
+	}
+
+	public void setSymbolRateMap(Map<String, CryptoCoinUserSymbolRateDTO> symbolRateMap) {
+		this.symbolRateMap = symbolRateMap;
+	}
+
 	@Override
 	public String toString() {
 		return "CryptoCoinUserKeysDTO [localUserId=" + localUserId + ", nickname=" + nickname + ", binanceApiKey="
 				+ binanceApiKey + ", binanceSecretKey=" + binanceSecretKey + ", gateIoApiKey=" + gateIoApiKey
 				+ ", gateIoSecretKey=" + gateIoSecretKey + ", okxApiKey=" + okxApiKey + ", okxSecretKey=" + okxSecretKey
 				+ ", okxPassPhrase=" + okxPassPhrase + ", connectBinanceUserDataStream=" + connectBinanceUserDataStream
-				+ "]";
+				+ ", symbolRateMap=" + symbolRateMap + "]";
 	}
 
 	@Override
 	public int hashCode() {
 		return Objects.hash(binanceApiKey, binanceSecretKey, connectBinanceUserDataStream, gateIoApiKey,
-				gateIoSecretKey, localUserId, nickname, okxApiKey, okxPassPhrase, okxSecretKey);
+				gateIoSecretKey, localUserId, nickname, okxApiKey, okxPassPhrase, okxSecretKey, symbolRateMap);
 	}
 
 	@Override
@@ -126,7 +136,8 @@ public class CryptoCoinUserKeysDTO {
 				&& Objects.equals(gateIoSecretKey, other.gateIoSecretKey)
 				&& Objects.equals(localUserId, other.localUserId) && Objects.equals(nickname, other.nickname)
 				&& Objects.equals(okxApiKey, other.okxApiKey) && Objects.equals(okxPassPhrase, other.okxPassPhrase)
-				&& Objects.equals(okxSecretKey, other.okxSecretKey);
+				&& Objects.equals(okxSecretKey, other.okxSecretKey)
+				&& Objects.equals(symbolRateMap, other.symbolRateMap);
 	}
 
 }
