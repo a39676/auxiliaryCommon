@@ -1,23 +1,19 @@
 package finance.cryptoCoin.common.pojo.dto;
 
-import java.util.List;
-import java.util.Map;
 import java.util.Objects;
 
 public class CryptoCoinUserKeysDTO {
 
-	private Integer localUserId;
-	private String nickname;
-	private String binanceApiKey;
-	private String binanceSecretKey;
-	private String gateIoApiKey;
-	private String gateIoSecretKey;
-	private String okxApiKey;
-	private String okxSecretKey;
-	private String okxPassPhrase;
-	private Boolean connectBinanceUserDataStream = false;
-	private List<CryptoCoinUserSymbolRateDTO> symbolRateSettingList;
-	private Map<String, CryptoCoinUserSymbolRateDTO> symbolRateMap;
+	protected Integer localUserId;
+	protected String nickname;
+	protected String binanceApiKey;
+	protected String binanceSecretKey;
+	protected String gateIoApiKey;
+	protected String gateIoSecretKey;
+	protected String okxApiKey;
+	protected String okxSecretKey;
+	protected String okxPassPhrase;
+	protected Boolean connectBinanceUserDataStream = false;
 
 	public Integer getLocalUserId() {
 		return localUserId;
@@ -99,36 +95,19 @@ public class CryptoCoinUserKeysDTO {
 		this.connectBinanceUserDataStream = connectBinanceUserDataStream;
 	}
 
-	public List<CryptoCoinUserSymbolRateDTO> getSymbolRateSettingList() {
-		return symbolRateSettingList;
-	}
-
-	public void setSymbolRateSettingList(List<CryptoCoinUserSymbolRateDTO> symbolRateSettingList) {
-		this.symbolRateSettingList = symbolRateSettingList;
-	}
-
-	public Map<String, CryptoCoinUserSymbolRateDTO> getSymbolRateMap() {
-		return symbolRateMap;
-	}
-
-	public void setSymbolRateMap(Map<String, CryptoCoinUserSymbolRateDTO> symbolRateMap) {
-		this.symbolRateMap = symbolRateMap;
-	}
-
 	@Override
 	public String toString() {
 		return "CryptoCoinUserKeysDTO [localUserId=" + localUserId + ", nickname=" + nickname + ", binanceApiKey="
 				+ binanceApiKey + ", binanceSecretKey=" + binanceSecretKey + ", gateIoApiKey=" + gateIoApiKey
 				+ ", gateIoSecretKey=" + gateIoSecretKey + ", okxApiKey=" + okxApiKey + ", okxSecretKey=" + okxSecretKey
 				+ ", okxPassPhrase=" + okxPassPhrase + ", connectBinanceUserDataStream=" + connectBinanceUserDataStream
-				+ ", symbolRateSettingList=" + symbolRateSettingList + ", symbolRateMap=" + symbolRateMap + "]";
+				+ "]";
 	}
 
 	@Override
 	public int hashCode() {
 		return Objects.hash(binanceApiKey, binanceSecretKey, connectBinanceUserDataStream, gateIoApiKey,
-				gateIoSecretKey, localUserId, nickname, okxApiKey, okxPassPhrase, okxSecretKey, symbolRateMap,
-				symbolRateSettingList);
+				gateIoSecretKey, localUserId, nickname, okxApiKey, okxPassPhrase, okxSecretKey);
 	}
 
 	@Override
@@ -147,9 +126,7 @@ public class CryptoCoinUserKeysDTO {
 				&& Objects.equals(gateIoSecretKey, other.gateIoSecretKey)
 				&& Objects.equals(localUserId, other.localUserId) && Objects.equals(nickname, other.nickname)
 				&& Objects.equals(okxApiKey, other.okxApiKey) && Objects.equals(okxPassPhrase, other.okxPassPhrase)
-				&& Objects.equals(okxSecretKey, other.okxSecretKey)
-				&& Objects.equals(symbolRateMap, other.symbolRateMap)
-				&& Objects.equals(symbolRateSettingList, other.symbolRateSettingList);
+				&& Objects.equals(okxSecretKey, other.okxSecretKey);
 	}
 
 }
