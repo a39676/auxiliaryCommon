@@ -1,7 +1,7 @@
 package finance.cryptoCoin.binance.pojo.result;
 
 import auxiliaryCommon.pojo.result.CommonResult;
-import finance.cryptoCoin.binance.future.cm.pojo.result.CryptoCoinBinanceFutureCmQueryOrderResult;
+import finance.cryptoCoin.binance.future.cm.pojo.result.CryptoCoinBinanceFutureCmQueryOpenOrderResult;
 import finance.cryptoCoin.binance.future.um.pojo.result.CryptoCoinBinanceCmFuturePositionInfoResult;
 import finance.cryptoCoin.binance.future.um.pojo.result.CryptoCoinBinanceFutureUmQueryOrderResult;
 import finance.cryptoCoin.binance.future.um.pojo.result.CryptoCoinBinanceUmFuturePositionInfoResult;
@@ -17,7 +17,7 @@ public class CryptoCoinBinanceAccountSummaryResult extends CommonResult {
 	private CryptoCoinBinanceSpotAccountInfoResult accountInfos;
 	private CryptoCoinBinanceFutureUmQueryOrderResult umOpenOrders;
 	private CryptoCoinBinanceUmFuturePositionInfoResult positionInfoUM;
-	private CryptoCoinBinanceFutureCmQueryOrderResult cmOpenOrders;
+	private CryptoCoinBinanceFutureCmQueryOpenOrderResult cmOpenOrders;
 	private CryptoCoinBinanceCmFuturePositionInfoResult positionInfoCM;
 
 	public String getSummary() {
@@ -68,11 +68,11 @@ public class CryptoCoinBinanceAccountSummaryResult extends CommonResult {
 		this.positionInfoUM = positionInfoUM;
 	}
 
-	public CryptoCoinBinanceFutureCmQueryOrderResult getCmOpenOrders() {
+	public CryptoCoinBinanceFutureCmQueryOpenOrderResult getCmOpenOrders() {
 		return cmOpenOrders;
 	}
 
-	public void setCmOpenOrders(CryptoCoinBinanceFutureCmQueryOrderResult cmOpenOrders) {
+	public void setCmOpenOrders(CryptoCoinBinanceFutureCmQueryOpenOrderResult cmOpenOrders) {
 		this.cmOpenOrders = cmOpenOrders;
 	}
 

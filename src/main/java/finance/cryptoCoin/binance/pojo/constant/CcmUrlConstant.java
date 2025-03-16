@@ -12,6 +12,7 @@ public class CcmUrlConstant {
 	
 	public static final String POSITION_INFO_CM = "/positionInfoCm";
 	public static final String GET_OPEN_ORDERS_CM = "/getOpenOrdersCm";
+	public static final String GET_ORDERS_BY_SYMBOL_CM = "/getOrdersBySymbolCm";
 	
 	public static final String POSITION_INFO_SPOT = "/positionInfoSpot";
 	public static final String GET_OPEN_ORDERS_SPOT = "/getOpenOrdersSpot";
