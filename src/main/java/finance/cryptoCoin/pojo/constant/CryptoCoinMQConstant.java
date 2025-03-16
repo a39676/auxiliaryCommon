@@ -18,6 +18,7 @@ public class CryptoCoinMQConstant {
 	public static final String CRYPTO_COIN_SPOT_CANCEL_ORDER_BY_ID = "CryptoCoinSpotCancelOrderById";
 	
 	public static final String BINANCE_UM_FUTURE_ORDER = "CryptoCoinBinanceUmFutureOrder";
+	public static final String BINANCE_UM_FUTURE_SINGLE_USER_GROUP_ORDER = "CryptoCoinBinanceUmFutureSingleUserGroupOrder";
 	public static final String BINANCE_UM_BTC_ARBITRAGE_WITH_BATCH = "CryptoCoinBinanceUmBtcArbitrageWithBatch";
 	public static final String BINANCE_UM_FUTURE_ORDER_MODIFY = "CryptoCoinBinanceUmFutureOrderModify";
 
