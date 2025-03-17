@@ -5,6 +5,7 @@ import java.math.BigDecimal;
 import finance.cryptoCoin.binance.pojo.type.BinanceOrderSideType;
 import finance.cryptoCoin.binance.pojo.type.BinanceOrderTypeType;
 import finance.cryptoCoin.binance.pojo.type.BinancePositionSideType;
+import finance.cryptoCoin.binance.pojo.type.BinanceTimeInForceType;
 import finance.cryptoCoin.common.pojo.dto.CryptoCoinInteractionSingleUserCommonDTO;
 
 /**
@@ -21,6 +22,8 @@ public class CryptoCoinBinanceFutureUmSetOrderV2DTO extends CryptoCoinInteractio
 	private Integer positionSideCode;
 	/** {@link BinanceOrderTypeType} */
 	private Integer orderTypeCode;
+	/** {@link BinanceTimeInForceType} */
+	private Integer timeInForceCode;
 
 	public String getSymbol() {
 		return symbol;
@@ -70,12 +73,20 @@ public class CryptoCoinBinanceFutureUmSetOrderV2DTO extends CryptoCoinInteractio
 		this.orderTypeCode = orderTypeCode;
 	}
 
+	public Integer getTimeInForceCode() {
+		return timeInForceCode;
+	}
+
+	public void setTimeInForceCode(Integer timeInForceCode) {
+		this.timeInForceCode = timeInForceCode;
+	}
+
 	@Override
 	public String toString() {
 		return "CryptoCoinBinanceFutureUmSetOrderV2DTO [symbol=" + symbol + ", price=" + price + ", quantity="
 				+ quantity + ", orderSideCode=" + orderSideCode + ", positionSideCode=" + positionSideCode
-				+ ", orderTypeCode=" + orderTypeCode + ", userId=" + userId + ", userNickname=" + userNickname
-				+ ", totpCode=" + totpCode + ", exchangeCode=" + exchangeCode + "]";
+				+ ", orderTypeCode=" + orderTypeCode + ", timeInForceCode=" + timeInForceCode + ", userId=" + userId
+				+ ", userNickname=" + userNickname + ", totpCode=" + totpCode + ", exchangeCode=" + exchangeCode + "]";
 	}
 
 }
