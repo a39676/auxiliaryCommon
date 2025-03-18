@@ -2,7 +2,8 @@ package finance.cryptoCoin.binance.future.um.pojo.dto;
 
 import java.math.BigDecimal;
 
-public class CryptoCoinBinanceFutureUmPositionDetailDTO {
+public class CryptoCoinBinanceFutureUmPositionDetailDTO
+		implements Comparable<CryptoCoinBinanceFutureUmPositionDetailDTO> {
 
 	/** "BTCUSDT", // 交易对 */
 	private String symbol;
@@ -14,6 +15,8 @@ public class CryptoCoinBinanceFutureUmPositionDetailDTO {
 	private BigDecimal breakEvenPrice;
 	/** "6679.50671178", // 当前标记价格 */
 	private BigDecimal markPrice;
+	/** 当前标记价格与开仓均价之间的比率, 自行添加, 用于排序 */
+	private BigDecimal unRealizedPriceGap;
 	/** "0.00000000", // 持仓未实现盈亏 */
 	private BigDecimal unRealizedProfit;
 	/** "0", // 参考强平价格 */
@@ -77,6 +80,14 @@ public class CryptoCoinBinanceFutureUmPositionDetailDTO {
 
 	public void setMarkPrice(BigDecimal markPrice) {
 		this.markPrice = markPrice;
+	}
+
+	public BigDecimal getUnRealizedPriceGap() {
+		return unRealizedPriceGap;
+	}
+
+	public void setUnRealizedPriceGap(BigDecimal unRealizedPriceGap) {
+		this.unRealizedPriceGap = unRealizedPriceGap;
 	}
 
 	public BigDecimal getUnRealizedProfit() {
@@ -185,13 +196,39 @@ public class CryptoCoinBinanceFutureUmPositionDetailDTO {
 
 	@Override
 	public String toString() {
-		return "CryptoCoinBinanceUmFuturePositionDetailDTO [symbol=" + symbol + ", positionAmt=" + positionAmt
+		return "CryptoCoinBinanceFutureUmPositionDetailDTO [symbol=" + symbol + ", positionAmt=" + positionAmt
 				+ ", entryPrice=" + entryPrice + ", breakEvenPrice=" + breakEvenPrice + ", markPrice=" + markPrice
-				+ ", unRealizedProfit=" + unRealizedProfit + ", liquidationPrice=" + liquidationPrice + ", leverage="
-				+ leverage + ", maxNotionalValue=" + maxNotionalValue + ", marginType=" + marginType
-				+ ", isolatedMargin=" + isolatedMargin + ", isAutoAddMargin=" + isAutoAddMargin + ", positionSide="
-				+ positionSide + ", notional=" + notional + ", isolatedWallet=" + isolatedWallet + ", updateTime="
-				+ updateTime + ", isolated=" + isolated + ", adlQuantile=" + adlQuantile + "]";
+				+ ", unRealizedPriceGap=" + unRealizedPriceGap + ", unRealizedProfit=" + unRealizedProfit
+				+ ", liquidationPrice=" + liquidationPrice + ", leverage=" + leverage + ", maxNotionalValue="
+				+ maxNotionalValue + ", marginType=" + marginType + ", isolatedMargin=" + isolatedMargin
+				+ ", isAutoAddMargin=" + isAutoAddMargin + ", positionSide=" + positionSide + ", notional=" + notional
+				+ ", isolatedWallet=" + isolatedWallet + ", updateTime=" + updateTime + ", isolated=" + isolated
+				+ ", adlQuantile=" + adlQuantile + "]";
 	}
 
+	@Override
+	public int compareTo(CryptoCoinBinanceFutureUmPositionDetailDTO o) {
+		int i = compareWithPositionSide(o);
+		if (i != 0) {
+			return i;
+		}
+		i = compareWithUnRealizedPriceGap(o);
+		if (i != 0) {
+			return i;
+		}
+		i = compareWithUnRealizedProfit(o);
+		return i;
+	}
+
+	private int compareWithPositionSide(CryptoCoinBinanceFutureUmPositionDetailDTO o) {
+		return this.positionSide.compareTo(o.getPositionSide());
+	}
+
+	private int compareWithUnRealizedPriceGap(CryptoCoinBinanceFutureUmPositionDetailDTO o) {
+		return this.unRealizedPriceGap.compareTo(o.getUnRealizedPriceGap());
+	}
+
+	private int compareWithUnRealizedProfit(CryptoCoinBinanceFutureUmPositionDetailDTO o) {
+		return this.unRealizedProfit.compareTo(o.getUnRealizedProfit());
+	}
 }
