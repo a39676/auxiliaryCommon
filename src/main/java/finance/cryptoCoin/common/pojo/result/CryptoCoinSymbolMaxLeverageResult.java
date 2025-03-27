@@ -4,10 +4,30 @@ import java.util.List;
 
 import auxiliaryCommon.pojo.result.CommonResult;
 import finance.cryptoCoin.common.pojo.dto.CryptoCoinSymbolMaxLeverageDTO;
+import finance.cryptoCoin.common.pojo.type.CryptoExchangeType;
 
 public class CryptoCoinSymbolMaxLeverageResult extends CommonResult {
 
+	private String totpCode;
+	/** {@link CryptoExchangeType} */
+	private Integer exchangeCode;
 	private List<CryptoCoinSymbolMaxLeverageDTO> list;
+
+	public String getTotpCode() {
+		return totpCode;
+	}
+
+	public void setTotpCode(String totpCode) {
+		this.totpCode = totpCode;
+	}
+
+	public Integer getExchangeCode() {
+		return exchangeCode;
+	}
+
+	public void setExchangeCode(Integer exchangeCode) {
+		this.exchangeCode = exchangeCode;
+	}
 
 	public List<CryptoCoinSymbolMaxLeverageDTO> getList() {
 		return list;
@@ -19,7 +39,8 @@ public class CryptoCoinSymbolMaxLeverageResult extends CommonResult {
 
 	@Override
 	public String toString() {
-		return "CryptoCoinSymbolMaxLeverageResult [list=" + list + "]";
+		return "CryptoCoinSymbolMaxLeverageResult [totpCode=" + totpCode + ", exchangeCode=" + exchangeCode + ", list="
+				+ list + "]";
 	}
 
 }
