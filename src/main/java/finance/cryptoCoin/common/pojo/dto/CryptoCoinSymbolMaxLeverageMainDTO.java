@@ -1,17 +1,16 @@
-package finance.cryptoCoin.common.pojo.result;
+package finance.cryptoCoin.common.pojo.dto;
 
 import java.util.List;
 
-import auxiliaryCommon.pojo.result.CommonResult;
-import finance.cryptoCoin.common.pojo.dto.CryptoCoinSymbolMaxLeverageDTO;
 import finance.cryptoCoin.common.pojo.type.CryptoExchangeType;
 
-public class CryptoCoinSymbolMaxLeverageResult extends CommonResult {
+public class CryptoCoinSymbolMaxLeverageMainDTO {
 
 	private String totpCode;
 	/** {@link CryptoExchangeType} */
 	private Integer exchangeCode;
 	private List<CryptoCoinSymbolMaxLeverageDTO> list;
+	private String msg;
 
 	public String getTotpCode() {
 		return totpCode;
@@ -35,6 +34,14 @@ public class CryptoCoinSymbolMaxLeverageResult extends CommonResult {
 
 	public void setList(List<CryptoCoinSymbolMaxLeverageDTO> list) {
 		this.list = list;
+	}
+
+	public String getMsg() {
+		return msg;
+	}
+
+	public void setMsg(String msg) {
+		this.msg = msg;
 	}
 
 	@Override
