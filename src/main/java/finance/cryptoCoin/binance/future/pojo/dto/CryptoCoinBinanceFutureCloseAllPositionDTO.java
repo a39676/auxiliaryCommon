@@ -6,21 +6,20 @@ import finance.cryptoCoin.common.pojo.dto.CryptoCoinInteractionSingleUserCommonD
 public class CryptoCoinBinanceFutureCloseAllPositionDTO extends CryptoCoinInteractionSingleUserCommonDTO {
 
 	/** {@link BinancePositionSideType} */
-	private Integer binancePositionSideTypeCode;
+	private Integer positionSideCode;
 
-	public Integer getBinancePositionSideTypeCode() {
-		return binancePositionSideTypeCode;
+	public Integer getPositionSideCode() {
+		return positionSideCode;
 	}
 
-	public void setBinancePositionSideTypeCode(Integer binancePositionSideTypeCode) {
-		this.binancePositionSideTypeCode = binancePositionSideTypeCode;
+	public void setPositionSideCode(Integer positionSideCode) {
+		this.positionSideCode = positionSideCode;
 	}
 
 	@Override
 	public String toString() {
-		return "CryptoCoinBinanceFutureCloseAllPositionDTO [binancePositionSideTypeCode=" + binancePositionSideTypeCode
-				+ ", userId=" + userId + ", userNickname=" + userNickname + ", totpCode=" + totpCode + ", exchangeCode="
-				+ exchangeCode + "]";
+		return "CryptoCoinBinanceFutureCloseAllPositionDTO [positionSideCode=" + positionSideCode + ", userId=" + userId
+				+ ", userNickname=" + userNickname + ", totpCode=" + totpCode + ", exchangeCode=" + exchangeCode + "]";
 	}
 
 }
