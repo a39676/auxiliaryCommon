@@ -16,6 +16,7 @@ public class CryptoCoinBinanceFutureUmSetOrderV2DTO extends CryptoCoinInteractio
 	private String symbol;
 	private BigDecimal price;
 	private BigDecimal quantity;
+	private BigDecimal orderAmount;
 	/** {@link BinanceOrderSideType} */
 	private Integer orderSideCode;
 	/** {@link BinancePositionSideType} */
@@ -47,6 +48,14 @@ public class CryptoCoinBinanceFutureUmSetOrderV2DTO extends CryptoCoinInteractio
 
 	public void setQuantity(BigDecimal quantity) {
 		this.quantity = quantity;
+	}
+
+	public BigDecimal getOrderAmount() {
+		return orderAmount;
+	}
+
+	public void setOrderAmount(BigDecimal orderAmount) {
+		this.orderAmount = orderAmount;
 	}
 
 	public Integer getOrderSideCode() {
@@ -84,9 +93,8 @@ public class CryptoCoinBinanceFutureUmSetOrderV2DTO extends CryptoCoinInteractio
 	@Override
 	public String toString() {
 		return "CryptoCoinBinanceFutureUmSetOrderV2DTO [symbol=" + symbol + ", price=" + price + ", quantity="
-				+ quantity + ", orderSideCode=" + orderSideCode + ", positionSideCode=" + positionSideCode
-				+ ", orderTypeCode=" + orderTypeCode + ", timeInForceCode=" + timeInForceCode + ", userId=" + userId
-				+ ", userNickname=" + userNickname + ", totpCode=" + totpCode + ", exchangeCode=" + exchangeCode + "]";
+				+ quantity + ", orderAmount=" + orderAmount + ", orderSideCode=" + orderSideCode + ", positionSideCode="
+				+ positionSideCode + ", orderTypeCode=" + orderTypeCode + ", timeInForceCode=" + timeInForceCode + "]";
 	}
 
 }
