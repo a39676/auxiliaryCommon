@@ -2,7 +2,7 @@ package finance.cryptoCoin.common.pojo.dto;
 
 import java.util.List;
 
-public class CryptoCoinInteractionMultipleUserCommonDTO extends CryptoCoinInteractionCommonDTO {
+public class CryptoCoinInteractionMultipleUserCommonDTO extends CryptoCoinInteractionOrderCommonDTO {
 	
 	protected List<Integer> userIdList;
 	protected List<String> userNicknameList;

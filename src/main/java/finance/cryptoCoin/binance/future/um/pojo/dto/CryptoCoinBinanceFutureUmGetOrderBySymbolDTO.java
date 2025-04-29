@@ -4,17 +4,8 @@ import finance.cryptoCoin.common.pojo.dto.CryptoCoinInteractionSingleUserCommonD
 
 public class CryptoCoinBinanceFutureUmGetOrderBySymbolDTO extends CryptoCoinInteractionSingleUserCommonDTO {
 
-	private String symbol;
 	private Long startTime;
 	private Long endTime;
-
-	public String getSymbol() {
-		return symbol;
-	}
-
-	public void setSymbol(String symbol) {
-		this.symbol = symbol;
-	}
 
 	public Long getStartTime() {
 		return startTime;

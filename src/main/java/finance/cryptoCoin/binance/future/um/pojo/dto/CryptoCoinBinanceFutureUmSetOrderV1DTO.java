@@ -12,7 +12,6 @@ import finance.cryptoCoin.common.pojo.dto.CryptoCoinInteractionSingleUserCommonD
  */
 public class CryptoCoinBinanceFutureUmSetOrderV1DTO extends CryptoCoinInteractionSingleUserCommonDTO {
 
-	private String symbol;
 	private Double amount;
 	/** {@link BinanceOrderSideType} */
 	private Integer orderSideCode;
@@ -31,14 +30,6 @@ public class CryptoCoinBinanceFutureUmSetOrderV1DTO extends CryptoCoinInteractio
 
 	public void setTotpCode(String totpCode) {
 		this.totpCode = totpCode;
-	}
-
-	public String getSymbol() {
-		return symbol;
-	}
-
-	public void setSymbol(String symbol) {
-		this.symbol = symbol;
 	}
 
 	public Double getAmount() {

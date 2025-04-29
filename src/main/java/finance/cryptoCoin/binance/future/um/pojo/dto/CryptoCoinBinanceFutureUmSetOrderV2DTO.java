@@ -1,7 +1,5 @@
 package finance.cryptoCoin.binance.future.um.pojo.dto;
 
-import java.math.BigDecimal;
-
 import finance.cryptoCoin.binance.pojo.type.BinanceOrderSideType;
 import finance.cryptoCoin.binance.pojo.type.BinanceOrderTypeType;
 import finance.cryptoCoin.binance.pojo.type.BinancePositionSideType;
@@ -13,10 +11,6 @@ import finance.cryptoCoin.common.pojo.dto.CryptoCoinInteractionSingleUserCommonD
  */
 public class CryptoCoinBinanceFutureUmSetOrderV2DTO extends CryptoCoinInteractionSingleUserCommonDTO {
 
-	private String symbol;
-	private BigDecimal price;
-	private BigDecimal quantity;
-	private BigDecimal orderAmount;
 	/** {@link BinanceOrderSideType} */
 	private Integer orderSideCode;
 	/** {@link BinancePositionSideType} */
@@ -25,38 +19,6 @@ public class CryptoCoinBinanceFutureUmSetOrderV2DTO extends CryptoCoinInteractio
 	private Integer orderTypeCode;
 	/** {@link BinanceTimeInForceType} */
 	private Integer timeInForceCode;
-
-	public String getSymbol() {
-		return symbol;
-	}
-
-	public void setSymbol(String symbol) {
-		this.symbol = symbol;
-	}
-
-	public BigDecimal getPrice() {
-		return price;
-	}
-
-	public void setPrice(BigDecimal price) {
-		this.price = price;
-	}
-
-	public BigDecimal getQuantity() {
-		return quantity;
-	}
-
-	public void setQuantity(BigDecimal quantity) {
-		this.quantity = quantity;
-	}
-
-	public BigDecimal getOrderAmount() {
-		return orderAmount;
-	}
-
-	public void setOrderAmount(BigDecimal orderAmount) {
-		this.orderAmount = orderAmount;
-	}
 
 	public Integer getOrderSideCode() {
 		return orderSideCode;
