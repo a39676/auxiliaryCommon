@@ -19,14 +19,12 @@ public class CryptoCoinBinanceFutureUmOrderDTO extends CryptoCoinInteractionSing
 	private String orderId; // ": 1917641,
 	private BigDecimal origQty; // ": "0.40",
 	private String origType; // ": "TRAILING_STOP_MARKET",
-	private BigDecimal price; // ": "0",
 	private Boolean reduceOnly; // ": false,
 	private BinanceOrderSideType side; // ": "BUY",
 	private BinancePositionSideType positionSide; // ": "SHORT",
 	private BinanceOrderExecutionType status; // ": "NEW",
 	private BigDecimal stopPrice; // ": "9300", // please ignore when order type is TRAILING_STOP_MARKET
 	private Boolean closePosition; // ": false, // if Close-All
-	private String symbol; // ": "BTCUSDT",
 	private LocalDateTime time; // ": 1579276756075, // order time
 	private BinanceTimeInForceType timeInForce; // ": "GTC",
 	private BinanceOrderTypeType type; // ": "TRAILING_STOP_MARKET",
@@ -95,14 +93,6 @@ public class CryptoCoinBinanceFutureUmOrderDTO extends CryptoCoinInteractionSing
 		this.origType = origType;
 	}
 
-	public BigDecimal getPrice() {
-		return price;
-	}
-
-	public void setPrice(BigDecimal price) {
-		this.price = price;
-	}
-
 	public Boolean getReduceOnly() {
 		return reduceOnly;
 	}
@@ -149,14 +139,6 @@ public class CryptoCoinBinanceFutureUmOrderDTO extends CryptoCoinInteractionSing
 
 	public void setClosePosition(Boolean closePosition) {
 		this.closePosition = closePosition;
-	}
-
-	public String getSymbol() {
-		return symbol;
-	}
-
-	public void setSymbol(String symbol) {
-		this.symbol = symbol;
 	}
 
 	public LocalDateTime getTime() {
