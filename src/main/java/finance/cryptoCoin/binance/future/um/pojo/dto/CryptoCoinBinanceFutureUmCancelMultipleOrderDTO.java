@@ -9,7 +9,6 @@ import finance.cryptoCoin.common.pojo.dto.CryptoCoinInteractionSingleUserCommonD
 
 public class CryptoCoinBinanceFutureUmCancelMultipleOrderDTO extends CryptoCoinInteractionSingleUserCommonDTO {
 
-	private String symbol;
 	/** {@link BinanceOrderSideType} */
 	private Integer orderSideCode;
 	/** {@link BinancePositionSideType} */
@@ -19,14 +18,6 @@ public class CryptoCoinBinanceFutureUmCancelMultipleOrderDTO extends CryptoCoinI
 	private BigDecimal cancelIfOrderPriceHigherThan;
 	private BigDecimal cancelIfOrderPriceLowerThan;
 	private Boolean cancelAllOpenOrder = false;
-
-	public String getSymbol() {
-		return symbol;
-	}
-
-	public void setSymbol(String symbol) {
-		this.symbol = symbol;
-	}
 
 	public Integer getOrderSideCode() {
 		return orderSideCode;
