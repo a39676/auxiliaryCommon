@@ -13,6 +13,8 @@ public class CryptoCoinUserKeysDTO {
 	protected String okxApiKey;
 	protected String okxSecretKey;
 	protected String okxPassPhrase;
+	protected String juCoinApiKey;
+	protected String juCoinSecretKey;
 	protected Boolean connectBinanceUserDataStream = false;
 
 	public Integer getLocalUserId() {
@@ -87,6 +89,22 @@ public class CryptoCoinUserKeysDTO {
 		this.okxPassPhrase = okxPassPhrase;
 	}
 
+	public String getJuCoinApiKey() {
+		return juCoinApiKey;
+	}
+
+	public void setJuCoinApiKey(String juCoinApiKey) {
+		this.juCoinApiKey = juCoinApiKey;
+	}
+
+	public String getJuCoinSecretKey() {
+		return juCoinSecretKey;
+	}
+
+	public void setJuCoinSecretKey(String juCoinSecretKey) {
+		this.juCoinSecretKey = juCoinSecretKey;
+	}
+
 	public Boolean getConnectBinanceUserDataStream() {
 		return connectBinanceUserDataStream;
 	}
@@ -100,14 +118,15 @@ public class CryptoCoinUserKeysDTO {
 		return "CryptoCoinUserKeysDTO [localUserId=" + localUserId + ", nickname=" + nickname + ", binanceApiKey="
 				+ binanceApiKey + ", binanceSecretKey=" + binanceSecretKey + ", gateIoApiKey=" + gateIoApiKey
 				+ ", gateIoSecretKey=" + gateIoSecretKey + ", okxApiKey=" + okxApiKey + ", okxSecretKey=" + okxSecretKey
-				+ ", okxPassPhrase=" + okxPassPhrase + ", connectBinanceUserDataStream=" + connectBinanceUserDataStream
-				+ "]";
+				+ ", okxPassPhrase=" + okxPassPhrase + ", juCoinApiKey=" + juCoinApiKey + ", juCoinSecretKey="
+				+ juCoinSecretKey + ", connectBinanceUserDataStream=" + connectBinanceUserDataStream + "]";
 	}
 
 	@Override
 	public int hashCode() {
 		return Objects.hash(binanceApiKey, binanceSecretKey, connectBinanceUserDataStream, gateIoApiKey,
-				gateIoSecretKey, localUserId, nickname, okxApiKey, okxPassPhrase, okxSecretKey);
+				gateIoSecretKey, juCoinApiKey, juCoinSecretKey, localUserId, nickname, okxApiKey, okxPassPhrase,
+				okxSecretKey);
 	}
 
 	@Override
@@ -124,6 +143,8 @@ public class CryptoCoinUserKeysDTO {
 				&& Objects.equals(connectBinanceUserDataStream, other.connectBinanceUserDataStream)
 				&& Objects.equals(gateIoApiKey, other.gateIoApiKey)
 				&& Objects.equals(gateIoSecretKey, other.gateIoSecretKey)
+				&& Objects.equals(juCoinApiKey, other.juCoinApiKey)
+				&& Objects.equals(juCoinSecretKey, other.juCoinSecretKey)
 				&& Objects.equals(localUserId, other.localUserId) && Objects.equals(nickname, other.nickname)
 				&& Objects.equals(okxApiKey, other.okxApiKey) && Objects.equals(okxPassPhrase, other.okxPassPhrase)
 				&& Objects.equals(okxSecretKey, other.okxSecretKey);
