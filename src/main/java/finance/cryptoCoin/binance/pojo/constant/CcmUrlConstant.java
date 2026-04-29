@@ -22,6 +22,4 @@ public class CcmUrlConstant {
 	
 	public static final String GET_ACCOUNT_SUMMARY = "/getAccountSummary";
 	
-	public static final String CHANGE_TO_MAX_LEVERAGE = "/changeToMaxLeverage";
-
 }
