@@ -24,6 +24,8 @@ public class CryptoCoinMQConstant {
 	public static final String BINANCE_UM_FUTURE_CANCEL_MULTIPLE_ORDER = "CryptoCoinBinanceUmFutureCancelMultipleOrder";
 	public static final String BINANCE_UM_FUTURE_CANCEL_ORDER_BY_ID = "CryptoCoinBinanceUmFutureCancelOrderById";
 	public static final String BINANCE_UM_FUTURE_CLOSE_ALL_POSITION = "CryptoCoinBinanceUmFutureCloseAllPosition";
+	
+	public static final String BINANCE_UM_FUTURE_CHANGE_TO_MAX_LEVERAGE = "CryptoCoinBinanceUmFutureChangeToMaxLeverage";
 
 	public static final String BINANCE_CM_FUTURE_ORDER = "CryptoCoinBinanceCmFutureOrder";
 	public static final String BINANCE_CM_FUTURE_CANCEL_MULTIPLE_ORDER = "CryptoCoinBinanceCmFutureCancelMultipleOrder";
