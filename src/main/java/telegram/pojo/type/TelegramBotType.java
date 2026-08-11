@@ -10,6 +10,7 @@ public enum TelegramBotType {
 	AI_CHAT_NOTICE("aiChatNoticeBot", 6),
 	NORMAL_MSG("normalMsgBot", 7),
 	CCM_NOTICE("ccmNoticeBot", 8),
+	ARK_ASSISTANT_2("ArkAssistant2Bot", 9),
 	;
 	
 	private String name;
